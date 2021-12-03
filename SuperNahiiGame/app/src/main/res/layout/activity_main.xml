@@ -21,9 +21,11 @@
     <ImageButton
         android:layout_width="275dp"
         android:layout_height="86dp"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="224dp"
         android:background="@drawable/hasi_botoia"
-        tools:layout_editor_absoluteX="237dp"
-        tools:layout_editor_absoluteY="228dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </ImageButton>
 

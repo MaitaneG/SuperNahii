@@ -1,4 +1,4 @@
-package com.example.supernahii;
+package com.example.supernaaahigame;
 
 import org.junit.Test;
 

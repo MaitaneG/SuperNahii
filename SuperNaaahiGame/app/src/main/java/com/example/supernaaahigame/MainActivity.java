@@ -1,8 +1,9 @@
-package com.example.supernahii;
+package com.example.supernaaahigame;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
-import android.content.pm.ActivityInfo;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageButton hasiJokua;
     private ImageView tituloa;
+    private ImageButton logIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void hasieratu() {
-        tituloa=findViewById(R.id.imageView);
-        hasiJokua=findViewById(R.id.imageButtonHasiJokua);
+        tituloa = findViewById(R.id.imageView);
+        hasiJokua = findViewById(R.id.imageButtonHasiJokua);
+        logIn = findViewById(R.id.imageButtonErabiltzailea);
+
         hasiJokua.setOnClickListener(this::jokuaHasi);
 
         Animation anT = AnimationUtils.loadAnimation(this, R.anim.tituloa_atera);
@@ -36,7 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void jokuaHasi(View view) {
-        Toast.makeText(MainActivity.this,"Hola",Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "Hola", Toast.LENGTH_SHORT).show();
     }
 }

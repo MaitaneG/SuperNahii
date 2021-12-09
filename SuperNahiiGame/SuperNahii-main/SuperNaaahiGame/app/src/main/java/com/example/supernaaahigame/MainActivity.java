@@ -1,9 +1,10 @@
 package com.example.supernaaahigame;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
+import android.app.FragmentManager;
 import android.content.Context;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -13,16 +14,18 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class MenuaActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private ImageButton hasiJokua;
     private ImageView tituloa;
     private ImageButton logIn;
+    private SQLiteDatabase db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menua);
+        setContentView(R.layout.activity_main);
         hasieratu();
     }
 
@@ -39,15 +42,13 @@ public class MenuaActivity extends AppCompatActivity {
         Animation anB = AnimationUtils.loadAnimation(this, R.anim.botoia_atera);
         hasiJokua.startAnimation(anB);
 
-        SQLiteDatabase db = openOrCreateDatabase("nireDiskak", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS nireDiskak(taldea VARCHAR, diska VARCHAR);");
+        db = openOrCreateDatabase("Puntuazioa", Context.MODE_PRIVATE, null);
+        db.execSQL("CREATE TABLE IF NOT EXISTS puntuazioa(id VARCHAR PRIMARY KEY AUTOINCREMENT , id_langilea VARCHAR, puntuak INTEGER, data TEXT);");
+
     }
 
 
     private void jokuaHasi(View view) {
-        Toast.makeText(MenuaActivity.this, "Hola", Toast.LENGTH_SHORT).show();
-        Intent myIntent = new Intent(MenuaActivity.this, Jokua.class);
-
-        startActivity(myIntent);
+        Toast.makeText(MainActivity.this, "Hola", Toast.LENGTH_SHORT).show();
     }
 }

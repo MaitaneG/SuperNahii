@@ -17,7 +17,7 @@ public class JokuaView extends View {
 
     private int screenWidth, screenHeight, newWidth, newHeight;
     private Bitmap mapa;
-    private int mapaX=0;
+    private int mapaX = 0;
     private Handler handler;
     private Runnable runnable;
     private final long UPDATE_MILLIS = 30;
@@ -65,6 +65,6 @@ public class JokuaView extends View {
         if (mapaX < screenWidth - newWidth) {
             canvas.drawBitmap(mapa, mapaX + newWidth, 0, null);
         }
-        handler.postDelayed(runnable,UPDATE_MILLIS);
+        handler.postDelayed(runnable, UPDATE_MILLIS);
     }
 }

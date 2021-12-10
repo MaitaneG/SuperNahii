@@ -23,12 +23,13 @@
         android:id="@+id/imageButtonBolumena"
         android:layout_width="71dp"
         android:layout_height="74dp"
-        android:layout_marginStart="588dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginStart="596dp"
         android:background="@drawable/musika_jarrita"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView

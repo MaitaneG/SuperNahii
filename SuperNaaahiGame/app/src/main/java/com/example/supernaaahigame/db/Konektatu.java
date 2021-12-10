@@ -65,7 +65,7 @@ public class Konektatu {
                     try {
                         Statement sentencia = connection.createStatement();
 //                    Saltzailearentzat login-a
-                        ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"'AND pass= '"+pass+"' AND  grupo= 7");
+                        ResultSet rs=sentencia.executeQuery("SELECT login, pass FROM login WHERE login= '"+user+"'AND pass= '"+pass+"'");
                         while(rs.next()) {
                             User u= new User(rs.getString("login"),rs.getString("pass"));
                             users.add(u);

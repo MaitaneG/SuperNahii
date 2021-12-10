@@ -2,7 +2,6 @@ package com.example.supernaaahigame.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -18,9 +17,9 @@ import com.example.supernaaahigame.R;
 public class Menua extends AppCompatActivity {
 
     private ImageButton hasiJokua;
+    private ImageButton bolumena;
     private ImageView tituloa;
-    private ImageButton logIn;
-    private SQLiteDatabase db;
+    private boolean piztuta;
 
 
     @Override
@@ -33,9 +32,10 @@ public class Menua extends AppCompatActivity {
     private void hasieratu() {
         tituloa = findViewById(R.id.imageView);
         hasiJokua = findViewById(R.id.imageButtonHasiJokua);
-        logIn = findViewById(R.id.imageButtonErabiltzailea);
+        bolumena = findViewById(R.id.imageButtonBolumena);
 
         hasiJokua.setOnClickListener(this::jokuaHasi);
+        bolumena.setOnClickListener(this::musikaPiztuEdoItzali);
 
         Animation anT = AnimationUtils.loadAnimation(this, R.anim.tituloa_atera);
         tituloa.startAnimation(anT);
@@ -43,11 +43,21 @@ public class Menua extends AppCompatActivity {
         Animation anB = AnimationUtils.loadAnimation(this, R.anim.botoia_atera);
         hasiJokua.startAnimation(anB);
 
+        piztuta = true;
+    }
+
+    private void musikaPiztuEdoItzali(View view) {
+        if (piztuta) {
+            view.setBackgroundResource(R.drawable.musika_kenduta);
+            piztuta = false;
+        } else {
+            view.setBackgroundResource(R.drawable.musika_jarrita);
+            piztuta = true;
+        }
     }
 
 
     private void jokuaHasi(View view) {
-        Toast.makeText(Menua.this, "Hola", Toast.LENGTH_SHORT).show();
         Intent myIntent = new Intent(Menua.this, Login.class);
         startActivity(myIntent);
     }

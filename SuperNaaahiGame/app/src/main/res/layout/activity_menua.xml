@@ -20,7 +20,7 @@
         tools:ignore="SpeakableTextPresentCheck"/>
 
     <ImageButton
-        android:id="@+id/imageButtonErabiltzailea"
+        android:id="@+id/imageButtonBolumena"
         android:layout_width="71dp"
         android:layout_height="74dp"
         android:layout_marginStart="588dp"

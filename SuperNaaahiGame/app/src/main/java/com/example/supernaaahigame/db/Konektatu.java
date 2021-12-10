@@ -1,15 +1,12 @@
-package com.example.supernaaahigame;
+package com.example.supernaaahigame.db;
 
-import com.example.supernaaahigame.MainActivity;
+import com.example.supernaaahigame.model.User;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.concurrent.Semaphore;
 
 public class Konektatu {

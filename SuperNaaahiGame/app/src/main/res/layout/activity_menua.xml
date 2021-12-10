@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_hasiera"
-    tools:context=".MainActivity" >
+    tools:context=".view.Menua" >
 
     <ImageButton
         android:id="@+id/imageButtonHasiJokua"
@@ -25,7 +25,7 @@
         android:layout_height="74dp"
         android:layout_marginStart="588dp"
         android:layout_marginTop="296dp"
-        android:background="@drawable/log_in_ez"
+        android:background="@drawable/musika_jarrita"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

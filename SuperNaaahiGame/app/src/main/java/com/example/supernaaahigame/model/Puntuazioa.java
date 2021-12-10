@@ -1,12 +1,12 @@
-package com.example.supernaaahigame;
+package com.example.supernaaahigame.model;
 
 import android.text.format.DateFormat;
 
 import java.util.Date;
 
 public class Puntuazioa {
-    private int id,id_langilea,puntuak;
-    private Date date;
+    private int id, id_langilea, puntuak;
+    private Date data;
 
     public int getId() {
         return id;
@@ -33,10 +33,10 @@ public class Puntuazioa {
     }
 
     public Date getDate() {
-        return date;
+        return data;
     }
 
-    public void setDate(String date) {
-        this.date = DateFormat("yyyy.MM.dd".toString();
-    }
+//    public void setData(String data) {
+//        this.data = DateFormat.format("yyyy.MM.dd");
+//    }
 }

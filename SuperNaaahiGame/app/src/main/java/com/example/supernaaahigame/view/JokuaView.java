@@ -17,6 +17,8 @@ public class JokuaView extends View {
 
     private int screenWidth, screenHeight, newWidth, newHeight;
     private Bitmap mapa;
+    private Bitmap reno;
+
     private int mapaX = 0;
     private Handler handler;
     private Runnable runnable;

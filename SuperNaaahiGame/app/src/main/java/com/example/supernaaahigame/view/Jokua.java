@@ -23,11 +23,11 @@ public class Jokua extends AppCompatActivity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         // new JokuaView(this)
-        setContentView(R.layout.activity_jokua);
+        setContentView(new JokuaView(this));
 
-        //Botoiak kargatu
-        igoBotoia=findViewById(R.id.imageButtonIgo);
-        jaitsiBotoia=findViewById(R.id.imageButtonJaitsi);
-         view = new JokuaView(this);
+//        //Botoiak kargatu
+//        igoBotoia=findViewById(R.id.imageButtonIgo);
+//        jaitsiBotoia=findViewById(R.id.imageButtonJaitsi);
+//         view = new JokuaView(this);
     }
 }

@@ -105,4 +105,10 @@ public class Menua extends AppCompatActivity {
         Intent myIntent = new Intent(Menua.this, Login.class);
         startActivity(myIntent);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        hasierakoMusika.stop();
+    }
 }

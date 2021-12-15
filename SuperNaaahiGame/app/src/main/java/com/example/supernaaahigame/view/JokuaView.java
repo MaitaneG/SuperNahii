@@ -34,6 +34,10 @@ public class JokuaView extends View {
     public JokuaView(Context context) {
         super(context);
 
+        init();
+    }
+
+    private void init() {
         // Mapak kargatu
         mapa = BitmapFactory.decodeResource(getResources(), R.drawable.fondo_lehenego_posizioa);
         mapaAldatuta = BitmapFactory.decodeResource(getResources(), R.drawable.fondo_bigarren_posizioa);

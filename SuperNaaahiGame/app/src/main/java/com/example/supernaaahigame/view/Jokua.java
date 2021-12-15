@@ -25,9 +25,9 @@ public class Jokua extends AppCompatActivity {
         // new JokuaView(this)
         setContentView(new JokuaView(this));
 
-//        //Botoiak kargatu
-//        igoBotoia=findViewById(R.id.imageButtonIgo);
-//        jaitsiBotoia=findViewById(R.id.imageButtonJaitsi);
-//         view = new JokuaView(this);
+        //Botoiak kargatu
+        igoBotoia=findViewById(R.id.imageButtonIgo);
+        jaitsiBotoia=findViewById(R.id.imageButtonJaitsi);
+        //view = new JokuaView(this);
     }
 }

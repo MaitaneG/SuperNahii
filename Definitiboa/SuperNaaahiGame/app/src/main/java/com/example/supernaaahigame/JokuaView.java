@@ -18,7 +18,7 @@ public class JokuaView extends SurfaceView implements Runnable {
 
     private void resume(){
 
-    }
+    } 
 
     @Override
     protected void onDraw(Canvas canvas) {

@@ -6,6 +6,7 @@ import android.view.SurfaceView;
 
 public class JokuaView extends SurfaceView implements Runnable {
     private Thread haria;
+    private boolean jolasten;
 
     public JokuaView(Context context) {
         super(context);
@@ -13,12 +14,24 @@ public class JokuaView extends SurfaceView implements Runnable {
 
     @Override
     public void run() {
-
+        while (jolasten) {
+            update();
+            invalidate();
+            sleep();
+        }
     }
 
-    private void resume(){
+    private void update() {
+    }
 
-    } 
+    private void resume() {
+        haria = new Thread(this);
+        haria.start();
+    }
+
+    private void itxi() {
+        jolasten = false;
+    }
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -26,7 +39,13 @@ public class JokuaView extends SurfaceView implements Runnable {
     }
 
 
-    private void sleep(){
-
+    private void sleep() {
+        try {
+            Thread.sleep(17);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
+
+
 }

@@ -1,12 +1,21 @@
 package com.example.supernaaahigame.model;
 
-import android.text.format.DateFormat;
-
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Puntuazioa {
     private int id, id_langilea, puntuak;
     private Date data;
+
+
+    public Puntuazioa(int id_langilea, int puntuak, String data) {
+        this.id_langilea = id_langilea;
+        this.puntuak = puntuak;
+        this.data = Date;
+    }
+
+
 
     public int getId() {
         return id;

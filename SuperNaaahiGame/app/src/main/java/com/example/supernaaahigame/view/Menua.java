@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.supernaaahigame.R;
+import com.example.supernaaahigame.db.MyDbHelper;
 
 /**
  * Menua Layout-aren klasea
@@ -41,6 +42,10 @@ public class Menua extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menua);
         hasieratu(); // Konponenteak hasieratu
+        MyDbHelper dbHelper=new MyDbHelper(Menua.this);
+        SQLiteDatabase db=dbHelper.getWritableDatabase();
+
+
     }
 
     /**

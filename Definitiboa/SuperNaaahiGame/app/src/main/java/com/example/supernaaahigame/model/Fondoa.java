@@ -8,12 +8,12 @@ import com.example.supernaaahigame.R;
 
 public class Fondoa {
 
-    private int x=0, y=0;
+    public int x = 0, y = 0;
     private Bitmap fondoa;
 
-    public Fondoa(int screenX, int screenY, Resources res){
-        fondoa= BitmapFactory.decodeResource(res, R.drawable.fondo_bigarren_posizioa);
-        fondoa= Bitmap.createScaledBitmap(fondoa,screenX,screenY,false);
+    public Fondoa(int screenX, int screenY, Resources res) {
+        fondoa = BitmapFactory.decodeResource(res, R.drawable.fondo_bigarren_posizioa);
+        fondoa = Bitmap.createScaledBitmap(fondoa, screenX, (screenY-screenY/100), false);
     }
 
     public int getX() {

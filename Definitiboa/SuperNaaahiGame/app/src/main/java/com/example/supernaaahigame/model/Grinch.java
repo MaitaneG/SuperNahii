@@ -11,7 +11,7 @@ public class Grinch {
     private Bitmap reno1;
 
     public Grinch(int screenY, Resources res) {
-        reno1 = BitmapFactory.decodeResource(res, R.drawable.reno_andando);
+        reno1 = BitmapFactory.decodeResource(res, R.drawable.reno_andando1);
 
         width = reno1.getWidth();
         height = reno1.getHeight();

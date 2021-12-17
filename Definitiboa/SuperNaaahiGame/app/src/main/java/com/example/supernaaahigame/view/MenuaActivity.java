@@ -1,4 +1,4 @@
-package com.example.supernaaahigame;
+package com.example.supernaaahigame.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import com.example.supernaaahigame.R;
 
 /**
  * MenuaActivity Layout-aren klasea
@@ -65,6 +67,7 @@ public class MenuaActivity extends AppCompatActivity {
         // Abestia zehazten da
         hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
         hasierakoMusika.setLooping(true);
+        hasierakoMusika.start();
 
         // Musika ez badago jarrita, abestia hasten da
         piztuta = true;
@@ -79,7 +82,7 @@ public class MenuaActivity extends AppCompatActivity {
         // Piztuta badago, itzaltzen da
         if (piztuta) {
             view.setBackgroundResource(R.drawable.musika_kenduta);
-            hasierakoMusika.stop();
+            hasierakoMusika.pause();
             piztuta = false;
             // Ez badago piztuta pizten du
         } else {

@@ -8,21 +8,17 @@ import com.example.supernaaahigame.R;
 
 public class Rudolph {
 
-    private int X, y, width, height, renoa = 0;
+    private int x, y, width, height, renoa = 0;
     private Bitmap renoIbiltzen1, renoIbiltzen2, renoSaltoEgiten, renoMakurtzen;
 
-    public Rudolph(int screenY, Resources res, float screenRatioX, float screenRatioY) {
-        renoIbiltzen1 = BitmapFactory.decodeResource(res, R.drawable.reno_andando);
-        renoIbiltzen2 = BitmapFactory.decodeResource(res, R.drawable.reno_andando);
+    public Rudolph(int screenY, int screenX, Resources res, float screenRatioX, float screenRatioY) {
+        renoIbiltzen1 = BitmapFactory.decodeResource(res, R.drawable.reno_andando1);
+        renoIbiltzen2 = BitmapFactory.decodeResource(res, R.drawable.reno_andando2);
         renoSaltoEgiten = BitmapFactory.decodeResource(res, R.drawable.reno_saltando);
 
 
-        width = renoIbiltzen1.getWidth();
-        height = renoIbiltzen1.getHeight();
-
-        // Ez dakigu nola irtengo den
-        width /= 4;
-        height /= 4;
+        width = renoIbiltzen1.getWidth() / 2;
+        height = renoIbiltzen1.getHeight() / 2;
 
         width *= (int) screenRatioX;
         height *= (int) screenRatioY;
@@ -30,9 +26,10 @@ public class Rudolph {
         renoIbiltzen1 = Bitmap.createScaledBitmap(renoIbiltzen1, width, height, false);
         renoIbiltzen2 = Bitmap.createScaledBitmap(renoIbiltzen2, width, height, false);
         renoSaltoEgiten = Bitmap.createScaledBitmap(renoSaltoEgiten, width, height, false);
-        renoMakurtzen = Bitmap.createScaledBitmap(renoMakurtzen, width, height, false);
+        //renoMakurtzen = Bitmap.createScaledBitmap(renoMakurtzen, width, height, false);
 
-        y = screenY / 2;
+        y = screenY - 2 * screenY/5;
+        x = screenX/3;
     }
 
     public Bitmap renoaAldatu() {
@@ -45,7 +42,7 @@ public class Rudolph {
     }
 
     public int getX() {
-        return X;
+        return x;
     }
 
     public int getY() {

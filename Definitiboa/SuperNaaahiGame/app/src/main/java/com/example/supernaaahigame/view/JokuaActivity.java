@@ -1,4 +1,4 @@
-package com.example.supernaaahigame;
+package com.example.supernaaahigame.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 

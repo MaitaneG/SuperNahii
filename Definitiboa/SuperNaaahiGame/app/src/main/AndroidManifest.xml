@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SuperNaaahiGame.NoActionBar">
         <activity
-            android:name=".MenuaActivity"
+            android:name=".view.MenuaActivity"
             android:exported="true"
             android:screenOrientation="landscape"
             android:turnScreenOn="true">
@@ -22,7 +22,7 @@
         </activity>
 
         <activity
-            android:name=".JokuaActivity"
+            android:name=".view.JokuaActivity"
             android:exported="true"
             android:screenOrientation="landscape"
             android:turnScreenOn="true"/>

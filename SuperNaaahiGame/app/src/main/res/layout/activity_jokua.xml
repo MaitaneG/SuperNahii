@@ -4,4 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.Jokua"/>
+    tools:context=".view.Jokua">
+
+    <ImageButton
+        android:id="@+id/imageButtonIgo"
+        android:layout_width="109dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="588dp"
+        android:layout_marginTop="268dp"
+        android:backgroundTint="@color/kolorea"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/igo_botoia_o" />
+
+    <ImageButton
+        android:id="@+id/imageButtonJaitsi"
+        android:layout_width="109dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="268dp"
+        android:backgroundTint="@color/kolorea"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jaitsi_botoia_o" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -72,4 +72,12 @@ public class Rudolph {
     public Bitmap getRenoMakurtzen() {
         return renoMakurtzen;
     }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
 }

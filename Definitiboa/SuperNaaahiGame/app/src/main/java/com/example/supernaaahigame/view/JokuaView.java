@@ -81,6 +81,11 @@ public class JokuaView extends SurfaceView implements Runnable {
         if (fondoa2.getX() + fondoa2.getFondoa().getWidth() < 0) {
             fondoa2.setX(screenX);
         }
+        if (saltoEgiten) {
+            rudolph.setY(screenY - 2 * screenY / 3);
+        } else {
+            rudolph.setY(screenY - 2 * screenY / 5);
+        }
     }
 
     private void draw() {
@@ -91,7 +96,11 @@ public class JokuaView extends SurfaceView implements Runnable {
             canvas.drawBitmap(fondoa1.getFondoa(), fondoa1.getX(), fondoa1.getY(), paint);
             canvas.drawBitmap(fondoa2.getFondoa(), fondoa2.getX(), fondoa2.getY(), paint);
 
-            canvas.drawBitmap(rudolph.renoaAldatu(), rudolph.getX(), rudolph.getY(), paint);
+            if (saltoEgiten) {
+                canvas.drawBitmap(rudolph.getRenoSaltoEgiten(), rudolph.getX(), rudolph.getY(), paint);
+            } else {
+                canvas.drawBitmap(rudolph.renoaAldatu(), rudolph.getX(), rudolph.getY(), paint);
+            }
 
             canvas.drawBitmap(demonio.demonioaAldatu(), demonio.getX(), demonio.getY(), paint);
 
@@ -103,11 +112,10 @@ public class JokuaView extends SurfaceView implements Runnable {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                if(event.getX()<screenX/2){
-                    Log.d("lado","izquierda");
+                if (event.getX() > screenX / 2) {
                     saltoEgin();
-                }else{
-                    Log.d("lado","derecha");
+                } else {
+
                 }
                 break;
         }
@@ -116,13 +124,22 @@ public class JokuaView extends SurfaceView implements Runnable {
     }
 
     private void saltoEgin() {
-        saltoEgiten=true;
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+
+        if (!saltoEgiten) {
+            saltoEgiten = true;
+            try {
+                Thread.sleep(500);
+
+                saltoEgiten = false;
+                Thread.sleep(500);
+
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } else {
+            Log.d("a", "a");
         }
-        saltoEgiten=false;
+
     }
 
     private void sleep() {

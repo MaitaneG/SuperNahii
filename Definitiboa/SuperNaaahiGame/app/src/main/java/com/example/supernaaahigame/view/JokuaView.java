@@ -3,6 +3,7 @@ package com.example.supernaaahigame.view;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceView;
@@ -11,18 +12,30 @@ import com.example.supernaaahigame.model.Demonio;
 import com.example.supernaaahigame.model.Fondoa;
 import com.example.supernaaahigame.model.Rudolph;
 
+import java.util.Random;
+
 public class JokuaView extends SurfaceView implements Runnable {
+    // Haria
     private Thread haria;
-    private boolean jolasten;
-    private boolean saltoEgiten;
+    // Jolasten badago konprobatu
+    private boolean jolasten = false;
+    // Blokeoak egiteko (Ez du funtzionatzen)
+    private boolean saltoEgiten = false;
+    private boolean blokeoa;
+    // Fondo
     private Fondoa fondoa1, fondoa2;
+    // Pertsonaiak
     private Rudolph rudolph;
     private Demonio demonio;
+    private Demonio[] demonioak;
+    private Random random;
+    // Pantailaren balioak
     private int screenX, screenY;
     private float screenRatioX, screenRatioY;
+    // Paint
     private Paint paint;
 
-    public JokuaView(Context context, int screenX, int screenY) {
+    public JokuaView(JokuaActivity context, int screenX, int screenY) {
         super(context);
 
         this.screenX = screenX;
@@ -36,7 +49,15 @@ public class JokuaView extends SurfaceView implements Runnable {
 
         rudolph = new Rudolph(screenY, screenX, getResources(), screenRatioX, screenRatioY);
 
-        demonio = new Demonio(screenY, screenX, getResources(), screenRatioX, screenRatioY);
+        demonioak = new Demonio[3];
+
+        for (int i = 0; i < 3; i++) {
+
+            demonio = new Demonio(screenY, screenX, getResources(), screenRatioX, screenRatioY);
+            demonioak[i] = demonio;
+        }
+
+        random = new Random();
 
         fondoa2.setX(screenX);
 
@@ -86,6 +107,30 @@ public class JokuaView extends SurfaceView implements Runnable {
         } else {
             rudolph.setY(screenY - 2 * screenY / 5);
         }
+
+        for (Demonio dem : demonioak) {
+
+            dem.setX(dem.getX() - dem.getSpeed());
+        }
+
+        if (demonio.getX() + demonio.getWidth() < 0) {
+            int bound = (int) (30 * screenRatioX);
+            demonio.setSpeed(random.nextInt(bound));
+
+            if (demonio.getSpeed() < 10 * screenRatioX)
+                demonio.setSpeed((int) (10 * screenRatioX));
+
+            demonio.setX(screenX);
+
+        }
+
+
+        if (Rect.intersects(demonio.getCollisionShape(), rudolph.getCollisionShape())) {
+
+            //jolasten=false;
+            return;
+        }
+
     }
 
     private void draw() {
@@ -102,7 +147,9 @@ public class JokuaView extends SurfaceView implements Runnable {
                 canvas.drawBitmap(rudolph.renoaAldatu(), rudolph.getX(), rudolph.getY(), paint);
             }
 
-            canvas.drawBitmap(demonio.demonioaAldatu(), demonio.getX(), demonio.getY(), paint);
+            for (Demonio dem : demonioak) {
+                canvas.drawBitmap(dem.demonioaAldatu(), dem.getX(), dem.getY(), paint);
+            }
 
             getHolder().unlockCanvasAndPost(canvas);
         }
@@ -113,7 +160,10 @@ public class JokuaView extends SurfaceView implements Runnable {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 if (event.getX() > screenX / 2) {
-                    saltoEgin();
+                    if (!blokeoa) {
+                        saltoEgin();
+                    }
+
                 } else {
 
                 }
@@ -124,22 +174,17 @@ public class JokuaView extends SurfaceView implements Runnable {
     }
 
     private void saltoEgin() {
+        saltoEgiten = true;
+        blokeoa = true;
+        try {
+            Thread.sleep(300);
 
-        if (!saltoEgiten) {
-            saltoEgiten = true;
-            try {
-                Thread.sleep(500);
-
-                saltoEgiten = false;
-                Thread.sleep(500);
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        } else {
-            Log.d("a", "a");
+            saltoEgiten = false;
+            Thread.sleep(200);
+            blokeoa = false;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-
     }
 
     private void sleep() {

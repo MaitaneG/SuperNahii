@@ -3,6 +3,7 @@ package com.example.supernaaahigame.model;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Rect;
 
 import com.example.supernaaahigame.R;
 
@@ -79,5 +80,9 @@ public class Rudolph {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public Rect getCollisionShape() {
+        return new Rect(x, y, x + width, y + height);
     }
 }

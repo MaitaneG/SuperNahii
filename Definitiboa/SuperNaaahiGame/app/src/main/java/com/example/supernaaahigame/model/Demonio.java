@@ -3,10 +3,12 @@ package com.example.supernaaahigame.model;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Rect;
 
 import com.example.supernaaahigame.R;
 
 public class Demonio {
+    private int speed = 20;
     private int x, y, width, height, demonio = 0;
     private Bitmap demonio1, demonio2;
 
@@ -24,7 +26,7 @@ public class Demonio {
         demonio2 = Bitmap.createScaledBitmap(demonio2, width, height, false);
 
         y = screenY - 4*screenY/6;
-        x = screenX/3;
+        x = screenX;
     }
 
     public Bitmap demonioaAldatu() {
@@ -42,5 +44,25 @@ public class Demonio {
 
     public int getY() {
         return y;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public Rect getCollisionShape() {
+        return new Rect(x, y, x + width, y + height);
     }
 }

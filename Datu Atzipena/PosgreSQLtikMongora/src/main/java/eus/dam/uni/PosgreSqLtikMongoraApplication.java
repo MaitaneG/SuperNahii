@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestApiSuperNaaahiApplication {
+public class PosgreSqLtikMongoraApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApiSuperNaaahiApplication.class, args);
+		SpringApplication.run(PosgreSqLtikMongoraApplication.class, args);
 	}
 
 }

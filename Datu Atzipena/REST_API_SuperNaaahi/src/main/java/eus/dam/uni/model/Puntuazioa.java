@@ -3,9 +3,12 @@ package eus.dam.uni.model;
 import java.time.LocalDate;
 import java.util.Objects;
 
+import org.bson.types.ObjectId;
+
 public class Puntuazioa {
 
-	private int id;
+	private ObjectId id;
+	private int ida;
 	private String jokalaria;
 	private int puntuazioa;
 	private LocalDate createDate;
@@ -13,19 +16,13 @@ public class Puntuazioa {
 	public Puntuazioa() {
 	}
 
-	public Puntuazioa(int id, String jokalaria, int puntuazioa, LocalDate createDate) {
+	public Puntuazioa(ObjectId id, int ida, String jokalaria, int puntuazioa, LocalDate createDate) {
+		super();
 		this.id = id;
+		this.ida = ida;
 		this.jokalaria = jokalaria;
 		this.puntuazioa = puntuazioa;
 		this.createDate = createDate;
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getJokalaria() {
@@ -51,10 +48,10 @@ public class Puntuazioa {
 	public void setCreateDate(LocalDate createDate) {
 		this.createDate = createDate;
 	}
-
+	
 	@Override
 	public int hashCode() {
-		return Objects.hash(createDate, id, jokalaria, puntuazioa);
+		return Objects.hash(createDate, id, ida, jokalaria, puntuazioa);
 	}
 
 	@Override
@@ -66,13 +63,13 @@ public class Puntuazioa {
 		if (getClass() != obj.getClass())
 			return false;
 		Puntuazioa other = (Puntuazioa) obj;
-		return Objects.equals(createDate, other.createDate) && id == other.id
+		return Objects.equals(createDate, other.createDate) && Objects.equals(id, other.id) && ida == other.ida
 				&& Objects.equals(jokalaria, other.jokalaria) && puntuazioa == other.puntuazioa;
 	}
 
 	@Override
 	public String toString() {
-		return "Puntuazioa [id=" + id + ", jokalaria=" + jokalaria + ", puntuazioa=" + puntuazioa + ", createDate="
-				+ createDate + "]";
+		return "Puntuazioa [id=" + id + ", ida=" + ida + ", jokalaria=" + jokalaria + ", puntuazioa=" + puntuazioa
+				+ ", createDate=" + createDate + "]";
 	}
 }

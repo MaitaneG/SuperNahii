@@ -12,6 +12,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.supernaaahigame.R;
+import com.example.supernaaahigame.konexioa.Konexioa;
+import com.example.supernaaahigame.model.Puntuazioa;
+
+import java.time.LocalDate;
 
 /**
  * MenuaActivity Layout-aren klasea
@@ -71,6 +75,11 @@ public class MenuaActivity extends AppCompatActivity {
 
         // Musika ez badago jarrita, abestia hasten da
         piztuta = true;
+
+
+        // Konexioaren proba bat egiten
+        Konexioa kon = new Konexioa();
+        kon.konektatu(new Puntuazioa(1,"Maitane",123, LocalDate.now()));
     }
 
     /**

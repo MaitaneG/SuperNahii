@@ -6,6 +6,8 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import com.example.supernaaahigame.konexioa.Konexioa;
+
 public class JokuaActivity extends AppCompatActivity {
 
     private JokuaView jokuaView;

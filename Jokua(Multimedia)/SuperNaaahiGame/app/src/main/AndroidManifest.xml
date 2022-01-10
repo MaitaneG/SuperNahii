@@ -20,10 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".view.JokuaActivity"
             android:exported="true"
+            android:screenOrientation="landscape"
+            android:turnScreenOn="true" />
+        <activity
+            android:name=".view.GameOverActivity"
+            android:exported="false"
             android:screenOrientation="landscape"
             android:turnScreenOn="true"/>
     </application>

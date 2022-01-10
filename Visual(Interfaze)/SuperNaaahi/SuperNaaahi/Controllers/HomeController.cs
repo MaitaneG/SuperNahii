@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SuperNaaahi.Models;
 using System;
@@ -23,15 +24,27 @@ namespace SuperNaaahi.Controllers
             return View();
         }
 
-        public IActionResult Podiuma()
+       
+        public IActionResult HallOfFame()
+        {
+            return View();
+        }
+        public IActionResult Logina()
         {
             return View();
         }
 
-        public IActionResult Galtzailea()
+        [Authorize]
+        public IActionResult HallOfShame()
         {
             return View();
         }
+
+        public IActionResult Foroa()
+        {
+            return View();
+        }
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

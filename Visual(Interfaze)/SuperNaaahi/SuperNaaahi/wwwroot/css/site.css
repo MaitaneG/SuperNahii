@@ -65,12 +65,28 @@ html {
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
-    background-image: url("~/images/logo_size_invert.jpg")
+    background-image: url("~/images/logo_size_invert.gif");
+    
 }
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+/* Komentarioak agertzen diren lekua */
+.komentarioKutxa {
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    width:80%;
+    height:auto;
+    color:black;
+}
+
+.komentarioakSartzekoLekua {
+    resize: none;
 }

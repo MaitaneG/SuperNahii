@@ -10,6 +10,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.example.supernaaahigame.R;
 import com.example.supernaaahigame.konexioa.Konexioa;
@@ -79,7 +80,13 @@ public class MenuaActivity extends AppCompatActivity {
 
         // Konexioaren proba bat egiten
         Konexioa kon = new Konexioa();
-        kon.konektatu(new Puntuazioa(1,"Maitane",123, LocalDate.now()));
+        ;
+
+        if(kon.konektatu(new Puntuazioa(1,"Maitane",123, LocalDate.now()))){
+            Toast.makeText(this,"Ondo", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this,"Gaizki", Toast.LENGTH_SHORT).show();
+        }
     }
 
     /**

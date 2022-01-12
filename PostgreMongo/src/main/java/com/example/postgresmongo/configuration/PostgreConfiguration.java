@@ -14,6 +14,8 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.example.postgresmongo.dao.RankingJuegoPuntuazioaDAO;
+
 @Configuration
 @PropertySource("classpath:/application.properties")  
 @EnableTransactionManagement
@@ -88,8 +90,8 @@ public class PostgreConfiguration {
     }
 
     @Bean
-    public PostDao getPostDao() {
-    	return new PostDao();
+    public RankingJuegoPuntuazioaDAO getPostDao() {
+    	return new RankingJuegoPuntuazioaDAO();
     }
     
     @Autowired

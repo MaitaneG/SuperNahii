@@ -12,19 +12,19 @@ public class Fondoa {
         //fondoa = Bitmap.createScaledBitmap(fondoa, JokuaView.screenX, (JokuaView.screenY-JokuaView.screenY/100), false);
     }
 
-    public void draw(Canvas canvas){
-        canvas.drawBitmap(fondoa,x,y,null);
+    public void draw(Canvas canvas) {
+        canvas.drawBitmap(fondoa, x, y, null);
 
-        if(x<0){
-            canvas.drawBitmap(fondoa,x+JokuaView.WIDTH,y,null);
+        if (x < 0) {
+            canvas.drawBitmap(fondoa, x + JokuaView.WIDTH, y, null);
         }
     }
 
-    public void update(){
-        x -= 15;
+    public void update() {
+        x -= 10 ;
 
         if (x < -JokuaView.WIDTH) {
-            x= 0;
+            x = 0;
         }
     }
 }

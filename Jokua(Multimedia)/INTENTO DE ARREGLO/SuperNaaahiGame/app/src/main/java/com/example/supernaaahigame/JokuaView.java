@@ -1,6 +1,7 @@
 package com.example.supernaaahigame;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.view.SurfaceHolder;
@@ -11,8 +12,8 @@ public class JokuaView extends SurfaceView implements SurfaceHolder.Callback{
 
     private MainThread haria;
     public static int screenX, screenY;
-    //public static final int WIDTH = 543, HEIGHT = 360;
-    public static final int WIDTH = 856, HEIGHT = 480;
+    public static final int WIDTH = 543, HEIGHT = 360;
+    public static float screenRatioX, screenRatioY;
     private Fondoa fondoa1, fondoa2;
     private Deabrua deabrua;
 
@@ -30,8 +31,11 @@ public class JokuaView extends SurfaceView implements SurfaceHolder.Callback{
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
-        fondoa1= new Fondoa(BitmapFactory.decodeResource(getResources(), R.drawable.kaka));
-        fondoa2= new Fondoa(BitmapFactory.decodeResource(getResources(), R.drawable.kaka));
+        screenRatioX = 1920f / screenX;
+        screenRatioY = 1080f / screenY;
+
+        fondoa1= new Fondoa(BitmapFactory.decodeResource(getResources(), R.drawable.fondoa));
+        fondoa2= new Fondoa(Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.fondoa),WIDTH,HEIGHT,false));
         //deabrua = new Deabrua(getResources(), screenRatioX, screenRatioY);
 
         haria.setJolasten(true);

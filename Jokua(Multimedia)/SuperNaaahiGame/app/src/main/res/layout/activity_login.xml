@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo_login"
+    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".view.Menua">
+    tools:context=".view.Login">
 
     <EditText
         android:id="@+id/editTextEmailLogin"
         android:layout_width="428dp"
         android:layout_height="140dp"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="4dp"
         android:background="@drawable/flecha_email"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -22,13 +22,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.059" />
+        app:layout_constraintVertical_bias="0.135" />
 
     <EditText
         android:id="@+id/editPasswordLogin"
         android:layout_width="428dp"
         android:layout_height="140dp"
-        android:layout_marginStart="148dp"
+        android:layout_marginStart="16dp"
         android:background="@drawable/flecha_password"
         android:hint="Password"
         android:inputType="textPassword"
@@ -38,17 +38,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <ImageButton
         android:id="@+id/loginbtn"
         android:layout_width="125dp"
         android:layout_height="131dp"
-        android:layout_marginStart="300dp"
-        android:background="@drawable/botoia_login"
+        android:layout_marginStart="140dp"
+        android:background="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942"
+        app:layout_constraintVertical_bias="0.93"
         tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

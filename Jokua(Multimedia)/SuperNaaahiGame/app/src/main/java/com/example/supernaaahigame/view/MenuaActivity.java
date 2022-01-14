@@ -3,6 +3,7 @@ package com.example.supernaaahigame.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.supernaaahigame.R;
 import com.example.supernaaahigame.konexioa.Konexioa;
+import com.example.supernaaahigame.konexioa.db.MyDbHelper1;
 import com.example.supernaaahigame.model.Puntuazioa;
 
 import java.time.LocalDate;
@@ -33,6 +35,7 @@ public class MenuaActivity extends AppCompatActivity {
     // Musika eta musika piztuta dagoen
     private MediaPlayer hasierakoMusika;
     private boolean piztuta;
+    SQLiteDatabase db;
 
     /**
      * Layout-a sortzen denean
@@ -44,6 +47,9 @@ public class MenuaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menua);
         hasieratu(); // Konponenteak hasieratu
+        MyDbHelper1 helper1=new MyDbHelper1(this);
+        db = helper1.getWritableDatabase();
+
     }
 
     /**
@@ -114,7 +120,7 @@ public class MenuaActivity extends AppCompatActivity {
      * @param view
      */
     private void jokuaHasi(View view) {
-        Intent myIntent = new Intent(MenuaActivity.this, JokuaActivity.class);
+        Intent myIntent = new Intent(MenuaActivity.this, Login.class);
         startActivity(myIntent);
     }
 

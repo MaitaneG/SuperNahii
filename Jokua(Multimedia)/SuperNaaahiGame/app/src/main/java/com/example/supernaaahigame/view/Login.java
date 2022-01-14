@@ -10,7 +10,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.supernaaahigame.R;
-import com.example.supernaaahigame.konexioa.db.MyDbHelper;
+import com.example.supernaaahigame.konexioa.db.MyDbHelper1;
+import com.example.supernaaahigame.model.User;
+
+import java.util.ArrayList;
 //import com.example.supernaaahigame.db.Konektatu;
 
 /**
@@ -29,7 +32,10 @@ public class Login extends AppCompatActivity {
     private static boolean login = false;
     // Intent-a
     private Intent intent;
-    MyDbHelper helper;
+    private MyDbHelper1 helper;
+
+
+
 
     /**
      * Layout-a sortzen denean
@@ -58,6 +64,7 @@ public class Login extends AppCompatActivity {
         loginBotoia.setOnClickListener(this::botoiaSakatu);
         //Konexioa egiten da
        // konexioa = new Konektatu();
+
     }
 
     /**
@@ -83,10 +90,19 @@ public class Login extends AppCompatActivity {
 //        }
 //    }
     public void botoiaSakatu(View view) {
-
-
-
-
+        ArrayList<User>logina= helper.selectUser();
+        for(User u: logina){
+            if(u.getEmail().equals(emaila.getText().toString())&& u.getPass().equals( pasahitza.getText().toString())){
+                Toast.makeText(getApplicationContext(), "Logeatu zara", Toast.LENGTH_SHORT).show();
+                login = true;
+                intent = new Intent(Login.this, MenuaActivity.class);
+                startActivity(intent);
+            }
+        }
+        if(!login){
+            Toast.makeText(getApplicationContext(), "Ez zara langilea", Toast.LENGTH_SHORT).show();
+            intent = new Intent(Login.this, Login.class);
+            startActivity(intent);
+        }
     }
-
 }

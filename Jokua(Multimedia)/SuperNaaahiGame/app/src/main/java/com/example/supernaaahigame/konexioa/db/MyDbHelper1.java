@@ -10,25 +10,26 @@ import com.example.supernaaahigame.model.User;
 
 import java.util.ArrayList;
 
-public class MyDbHelper  extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION=1;
+public class MyDbHelper1 extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="Txapelketa_DB";
+    private static final int DATABASE_VERSION=2;
 
-    public MyDbHelper(Context context) {
+
+    public MyDbHelper1(Context context) {
+
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS " + DBUser.DbBaseColumn.TABLE_NAME + " (" +
-                DBUser.DbBaseColumn.COLUMN_USERNAME + " TEXT PRIMARY KEY," +
-                DBUser.DbBaseColumn.COLUMN_PASSWORD+ " TEXT NOT NULL)");
+        sqLiteDatabase.execSQL("CREATE TABLE IF NOT EXISTS " + DBUser1.DbBaseColumn.TABLE_NAME + " (" +
+                DBUser1.DbBaseColumn.COLUMN_NAME + " TEXT PRIMARY KEY," +
+                DBUser1.DbBaseColumn.COLUMN_PASSWORD+ " TEXT NOT NULL)");
 
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-//        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + DBUser.TABLE_NAME);
-//        onCreate(sqLiteDatabase);
+      onCreate(sqLiteDatabase);
 
     }
     public boolean addUser(User users){
@@ -36,10 +37,10 @@ public class MyDbHelper  extends SQLiteOpenHelper {
 
         ContentValues values= new ContentValues();
 
-        values.put(DBUser.DbBaseColumn.COLUMN_USERNAME,users.getEmail());
-        values.put(DBUser.DbBaseColumn.COLUMN_PASSWORD,users.getPass());
+        values.put(DBUser1.DbBaseColumn.COLUMN_NAME,users.getEmail());
+        values.put(DBUser1.DbBaseColumn.COLUMN_PASSWORD,users.getPass());
 
-        long sid= db.insert(DBUser.DbBaseColumn.TABLE_NAME, null,values);
+        long sid= db.insert(DBUser1.DbBaseColumn.TABLE_NAME, null,values);
 
         if(sid>0){
             return  true;
@@ -48,7 +49,7 @@ public class MyDbHelper  extends SQLiteOpenHelper {
         }
     }
 
-    public ArrayList<User> selectUser(){
+    public  ArrayList<User> selectUser(){
         SQLiteDatabase db=getWritableDatabase();
 
         Cursor c= db.rawQuery("SELECT * FROM app_users", null);

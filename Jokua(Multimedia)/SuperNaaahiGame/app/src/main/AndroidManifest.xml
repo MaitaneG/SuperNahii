@@ -25,6 +25,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".view.Login"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:turnScreenOn="true"/>
+        
+
+        <activity
             android:name=".view.JokuaActivity"
             android:exported="true"
             android:screenOrientation="landscape"

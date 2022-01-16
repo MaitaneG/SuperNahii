@@ -2,6 +2,7 @@ package com.example.supernaaahigame;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 
 public class Fondoa {
     private int x = 0, y = 0;

@@ -26,8 +26,8 @@ public class Deabrua {
         deabrua1 = Bitmap.createScaledBitmap(deabrua1, width, height, false);
         deabrua2 = Bitmap.createScaledBitmap(deabrua2, width, height, false);
 
-        y = JokuaView.screenY - 3 * JokuaView.screenY / 6;
-        x = JokuaView.screenX;
+        //y = JokuaView.screenY - 3 * JokuaView.screenY / 6;
+        //x = JokuaView.screenX;
     }
 
     public void draw(Canvas canvas){

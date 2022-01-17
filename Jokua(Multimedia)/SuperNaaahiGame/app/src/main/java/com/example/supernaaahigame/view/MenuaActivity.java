@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.example.supernaaahigame.R;
 import com.example.supernaaahigame.konexioa.Konexioa;
-import com.example.supernaaahigame.konexioa.db.MyDbHelper1;
 import com.example.supernaaahigame.model.Puntuazioa;
 
 import java.time.LocalDate;
@@ -47,8 +46,6 @@ public class MenuaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menua);
         hasieratu(); // Konponenteak hasieratu
-        MyDbHelper1 helper1=new MyDbHelper1(this);
-        db = helper1.getWritableDatabase();
 
     }
 

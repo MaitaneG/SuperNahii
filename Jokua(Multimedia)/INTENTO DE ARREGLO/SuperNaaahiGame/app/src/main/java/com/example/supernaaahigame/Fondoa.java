@@ -2,6 +2,7 @@ package com.example.supernaaahigame;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Paint;
 
 public class Fondoa {
     private int x = 0, y = 0;
@@ -10,6 +11,10 @@ public class Fondoa {
     public Fondoa(Bitmap fondoa) {
         this.fondoa = fondoa;
         //fondoa = Bitmap.createScaledBitmap(fondoa, JokuaView.screenX, (JokuaView.screenY-JokuaView.screenY/100), false);
+    }
+
+    public void setX(int x) {
+        this.x = x;
     }
 
     public void draw(Canvas canvas) {

@@ -11,17 +11,18 @@ import android.view.SurfaceView;
 public class JokuaView extends SurfaceView implements SurfaceHolder.Callback {
 
     private MainThread haria;
-    public static int screenX, screenY;
+    public int screenX, screenY;
     public static final int WIDTH = 856, HEIGHT = 480;
-    public static float screenRatioX, screenRatioY;
+    //public static float screenRatioX, screenRatioY;
     private Fondoa fondoa1, fondoa2;
     private Deabrua deabrua;
 
     public JokuaView(Context context, int screenX, int screenY) {
         super(context);
 
-//        JokuaView.screenX =screenX;
-//        JokuaView.screenY =screenY;
+        this.screenX =screenX;
+        this.screenY =screenY;
+
 
         getHolder().addCallback(this);
 
@@ -31,11 +32,9 @@ public class JokuaView extends SurfaceView implements SurfaceHolder.Callback {
 
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
-        screenRatioX = 1920f / screenX;
-        screenRatioY = 1080f / screenY;
-
-        fondoa1 = new Fondoa(Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.fondoa), WIDTH, HEIGHT, false));
-        //fondoa2 = new Fondoa(Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.fondoa), WIDTH, HEIGHT, false));
+        fondoa1 = new Fondoa(Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.fondoa), WIDTH, (HEIGHT+60), false));
+        fondoa2 = new Fondoa(Bitmap.createScaledBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.fondoa), WIDTH, (HEIGHT+60), false));
+        fondoa2.setX(WIDTH);
         //deabrua = new Deabrua(getResources(), screenRatioX, screenRatioY);
 
         haria.setJolasten(true);
@@ -62,7 +61,7 @@ public class JokuaView extends SurfaceView implements SurfaceHolder.Callback {
 
     public void update() {
         fondoa1.update();
-        //fondoa2.update();
+        fondoa2.update();
         //deabrua.update();
     }
 
@@ -78,7 +77,7 @@ public class JokuaView extends SurfaceView implements SurfaceHolder.Callback {
             canvas.scale(scaleFactorX, scaleFactorY);
 
             fondoa1.draw(canvas);
-            //fondoa2.draw(canvas);
+            fondoa2.draw(canvas);
             //deabrua.draw(canvas);
             canvas.restoreToCount(savedState);
         }

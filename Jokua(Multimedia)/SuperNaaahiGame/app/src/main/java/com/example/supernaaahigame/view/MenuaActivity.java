@@ -117,7 +117,7 @@ public class MenuaActivity extends AppCompatActivity {
      * @param view
      */
     private void jokuaHasi(View view) {
-        Intent myIntent = new Intent(MenuaActivity.this, Login.class);
+        Intent myIntent = new Intent(MenuaActivity.this, JokuaActivity.class);
         startActivity(myIntent);
     }
 

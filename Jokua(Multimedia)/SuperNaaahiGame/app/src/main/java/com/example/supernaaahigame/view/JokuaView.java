@@ -298,7 +298,7 @@ public class JokuaView extends SurfaceView implements Runnable {
      */
     private void sleep() {
         try {
-            Thread.sleep(17);
+            Thread.sleep(0);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

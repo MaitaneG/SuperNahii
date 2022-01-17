@@ -24,8 +24,6 @@ public class RankingJuegoPuntuazioa implements Serializable {
 	@Column(name="create_uid")
 	private Integer createUid;
 
-	private Timestamp data;
-
 	private String jokalari;
 
 	@Column(name="jokalari_id")
@@ -40,6 +38,7 @@ public class RankingJuegoPuntuazioa implements Serializable {
 	private Integer writeUid;
 
 	public RankingJuegoPuntuazioa() {
+		
 	}
 
 	public Integer getId() {
@@ -64,14 +63,6 @@ public class RankingJuegoPuntuazioa implements Serializable {
 
 	public void setCreateUid(Integer createUid) {
 		this.createUid = createUid;
-	}
-
-	public Timestamp getData() {
-		return this.data;
-	}
-
-	public void setData(Timestamp data) {
-		this.data = data;
 	}
 
 	public String getJokalari() {

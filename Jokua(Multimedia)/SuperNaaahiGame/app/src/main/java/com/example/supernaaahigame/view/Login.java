@@ -2,8 +2,10 @@ package com.example.supernaaahigame.view;
 
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -14,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.supernaaahigame.R;
 import com.example.supernaaahigame.konexioa.Konexioa;
 import com.example.supernaaahigame.model.User;
+
+import java.util.ArrayList;
 //import com.example.supernaaahigame.db.Konektatu;
 
 /**
@@ -49,9 +53,10 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        hasieratu();
+
         db = openOrCreateDatabase("Txapelketa", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(email VARCHAR, password VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(id int,email VARCHAR, password VARCHAR);");
+        hasieratu();
 
 
     }
@@ -61,17 +66,27 @@ public class Login extends AppCompatActivity {
      */
     private void hasieratu() {
         // Labelak
+
         emaila = findViewById(R.id.editTextEmailLogin);
         pasahitza = findViewById(R.id.editPasswordLogin);
         // Jolasa hasteko botoia
         loginBotoia = findViewById(R.id.loginbtn);
         // Botoiari listenerra jarri
+
         loginBotoia.setOnClickListener(this::botoiaSakatu);
+
         //Konexioa egiten da
         konexioa = new Konexioa();
+        konexioa.erabiltzaileakLortu();
+        ArrayList<User>userr=select();
+        Log.d("insertatu",userr.toString());
+
 
     }
-
+    /**
+     * Logina balidatu eta jokua hasi
+     * @param view
+     */
     private void botoiaSakatu(View view) {
         String user=emaila.getText().toString();
         String pass=pasahitza.getText().toString();
@@ -83,6 +98,7 @@ public class Login extends AppCompatActivity {
                 Toast.makeText(this, "Logeatu zara", Toast.LENGTH_SHORT).show();
                 Intent i=new Intent(Login.this, JokuaActivity.class);
                 startActivity(i);
+
             }
             else{
                 Toast.makeText(this, "Ez zara logeatu ", Toast.LENGTH_SHORT).show();
@@ -90,43 +106,16 @@ public class Login extends AppCompatActivity {
         }
 
     }
+    public ArrayList<User> select(){
+        ArrayList<User>u=new ArrayList<>();
 
-    /**
-     * Logina balidatu eta jokua hasi
-     * @param view
-     */
-//    public void botoiaSakatu(View view) {
-//        // Gakoak hutsik badaude
-//        if (emaila.getText().toString().equals("") || pasahitza.getText().toString().equals("")) {
-//            Toast.makeText(Login.this, "Gakoak bete behar dituzu.", Toast.LENGTH_SHORT).show();
-//        } else {
-//            // Konexioa ondo egin bada eta emaila eta pasahitza ondo egin bada
-//            if (konexioa.login(emaila.getText().toString(), pasahitza.getText().toString())) {
-//                login = true;
-//                intent = new Intent(Login.this, Jokua.class);
-//                startActivity(intent);
-//            } else {
-//                Toast.makeText(getApplicationContext(), "Ez zara enpresako langilea.", Toast.LENGTH_SHORT).show();
-//                login = true;
-//                intent = new Intent(Login.this, Jokua.class);
-//                startActivity(intent);
-//            }
-//        }
-//    }
-//    public void botoiaSakatu(View view) {
-//        ArrayList<User>logina= helper.selectUser();
-//        for(User u: logina){
-//            if(u.getEmail().equals(emaila.getText().toString())&& u.getPass().equals( pasahitza.getText().toString())){
-//                Toast.makeText(getApplicationContext(), "Logeatu zara", Toast.LENGTH_SHORT).show();
-//                login = true;
-//                intent = new Intent(Login.this, MenuaActivity.class);
-//                startActivity(intent);
-//            }
-//        }
-//        if(!login){
-//            Toast.makeText(getApplicationContext(), "Ez zara langilea", Toast.LENGTH_SHORT).show();
-//            intent = new Intent(Login.this, Login.class);
-//            startActivity(intent);
-//        }
-//    }
+        Cursor c =db.rawQuery("SELECT * FROM Txapelketa",null);
+        while(c.moveToNext()){
+            u.add(new User(c.getString(0),c.getString(1)));
+        }
+        return u;
+    }
+
+
+
 }

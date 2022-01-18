@@ -83,13 +83,13 @@ public class MenuaActivity extends AppCompatActivity {
 
         // Konexioaren proba bat egiten
         Konexioa kon = new Konexioa();
-        ;
 
-        if(kon.konektatu(new Puntuazioa(1,"Maitane",123, LocalDate.now()))){
-            Toast.makeText(this,"Ondo", Toast.LENGTH_SHORT).show();
-        }else{
-            Toast.makeText(this,"Gaizki", Toast.LENGTH_SHORT).show();
-        }
+
+//        if(kon.bidaliMezua(new Puntuazioa(1,"Maitane",123, LocalDate.now()))){
+//            Toast.makeText(this,"Ondo", Toast.LENGTH_SHORT).show();
+//        }else{
+//            Toast.makeText(this,"Gaizki", Toast.LENGTH_SHORT).show();
+//        }
     }
 
     /**
@@ -117,7 +117,7 @@ public class MenuaActivity extends AppCompatActivity {
      * @param view
      */
     private void jokuaHasi(View view) {
-        Intent myIntent = new Intent(MenuaActivity.this, JokuaActivity.class);
+        Intent myIntent = new Intent(MenuaActivity.this, Login.class);
         startActivity(myIntent);
     }
 

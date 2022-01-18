@@ -31,21 +31,6 @@ public class KonexioaPostgre extends Thread{
 		}
 		return conn;
 	}
-	public Connection connectMongo() {
-		Connection conn = null;
-		try {
-			String url = "jdbc:postgresql://192.168.65.187/naaahi";
-			Properties props = new Properties();
-			props.setProperty("user", "odoo15");
-			props.setProperty("password", "Admin123");
-			conn = DriverManager.getConnection(url, props);
-			
-			System.out.println("Postgres-era konektatuta");
-		} catch (SQLException e) {
-			JOptionPane.showMessageDialog(null, e.getMessage());
-		}
-		return conn;
-	}
 
 	public ArrayList<User> selectUser() {
 		ArrayList<User> users = new ArrayList<>();
@@ -85,7 +70,6 @@ public class KonexioaPostgre extends Thread{
 			JOptionPane.showMessageDialog(null, ex.getMessage());
 		}
 		return puntuazioak;
-
 	}
 	
 	public int insertPuntuazioa(ArrayList<Puntuazioa> p) {

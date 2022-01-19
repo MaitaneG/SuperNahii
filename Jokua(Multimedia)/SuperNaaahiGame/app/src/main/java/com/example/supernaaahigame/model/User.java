@@ -2,10 +2,17 @@ package com.example.supernaaahigame.model;
 
 public class User {
     int id;
+    String name;
     String email;
     String pass;
 
-    public User( int id,String email, String pass) {
+    public User( int id,String name ,String email, String pass) {
+        this.id=id;
+        this.name=name;
+        this.email = email;
+        this.pass = pass;
+    }
+    public User( int id ,String email, String pass) {
         this.id=id;
         this.email = email;
         this.pass = pass;
@@ -13,6 +20,14 @@ public class User {
     public User( String email, String pass) {
         this.email = email;
         this.pass = pass;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getId() {

@@ -25,7 +25,7 @@ public class KonexioaPostgre extends Thread{
 			props.setProperty("password", "Admin123");
 			conn = DriverManager.getConnection(url, props);
 			
-			System.out.println("Postgres-era konektatuta");
+			System.out.println("Postgres-era konektatuta\n");
 		} catch (SQLException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}

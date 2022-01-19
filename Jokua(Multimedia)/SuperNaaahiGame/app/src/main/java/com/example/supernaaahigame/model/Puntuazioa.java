@@ -49,11 +49,10 @@ public class Puntuazioa {
 
     @Override
     public String toString() {
-        return "Puntuazioa{" +
-                "id=" + id +
-                ", jokalaria='" + jokalaria + '\'' +
-                ", puntuazioa=" + puntuazioa +
-                ", createDate=" + createDate +
-                '}';
+        return  id +
+                ",'" + jokalaria +
+                "," + puntuazioa +
+                "," + createDate +
+                ';';
     }
 }

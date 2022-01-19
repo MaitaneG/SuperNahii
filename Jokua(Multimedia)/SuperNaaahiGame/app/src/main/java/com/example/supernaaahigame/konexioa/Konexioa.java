@@ -40,7 +40,7 @@ public class Konexioa extends Thread {
                             PrintWriter salida = new PrintWriter(
                                     new OutputStreamWriter(sk.getOutputStream()), true);
 
-                            salida.println("2,Alex,400;11,Oihana,400");
+                            salida.println(puntuazioa.toString());
                             salida.println("bukatu");
                             konektatuta = true;
                             sk.close();
@@ -73,13 +73,15 @@ public class Konexioa extends Thread {
                             String jaso;
                             String dena="";
                             while ((jaso=entrada.readLine()) != null) {
+                                String borrau="DELETE FROM Txapelketa";
+                                Login.db.execSQL(borrau);
                                 dena = dena+" ";
                                 Log.d("entrada",jaso);
                                 String[] erregistroak = jaso.split(";");
                                 for (int i = 0; i < erregistroak.length; i++) {
                                     String[] parts = erregistroak[i].split(",");
                                     users.add(new User(Integer.parseInt((parts[0])),(parts[1]), parts[2]));
-                                    String insert_query = "INSERT INTO Txapelketa(id,email,password) VALUES (users.get(i).getId()+,'"+ users.get(i).getEmail() + "', '" + users.get(i).getPass() + "')";
+                                    String insert_query = "INSERT INTO Txapelketa(id,email,password) VALUES ("+users.get(i).getId()+"'','"+ users.get(i).getEmail() + "', '" + users.get(i).getPass() + "')";
                                     Login.db.execSQL(insert_query);
 
                                 }

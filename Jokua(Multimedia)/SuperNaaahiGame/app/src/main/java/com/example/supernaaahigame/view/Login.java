@@ -55,7 +55,7 @@ public class Login extends AppCompatActivity {
 
 
         db = openOrCreateDatabase("Txapelketa", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(id int,email VARCHAR, password VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(id INTEGER,email VARCHAR, password VARCHAR);");
         hasieratu();
 
 
@@ -111,7 +111,7 @@ public class Login extends AppCompatActivity {
 
         Cursor c =db.rawQuery("SELECT * FROM Txapelketa",null);
         while(c.moveToNext()){
-            u.add(new User(c.getString(0),c.getString(1)));
+            u.add(new User(c.getInt(0),c.getString(1),c.getString(2)));
         }
         return u;
     }

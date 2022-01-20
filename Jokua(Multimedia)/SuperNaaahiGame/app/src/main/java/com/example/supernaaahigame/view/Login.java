@@ -55,9 +55,11 @@ public class Login extends AppCompatActivity {
 
 
         db = openOrCreateDatabase("Txapelketa", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(id INTEGER,izena VARCHAR,email VARCHAR, password VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(id INTEGER,email VARCHAR, password VARCHAR);");
         hasieratu();
 
+        konexioa = new Konexioa();
+        konexioa.erabiltzaileakLortu();
 
     }
 
@@ -75,9 +77,8 @@ public class Login extends AppCompatActivity {
 
         loginBotoia.setOnClickListener(this::botoiaSakatu);
 
-        //Konexioa egiten da
-        konexioa = new Konexioa();
-        konexioa.erabiltzaileakLortu();
+
+
 
 
     }

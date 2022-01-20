@@ -64,7 +64,7 @@ public class ZerbitzariHaria extends Thread {
 						puntuazioak
 								.add(new Puntuazioa(Integer.parseInt(parts[0]), parts[1], Integer.parseInt(parts[2])));
 					}
-
+ 
 					postgresraBidaliPuntuazioak(puntuazioak);
 					mongoraBidaliPuntuazioak(puntuazioak);
 				}

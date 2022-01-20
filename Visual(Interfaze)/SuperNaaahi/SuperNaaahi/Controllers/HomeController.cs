@@ -29,10 +29,7 @@ namespace SuperNaaahi.Controllers
         {
             return View();
         }
-        public IActionResult Logina()
-        {
-            return View();
-        }
+     
 
         [Authorize]
         public IActionResult HallOfShame()

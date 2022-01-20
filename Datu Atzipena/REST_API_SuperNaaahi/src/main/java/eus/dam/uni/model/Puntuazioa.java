@@ -5,6 +5,11 @@ import java.util.Objects;
 
 import org.bson.types.ObjectId;
 
+/**
+ * 
+ * Puntuazioaren modeloa
+ *
+ */
 public class Puntuazioa {
 
 	private ObjectId id;

@@ -10,5 +10,7 @@ namespace SuperNaaahi.Services
     {
 
         Task<List<Puntuazioa>> GetPuntuazioak();
+        Task<List<Puntuazioa>> GetHallOfFame();
+        Task<List<Puntuazioa>> GetHallOfShame();
     }
 }

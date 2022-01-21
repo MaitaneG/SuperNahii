@@ -7,19 +7,18 @@ using System.Threading.Tasks;
 
 namespace SuperNaaahi.ViewComponents
 {
-    public class PuntuazioakViewComponent: ViewComponent
+    public class HallOfShameViewComponent:ViewComponent
     {
         private readonly IPuntuazioaService _puntuazioaService;
 
-        public PuntuazioakViewComponent(IPuntuazioaService ardoaService)
+        public HallOfShameViewComponent(IPuntuazioaService ardoaService)
         {
             _puntuazioaService = ardoaService;
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View(await _puntuazioaService.GetPuntuazioak());
+            return View(await _puntuazioaService.GetHallOfShame());
 
         }
-    
     }
 }

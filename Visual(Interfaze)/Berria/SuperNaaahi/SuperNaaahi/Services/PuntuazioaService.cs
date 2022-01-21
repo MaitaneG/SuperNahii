@@ -28,5 +28,33 @@ namespace SuperNaaahi.Services
             }
             return puntuazioaList;
         }
+        public async Task<List<Puntuazioa>> GetHallOfFame()
+        {
+            List<Puntuazioa> puntuazioaList = new List<Puntuazioa>();
+
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync(rutaTodos+"hallOfFame/"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    puntuazioaList = JsonConvert.DeserializeObject<List<Puntuazioa>>(apiResponse);
+                }
+            }
+            return puntuazioaList;
+        }
+        public async Task<List<Puntuazioa>> GetHallOfShame()
+        {
+            List<Puntuazioa> puntuazioaList = new List<Puntuazioa>();
+
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync(rutaTodos + "hallOfShame/"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    puntuazioaList = JsonConvert.DeserializeObject<List<Puntuazioa>>(apiResponse);
+                }
+            }
+            return puntuazioaList;
+        }
     }
 }

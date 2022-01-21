@@ -169,3 +169,4 @@ C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaah
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Puntuazioa\Edit.cshtml.g.cs
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Puntuazioa\Index.cshtml.g.cs
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Shared\Components\Puntuazioak\Default.cshtml.g.cs
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Home\General.cshtml.g.cs

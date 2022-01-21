@@ -1,0 +1,11 @@
+﻿
+@model IEnumerable<SuperNaaahi.Models.Puntuazioa>
+
+@{
+    ViewData["Title"] = "General";
+}
+<h1>@ViewData["Title"]</h1>
+
+<br />
+
+@await Component.InvokeAsync("Puntuazioak")

@@ -43,6 +43,11 @@ namespace SuperNaaahi.Controllers
             return View();
         }
 
+        public IActionResult Inkesta()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

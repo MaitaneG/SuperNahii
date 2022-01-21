@@ -1,5 +1,5 @@
 ﻿@{
-    @model IEnumerable<SuperNaaahi.Models.Puntuazioa>
+    @model IEnumerable<SuperNaaahi.Models.PuntuazioaModel>
 }
 <table class="table table-striped">
     <thead>
@@ -12,10 +12,10 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr id="row-@item.id">
-                <th>@Html.DisplayFor(modelItem => item.jokalaria)</th>
-                <th>@Html.DisplayFor(modelItem => item.puntuazioa)</th>
-                <th>@Html.DisplayFor(modelItem => item.createDate)</th>
+            <tr id="row-@item.Id">
+                <th>@Html.DisplayFor(modelItem => item.Jokalaria)</th>
+                <th>@Html.DisplayFor(modelItem => item.Puntuazioa)</th>
+                <th>@Html.DisplayFor(modelItem => item.CreateDate)</th>
             </tr>
         }
     </tbody>

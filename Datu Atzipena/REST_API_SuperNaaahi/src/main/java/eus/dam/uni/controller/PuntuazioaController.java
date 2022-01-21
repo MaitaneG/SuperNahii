@@ -27,8 +27,18 @@ public class PuntuazioaController {
 	 * 
 	 * @return Puntuazio guztiak
 	 */
-	@GetMapping("puntuazioa")
+	@GetMapping("puntuazioak")
 	public List<Puntuazioa> getPuntuazioak() {
 		return puntuazoaDao.findAll();
+	}
+
+	@GetMapping("puntuazioak/hallOfFame")
+	public List<Puntuazioa> getHallOfFame() {
+		return puntuazoaDao.findHallOfFame();
+	}
+
+	@GetMapping("puntuazioak/hallOfShame")
+	public List<Puntuazioa> getHallOfShame() {
+		return puntuazoaDao.findHallOfShame();
 	}
 }

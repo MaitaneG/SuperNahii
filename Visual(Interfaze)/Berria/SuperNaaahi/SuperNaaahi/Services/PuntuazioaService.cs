@@ -14,44 +14,44 @@ namespace SuperNaaahi.Services
         private Uri rutaTodos = new Uri("http://192.168.65.7:8080/puntuazioak/");
 
 
-        public async Task<List<Puntuazioa>> GetPuntuazioak()
+        public async Task<List<PuntuazioaModel>> GetPuntuazioak()
         {
-            List<Puntuazioa> puntuazioaList = new List<Puntuazioa>();
+            List<PuntuazioaModel> puntuazioaList = new List<PuntuazioaModel>();
 
             using (var httpClient = new HttpClient())
             {
                using (var response = await httpClient.GetAsync(rutaTodos)) 
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    puntuazioaList = JsonConvert.DeserializeObject<List<Puntuazioa>>(apiResponse);
+                    puntuazioaList = JsonConvert.DeserializeObject<List<PuntuazioaModel>>(apiResponse);
                 }
             }
             return puntuazioaList;
         }
-        public async Task<List<Puntuazioa>> GetHallOfFame()
+        public async Task<List<PuntuazioaModel>> GetHallOfFame()
         {
-            List<Puntuazioa> puntuazioaList = new List<Puntuazioa>();
+            List<PuntuazioaModel> puntuazioaList = new List<PuntuazioaModel>();
 
             using (var httpClient = new HttpClient())
             {
                 using (var response = await httpClient.GetAsync(rutaTodos+"hallOfFame/"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    puntuazioaList = JsonConvert.DeserializeObject<List<Puntuazioa>>(apiResponse);
+                    puntuazioaList = JsonConvert.DeserializeObject<List<PuntuazioaModel>>(apiResponse);
                 }
             }
             return puntuazioaList;
         }
-        public async Task<List<Puntuazioa>> GetHallOfShame()
+        public async Task<List<PuntuazioaModel>> GetHallOfShame()
         {
-            List<Puntuazioa> puntuazioaList = new List<Puntuazioa>();
+            List<PuntuazioaModel> puntuazioaList = new List<PuntuazioaModel>();
 
             using (var httpClient = new HttpClient())
             {
                 using (var response = await httpClient.GetAsync(rutaTodos + "hallOfShame/"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    puntuazioaList = JsonConvert.DeserializeObject<List<Puntuazioa>>(apiResponse);
+                    puntuazioaList = JsonConvert.DeserializeObject<List<PuntuazioaModel>>(apiResponse);
                 }
             }
             return puntuazioaList;

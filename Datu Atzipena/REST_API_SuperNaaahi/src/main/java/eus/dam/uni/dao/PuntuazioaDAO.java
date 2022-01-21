@@ -7,11 +7,18 @@ import javax.annotation.PostConstruct;
 
 import eus.dam.uni.model.*;
 
+import org.bson.BsonDocument;
+import org.bson.codecs.configuration.CodecRegistry;
+import org.bson.conversions.Bson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.google.common.collect.Lists;
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.model.Filters;
 
 /**
  * 
@@ -33,10 +40,21 @@ public class PuntuazioaDAO {
 	}
 
 	public List<Puntuazioa> findAll() {
-		return collection.find().into(new ArrayList<>());
+
+		return collection.find().sort(new BasicDBObject("puntuazioa", -1)).into(new ArrayList<>());
 	}
-	/*
-	 * public Eskatzailea save(Eskatzailea esk){ eskatzaileak.add(esk); return esk;
-	 * }
-	 */
+
+	public List<Puntuazioa> findHallOfFame() {
+		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
+				.limit(2);
+		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
+		return puntuazioas;
+	}
+
+	public List<Puntuazioa> findHallOfShame() {
+		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", +1))
+				.limit(2);
+		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
+		return puntuazioas;
+	}
 }

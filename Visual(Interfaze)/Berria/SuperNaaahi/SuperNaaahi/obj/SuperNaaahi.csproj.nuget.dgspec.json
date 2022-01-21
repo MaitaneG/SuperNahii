@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj": {}
+    "C:\\Users\\gallastegui.maitane\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj": {
+    "C:\\Users\\gallastegui.maitane\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
+        "projectUniqueName": "C:\\Users\\gallastegui.maitane\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
         "projectName": "SuperNaaahi",
-        "projectPath": "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
-        "packagesPath": "C:\\Users\\arambarri.oihana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\obj\\",
+        "projectPath": "C:\\Users\\gallastegui.maitane\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
+        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gallastegui.maitane\\Desktop\\SuperNahii\\Visual(Interfaze)\\Berria\\SuperNaaahi\\SuperNaaahi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\arambarri.oihana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

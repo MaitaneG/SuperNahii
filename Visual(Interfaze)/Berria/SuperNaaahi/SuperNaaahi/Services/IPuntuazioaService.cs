@@ -9,8 +9,8 @@ namespace SuperNaaahi.Services
     public interface IPuntuazioaService
     {
 
-        Task<List<Puntuazioa>> GetPuntuazioak();
-        Task<List<Puntuazioa>> GetHallOfFame();
-        Task<List<Puntuazioa>> GetHallOfShame();
+        Task<List<PuntuazioaModel>> GetPuntuazioak();
+        Task<List<PuntuazioaModel>> GetHallOfFame();
+        Task<List<PuntuazioaModel>> GetHallOfShame();
     }
 }

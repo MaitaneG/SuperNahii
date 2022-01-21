@@ -24,7 +24,10 @@ namespace SuperNaaahi.Controllers
             return View();
         }
 
-       
+        public IActionResult General()
+        {
+            return View();
+        }
         public IActionResult HallOfFame()
         {
             return View();

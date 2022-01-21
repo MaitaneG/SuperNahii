@@ -1,0 +1,36 @@
+﻿@model SuperNaaahi.Models.Puntuazioa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Puntuazioa</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.jokalaria)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.jokalaria)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.puntuazioa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.puntuazioa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.createDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.createDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

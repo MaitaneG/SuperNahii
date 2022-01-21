@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SuperNaaahi.Data;
+using SuperNaaahi.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,7 +36,8 @@ namespace SuperNaaahi
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
-
+            //Puntuazioa injektatu
+            services.AddScoped<IPuntuazioaService, PuntuazioaService>();
             //Session gehitzen dugu
             services.AddDistributedMemoryCache();
             services.AddSession();

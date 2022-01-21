@@ -1,0 +1,22 @@
+﻿@{
+    @model IEnumerable<SuperNaaahi.Models.Puntuazioa>
+}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Langilea</th>
+            <th>Puntuazioa</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr id="row-@item.id">
+                <th>@Html.DisplayFor(modelItem => item.jokalaria)</th>
+                <th>@Html.DisplayFor(modelItem => item.puntuazioa)</th>
+                <th>@Html.DisplayFor(modelItem => item.createDate)</th>
+            </tr>
+        }
+    </tbody>
+</table>

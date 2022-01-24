@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace SuperNaaahi.Models
 {
+    /**
+     * Foroa egiteko modeloa
+     */
     public class Foroa
     {
         public int Id{ get; set; }

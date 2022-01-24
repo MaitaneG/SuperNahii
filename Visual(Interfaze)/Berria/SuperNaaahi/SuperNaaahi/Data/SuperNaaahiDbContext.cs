@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SuperNaaahi.Data
 {
+    /**
+     * SuperNaaahi Microsoft SQL serverrera konektatzeko
+     */
     public class SuperNaaahiDbContext:DbContext
     {
         public SuperNaaahiDbContext(DbContextOptions<SuperNaaahiDbContext> options)

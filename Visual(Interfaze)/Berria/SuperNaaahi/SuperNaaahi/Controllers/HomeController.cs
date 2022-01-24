@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace SuperNaaahi.Controllers
 {
+    /**
+     * Home karpetan dauden bistak kontrolatzeko
+     */
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -22,35 +25,57 @@ namespace SuperNaaahi.Controllers
             _inkestaService = inkestaService;
         }
 
+        /**
+         * Index bista (Pagina nagusia) bistaratzeko
+         */
         public IActionResult Index()
         {
             return View();
         }
 
+        /**
+         * General bista (Puntuazio guztiak) bistaratzeko
+         */
         public IActionResult General()
         {
             return View();
         }
+
+        /**
+         * HallOfFame bista (Puntuazio honenak) bistaratzeko
+         */
         public IActionResult HallOfFame()
         {
             return View();
         }
      
+        /**
+         * HallOfShame bista (Puntuazio txarrenak) bistaratzeko
+         */
         public IActionResult HallOfShame()
         {
             return View();
         }
 
+        /**
+         * Foroa bista bistaratzeko
+         */
         public IActionResult Foroa()
         {
             return View();
         }
 
+        /**
+         * Inkesta bista bistaratzeko
+         */
         public IActionResult Inkesta()
         {
             return View();
         }
 
+        /**
+         * Inkesta bat betetzen denean
+         */
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Inkesta(Inkesta inkesta)
@@ -68,11 +93,17 @@ namespace SuperNaaahi.Controllers
             }
         }
 
+        /**
+         * Privacy bista bistaratzeko
+         */
         public IActionResult Privacy()
         {
             return View();
         }
 
+        /**
+         * Erroreak bistaratzeko
+         */
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

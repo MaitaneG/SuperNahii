@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 namespace SuperNaaahi.Models
 
 {
+    /**
+     * Puntuazioa bistaratzeko modeloa 
+     */
     public class PuntuazioaModel
     {
         public int Id { get; set; }

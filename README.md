@@ -9,4 +9,7 @@ Karpeta honetan REST API dago.
 Karpeta honetan jokuaren hiru bertsioen proiektuak ditugu. Ez doa ezer ez.
 
 ##Vsual
-Bertan web orria dago. Diseinua eta REST API-ra konektatu
+Bertan web orria dago. Diseinua eta REST API-ra konektatu.
+
+##Zerbitzuak
+Android-eko sqlite, postgre eta Mongo konektatzen du.

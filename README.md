@@ -8,7 +8,7 @@ Karpeta honetan REST API dago.
 ## Jokua(Multimedia)
 Karpeta honetan jokuaren hiru bertsioen proiektuak ditugu. Ez doa ezer ez.
 
-## Vsual
+## Visual(Interfaze)
 Bertan web orria dago. Diseinua eta REST API-ra konektatu.
 
 ## Zerbitzuak

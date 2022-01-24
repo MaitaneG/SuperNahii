@@ -2,10 +2,10 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-  background-color:deepskyblue;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    background-color: deepskyblue;
 }
 
 /* Provide sufficient contrast against white background */
@@ -20,13 +20,15 @@ a {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 .navbar {
     background-color: deepskyblue;
-    font-weight:bold}
+    font-weight:bold;
+    width:100%;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -89,4 +91,28 @@ body {
 
 .komentarioakSartzekoLekua {
     resize: none;
+}
+
+.inkestaLinka{
+    color:dodgerblue;
+}
+
+.informazioaIndex {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px #888888;
+}
+
+.argazkiaIndex{
+    margin-top:30px;
+    width:70%;
+}
+
+.resposive{
+    width:25%;
+    text-align:center;
 }

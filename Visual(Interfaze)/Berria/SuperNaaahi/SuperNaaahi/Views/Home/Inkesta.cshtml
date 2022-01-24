@@ -5,26 +5,25 @@
 }
 
 <h1>Inkesta</h1>
-
-<h4>Inkesta</h4>
 <hr />
+<br/>
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Inkesta">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Pertsona" class="control-label"></label>
-                <input asp-for="Pertsona" class="form-control" />
-                <span asp-validation-for="Pertsona" class="text-danger"></span>
+                <label asp-for="Korreoa" class="control-label"></label>
+                <input asp-for="Korreoa" class="form-control" value="@User.Identity.Name" readonly />
+                <span asp-validation-for="Korreoa" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Balorazioa" class="control-label"></label>
-                <input asp-for="Balorazioa" class="form-control" max="10" min="0"/>
+                <input asp-for="Balorazioa" class="form-control" max="10" min="0" />
                 <span asp-validation-for="Balorazioa" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Hobetzeko" class="control-label"></label>
-                <textarea asp-for="Hobetzeko" class="form-control" ></textarea>
+                <textarea asp-for="Hobetzeko" class="form-control komentarioakSartzekoLekua"></textarea>
                 <span asp-validation-for="Hobetzeko" class="text-danger"></span>
             </div>
             <div class="form-group form-check">
@@ -32,8 +31,19 @@
                     <input class="form-check-input" asp-for="Gomendatu" /> @Html.DisplayNameFor(model => model.Gomendatu)
                 </label>
             </div>
+            <!--
+       return confirm ('Ziur zaude inkesta bidali nahi duzula?')
+    -->
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                @if (ViewBag.Alert != null)
+                {
+                    <input type="submit" value="Create" class="btn btn-primary" onclick="return alert(@ViewBag.Alert);" />
+                }
+                else
+                {
+                    <input type="submit" value="Create" class="btn btn-primary" onclick="return alert ('Ziur zaude inkesta bidali nahi duzula?');" />
+                }
+
             </div>
         </form>
     </div>

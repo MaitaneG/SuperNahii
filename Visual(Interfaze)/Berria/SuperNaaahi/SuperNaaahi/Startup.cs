@@ -33,11 +33,19 @@ namespace SuperNaaahi
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDatabaseDeveloperPageExceptionFilter();
 
+            //Gure konexioa injektatzen dugu
+            services.AddDbContext<SuperNaaahiDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("SuperNaaahi")));
+            services.AddDatabaseDeveloperPageExceptionFilter();
+
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             //Puntuazioa injektatu
             services.AddScoped<IPuntuazioaService, PuntuazioaService>();
+            services.AddScoped<IInkestaService, InkestaService>();
             //Session gehitzen dugu
             services.AddDistributedMemoryCache();
             services.AddSession();

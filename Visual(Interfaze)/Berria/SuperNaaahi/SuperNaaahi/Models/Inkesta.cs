@@ -9,7 +9,10 @@ namespace SuperNaaahi.Models
     public class Inkesta
     {
         [Key]
-        public string Pertsona { get; set; }
+        [Required(ErrorMessage ="Zure korreoa derrigorrez sartu behar duzu.")]
+        [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail is not valid")]
+        public string Korreoa { get; set; }
+        [Required(ErrorMessage = "Balorazioa derrigorrez sartu behar duzu.")]
         public int Balorazioa { get; set; }
         public string Hobetzeko { get; set; }
         public bool Gomendatu { get; set; }

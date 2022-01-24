@@ -13,7 +13,5 @@ namespace SuperNaaahi.Data
             : base(options)
         {
         }
-        public DbSet<SuperNaaahi.Models.PuntuazioaModel> Puntuazioa { get; set; }
-        public DbSet<SuperNaaahi.Models.Inkesta> Inkesta { get; set; }
     }
 }

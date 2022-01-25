@@ -62,6 +62,7 @@ namespace SuperNaaahi.Controllers
         /**
          * Foroa bista bistaratzeko
          */
+        [Authorize]
         public IActionResult Foroa()
         {
             return View();
@@ -86,6 +87,7 @@ namespace SuperNaaahi.Controllers
         /**
          * Inkesta bista bistaratzeko
          */
+        [Authorize]
         public IActionResult Inkesta()
         {
             return View();

@@ -7,15 +7,26 @@
 
 @foreach (var item in Model)
 {
-  
-    <div class="kontainer darker">
-        <img src="/images/user.png" alt="Avatar" class="right">
 
-        <p><b>@item.Korreoa:</b> @item.Komentarioa</p>
-        <span class="time-right">@item.Data</span>
-    </div>
- 
-    
+    if (User.Identity.Name.Equals(item.Korreoa))
+    {
+        <div class="kontainer darker">
+            <img src="/images/user.png" alt="Avatar" class="right">
+            <p><b>@item.Korreoa: </b> @item.Komentarioa</p>
+            <span class="time-right">@item.Data</span>
+        </div>
+    }
+    else
+    {
+        <div class="kontainer">
+            <img src="/images/user.png" alt="Avatar">
+            <p><b>@item.Korreoa: </b> @item.Komentarioa</p>
+            <span class="time-left">@item.Data</span>
+        </div>
+    }
+
+
+
 
 
 

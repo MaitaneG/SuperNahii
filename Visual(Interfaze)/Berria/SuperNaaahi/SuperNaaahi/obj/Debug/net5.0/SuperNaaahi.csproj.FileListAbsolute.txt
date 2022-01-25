@@ -163,11 +163,6 @@ C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaah
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Puntuazioa\Create.cshtml.g.cs
-C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Puntuazioa\Delete.cshtml.g.cs
-C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Puntuazioa\Details.cshtml.g.cs
-C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Puntuazioa\Edit.cshtml.g.cs
-C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Puntuazioa\Index.cshtml.g.cs
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Shared\Components\Puntuazioak\Default.cshtml.g.cs
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Home\General.cshtml.g.cs
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Shared\Components\HallOfFame\Default.cshtml.g.cs
@@ -342,3 +337,5 @@ C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNa
 C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\SuperNaaahi.csproj.CopyComplete
 C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\SuperNaaahi.genruntimeconfig.cache
 C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Home\Inkesta.cshtml.g.cs
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Home\Inkesta.cshtml.g.cs
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\Berria\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\Razor\Views\Shared\Components\Foroa\Default.cshtml.g.cs

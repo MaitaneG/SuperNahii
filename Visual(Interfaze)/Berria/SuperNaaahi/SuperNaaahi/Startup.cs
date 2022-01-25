@@ -46,6 +46,7 @@ namespace SuperNaaahi
             //Puntuazioa injektatu
             services.AddScoped<IPuntuazioaService, PuntuazioaService>();
             services.AddScoped<IInkestaService, InkestaService>();
+            services.AddScoped<IForoaService, ForoaService>();
             //Session gehitzen dugu
             services.AddDistributedMemoryCache();
             services.AddSession();

@@ -18,11 +18,13 @@ namespace SuperNaaahi.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IInkestaService _inkestaService;
+        private readonly IForoaService _foroaService;
 
-        public HomeController(ILogger<HomeController> logger, IInkestaService inkestaService)
+        public HomeController(ILogger<HomeController> logger, IInkestaService inkestaService, IForoaService foroaService)
         {
             _logger = logger;
             _inkestaService = inkestaService;
+            _foroaService = foroaService;
         }
 
         /**
@@ -63,6 +65,22 @@ namespace SuperNaaahi.Controllers
         public IActionResult Foroa()
         {
             return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Foroa(Foroa Foroa)
+        {
+            try
+            {
+                Foroa.Data = DateTime.Now;
+                _foroaService.Komentatu(Foroa);
+                return View();
+            }
+            catch
+            {
+                ViewBag.Alert = "Erabiltzaile honek inkesta beteta dauka";
+                return View();
+            }
         }
 
         /**

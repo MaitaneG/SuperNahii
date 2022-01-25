@@ -1,4 +1,6 @@
-﻿using SuperNaaahi.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using SuperNaaahi.Data;
+using SuperNaaahi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +10,22 @@ namespace SuperNaaahi.Services
 {
     public class ForoaService : IForoaService
     {
-        public Task Komentatu(Foroa f)
+        private readonly SuperNaaahiDbContext _superNaaahiDbContext;
+
+        public ForoaService(SuperNaaahiDbContext superNaaahiDbContext)
         {
-            throw new NotImplementedException();
+            _superNaaahiDbContext = superNaaahiDbContext;
+        }
+
+        public async Task Komentatu(Foroa f)
+        {
+            _superNaaahiDbContext.Foroa.Add(f);
+            _superNaaahiDbContext.SaveChanges();
+
+        }
+        public async Task<IList<Foroa>> KomentarioakLortu()
+        {
+            return await _superNaaahiDbContext.Foroa.ToListAsync();
         }
     }
 }

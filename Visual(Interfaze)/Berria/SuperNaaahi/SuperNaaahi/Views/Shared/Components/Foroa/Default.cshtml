@@ -1,0 +1,22 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    @model IEnumerable<SuperNaaahi.Models.Foroa>
+}
+
+@foreach (var item in Model)
+{
+  
+    <div class="kontainer darker">
+        <img src="/images/user.png" alt="Avatar" class="right">
+
+        <p><b>@item.Korreoa:</b> @item.Komentarioa</p>
+        <span class="time-right">@item.Data</span>
+    </div>
+ 
+    
+
+
+
+}

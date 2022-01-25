@@ -16,5 +16,6 @@ namespace SuperNaaahi.Data
         {
         }
         public DbSet<SuperNaaahi.Models.Inkesta> Inkesta { get; set; }
+        public DbSet<SuperNaaahi.Models.Foroa> Foroa { get; set; }
     }
 }

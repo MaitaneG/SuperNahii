@@ -101,7 +101,7 @@ public class Konexioa extends Thread {
 
         Cursor c = Login.db.rawQuery("select * from Txapelketa where email='" + u.getEmail() + "' and password='" + u.getPass() + "';", null);
         while(c.moveToNext()){
-            User a=new User(c.getInt(0),c.getString(1),c.getString(2));
+            User a=new User(c.getInt(0),c.getString(1),c.getString(2),c.getString(3));
             actualUser=a;
             return true;
         }

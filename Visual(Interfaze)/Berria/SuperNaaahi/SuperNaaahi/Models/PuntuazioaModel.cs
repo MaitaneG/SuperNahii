@@ -12,8 +12,8 @@ namespace SuperNaaahi.Models
     public class PuntuazioaModel
     {
         public int Id { get; set; }
-        public string Jokalaria { get; set; }
+        public string Jokalari { get; set; }
         public int Puntuazioa { get; set; }
-        public DateTime CreateDate { get; set; }
+        public DateTime Data { get; set; }
     }
 }

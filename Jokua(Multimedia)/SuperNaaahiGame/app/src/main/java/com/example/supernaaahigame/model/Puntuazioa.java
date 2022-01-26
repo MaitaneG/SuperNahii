@@ -1,14 +1,15 @@
 package com.example.supernaaahigame.model;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Puntuazioa {
     private int id;
     private String jokalaria;
     private int puntuazioa;
-    private LocalDate createDate;
+    private LocalDateTime createDate;
 
-    public Puntuazioa(int id, String jokalaria, int puntuazioa, LocalDate createDate) {
+    public Puntuazioa(int id, String jokalaria, int puntuazioa, LocalDateTime createDate) {
         this.id = id;
         this.jokalaria = jokalaria;
         this.puntuazioa = puntuazioa;
@@ -39,18 +40,18 @@ public class Puntuazioa {
         this.puntuazioa = puntuazioa;
     }
 
-    public LocalDate getCreateDate() {
+    public LocalDateTime getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(LocalDate createDate) {
+    public void setCreateDate(LocalDateTime createDate) {
         this.createDate = createDate;
     }
 
     @Override
     public String toString() {
         return  id +
-                ",'" + jokalaria +
+                "," + jokalaria +
                 "," + puntuazioa +
                 "," + createDate +
                 ';';

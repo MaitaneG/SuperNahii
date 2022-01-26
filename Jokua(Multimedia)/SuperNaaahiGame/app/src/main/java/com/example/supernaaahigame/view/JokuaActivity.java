@@ -10,6 +10,7 @@ import com.example.supernaaahigame.konexioa.Konexioa;
 import com.example.supernaaahigame.model.Puntuazioa;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class JokuaActivity extends AppCompatActivity {
 
@@ -28,7 +29,7 @@ public class JokuaActivity extends AppCompatActivity {
 
 
         Konexioa kon=new Konexioa();
-        kon.bidaliMezua(new Puntuazioa(Konexioa.actualUser.getId(),Konexioa.actualUser.getName(),120, LocalDate.now()));
+        kon.bidaliMezua(new Puntuazioa(Konexioa.actualUser.getId(),Konexioa.actualUser.getName(),200, LocalDateTime.now()));
         setContentView(jokuaView);
     }
 

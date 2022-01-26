@@ -1,6 +1,6 @@
 package eus.dam.uni.model;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 import org.bson.types.ObjectId;
@@ -13,31 +13,41 @@ import org.bson.types.ObjectId;
 public class Puntuazioa {
 
 	private ObjectId id;
-	private int ida;
-	private String jokalaria;
+	//private int ida;
+	private String jokalari;
+	private int jokalariId;
 	private int puntuazioa;
-	private LocalDate createDate;
+	private LocalDateTime data;
 	
 	public Puntuazioa() {
 	}
 
-	public Puntuazioa(ObjectId id, int ida, String jokalaria, int puntuazioa, LocalDate createDate) {
+	public Puntuazioa(ObjectId id, /*int ida,*/ String jokalari, int jokalariId, int puntuazioa, LocalDateTime data) {
 		super();
 		this.id = id;
-		this.ida = ida;
-		this.jokalaria = jokalaria;
+		//this.ida = ida;
+		this.jokalari = jokalari;
+		this.jokalariId=jokalariId;
 		this.puntuazioa = puntuazioa;
-		this.createDate = createDate;
+		this.data = data;
 	}
 
-	public String getJokalaria() {
-		return jokalaria;
+	
+	public String getJokalari() {
+		return jokalari;
 	}
 
-	public void setJokalaria(String jokalaria) {
-		this.jokalaria = jokalaria;
+	public void setJokalari(String jokalari) {
+		this.jokalari = jokalari;
 	}
 
+	public int getJokalariId() {
+		return jokalariId;
+	}
+
+	public void setJokalariaId(int jokalariaId) {
+		this.jokalariId = jokalariaId;
+	}
 	public int getPuntuazioa() {
 		return puntuazioa;
 	}
@@ -46,17 +56,18 @@ public class Puntuazioa {
 		this.puntuazioa = puntuazioa;
 	}
 
-	public LocalDate getCreateDate() {
-		return createDate;
-	}
-
-	public void setCreateDate(LocalDate createDate) {
-		this.createDate = createDate;
+	public LocalDateTime getData() {
+		return data;
 	}
 	
+
+	public void setData(LocalDateTime data) {
+		this.data = data;
+	}
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(createDate, id, ida, jokalaria, puntuazioa);
+		return Objects.hash(data, id, jokalari, jokalariId, puntuazioa);
 	}
 
 	@Override
@@ -68,13 +79,19 @@ public class Puntuazioa {
 		if (getClass() != obj.getClass())
 			return false;
 		Puntuazioa other = (Puntuazioa) obj;
-		return Objects.equals(createDate, other.createDate) && Objects.equals(id, other.id) && ida == other.ida
-				&& Objects.equals(jokalaria, other.jokalaria) && puntuazioa == other.puntuazioa;
+		return Objects.equals(data, other.data) && Objects.equals(id, other.id)
+				&& Objects.equals(jokalari, other.jokalari) && jokalariId == other.jokalariId
+				&& puntuazioa == other.puntuazioa;
 	}
 
 	@Override
 	public String toString() {
-		return "Puntuazioa [id=" + id + ", ida=" + ida + ", jokalaria=" + jokalaria + ", puntuazioa=" + puntuazioa
-				+ ", createDate=" + createDate + "]";
+		return "Puntuazioa [id=" + id + ", jokalaria=" + jokalari + ", jokalariaId=" + jokalariId + ", puntuazioa="
+				+ puntuazioa + ", createDate=" + data + "]";
 	}
+
+	
+
+	
+
 }

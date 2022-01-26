@@ -1,30 +1,34 @@
 package com.example.postgremongokonexioak.model;
 
+import java.time.LocalDateTime;
+
 public class Puntuazioa {
-	private int jokalariId;
-	private String jokalari;
+	private int jokalariaId;
+	private String jokalaria;
 	private int puntuazioa;
+	private LocalDateTime data;
 	
-	public Puntuazioa(int jokalariId, String jokalari, int puntuazioa) {
-		this.jokalariId = jokalariId;
-		this.jokalari = jokalari;
+	public Puntuazioa(int jokalariaId, String jokalaria, int puntuazioa, String data) {
+		this.jokalariaId = jokalariaId;
+		this.jokalaria = jokalaria;
 		this.puntuazioa = puntuazioa;
+		this.data=LocalDateTime.parse(data);
 	}
 
-	public int getJokalariId() {
-		return jokalariId;
+	public int getJokalariaId() {
+		return jokalariaId;
 	}
 
-	public void setJokalariId(int jokalariId) {
-		this.jokalariId = jokalariId;
+	public void setJokalariaId(int jokalariaId) {
+		this.jokalariaId = jokalariaId;
 	}
 
-	public String getJokalari() {
-		return jokalari;
+	public String getJokalaria() {
+		return jokalaria;
 	}
 
-	public void setJokalari(String jokalari) {
-		this.jokalari = jokalari;
+	public void setJokalaria(String jokalaria) {
+		this.jokalaria = jokalaria;
 	}
 
 	public int getPuntuazioa() {
@@ -34,6 +38,12 @@ public class Puntuazioa {
 	public void setPuntuazioa(int puntuazioa) {
 		this.puntuazioa = puntuazioa;
 	}
-	
-	
+
+	public LocalDateTime getData() {
+		return data;
+	}
+
+	public void setData(LocalDateTime data) {
+		this.data = data;
+	}
 }

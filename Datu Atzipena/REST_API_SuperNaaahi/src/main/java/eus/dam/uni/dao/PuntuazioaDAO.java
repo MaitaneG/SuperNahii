@@ -36,7 +36,7 @@ public class PuntuazioaDAO {
 	 */
 	@PostConstruct
 	void datuakKargatu() {
-		collection = client.getDatabase("supernaaahi").getCollection("puntuazioa", Puntuazioa.class);
+		collection = client.getDatabase("naaahi").getCollection("puntuazioa", Puntuazioa.class);
 	}
 
 	public List<Puntuazioa> findAll() {
@@ -44,6 +44,27 @@ public class PuntuazioaDAO {
 		return collection.find().sort(new BasicDBObject("puntuazioa", -1)).into(new ArrayList<>());
 	}
 
+	public List<Puntuazioa> puntuazio5() {
+		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
+				.limit(5);
+		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
+		return puntuazioas;
+	}
+	
+	public List<Puntuazioa> puntuazio10() {
+		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
+				.limit(10);
+		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
+		return puntuazioas;
+	}
+	
+	public List<Puntuazioa> puntuazio20() {
+		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
+				.limit(20);
+		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
+		return puntuazioas;
+	}
+	
 	public List<Puntuazioa> findHallOfFame() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
 				.limit(2);

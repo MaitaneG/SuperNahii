@@ -63,7 +63,7 @@ public class ZerbitzariHaria extends Thread {
 					for (int i = 0; i < erregistroak.length; i++) {
 						String[] parts = erregistroak[i].split(",");
 						puntuazioak
-								.add(new Puntuazioa(Integer.parseInt(parts[0]), parts[1], Integer.parseInt(parts[2])));
+								.add(new Puntuazioa(Integer.parseInt(parts[0]), parts[1], Integer.parseInt(parts[2]), parts[3]));
 					}
  
 					postgresraBidaliPuntuazioak(puntuazioak);

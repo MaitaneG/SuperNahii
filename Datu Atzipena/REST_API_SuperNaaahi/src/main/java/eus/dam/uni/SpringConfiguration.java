@@ -21,8 +21,8 @@ import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 @Configuration
 public class SpringConfiguration {
 
-	//private String connectionString="mongodb://192.168.65.2:27017";
-	private String connectionString = "mongodb://localhost:27017";
+	private String connectionString="mongodb://192.168.65.2:27017";
+	//private String connectionString = "mongodb://localhost:27017";
 
 	@Bean // Indicates that a method produces a bean to be managed by the Spring
 			// container.

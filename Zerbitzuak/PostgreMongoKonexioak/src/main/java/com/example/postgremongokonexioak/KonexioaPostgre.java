@@ -62,7 +62,7 @@ public class KonexioaPostgre extends Thread{
 				Statement stmt = conn.createStatement();
 				ResultSet rs = stmt.executeQuery(sql)) {
 			while (rs.next()) {
-				Puntuazioa m = new Puntuazioa(rs.getInt("jokalari_id"), rs.getString("jokalari"), rs.getInt("puntuazioa"));
+				Puntuazioa m = new Puntuazioa(rs.getInt("jokalari_id"), rs.getString("jokalari"), rs.getInt("puntuazioa"), rs.getString("create_date"));
 				puntuazioak.add(m);
 			}
 			
@@ -78,8 +78,8 @@ public class KonexioaPostgre extends Thread{
 	           PreparedStatement ptmt = conn.prepareStatement(sql)) {
 	           
 	    	   for(Puntuazioa puntuazioa : p) {
-	    		   ptmt.setInt(1, puntuazioa.getJokalariId());
-		    	   ptmt.setString(2, puntuazioa.getJokalari());
+	    		   ptmt.setInt(1, puntuazioa.getJokalariaId());
+		    	   ptmt.setString(2, puntuazioa.getJokalaria());
 		    	   ptmt.setInt(3, puntuazioa.getPuntuazioa());
 		           ptmt.executeUpdate();
 	    	   }

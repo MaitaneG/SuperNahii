@@ -55,7 +55,7 @@ public class Login extends AppCompatActivity {
 
 
         db = openOrCreateDatabase("Txapelketa", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(id INTEGER,email VARCHAR, password VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(id INTEGER,izena VARCHAR,email VARCHAR, password VARCHAR);");
         hasieratu();
 
         konexioa = new Konexioa();

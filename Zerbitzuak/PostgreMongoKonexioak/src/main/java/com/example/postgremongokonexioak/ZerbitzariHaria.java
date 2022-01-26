@@ -27,7 +27,7 @@ public class ZerbitzariHaria extends Thread {
 		try {
 			// Sarrera eta irteerako fluxuak sortzen dira
 			sarreraFluxua = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
-			irteeraFluxua = new PrintWriter(socket.getOutputStream());
+			irteeraFluxua = new PrintWriter(socket.getOutputStream(),true);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

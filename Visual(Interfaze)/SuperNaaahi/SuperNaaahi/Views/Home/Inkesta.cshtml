@@ -1,5 +1,4 @@
 ﻿@model SuperNaaahi.Models.Inkesta
-
 @{
     ViewData["Title"] = "Inkesta";
 }
@@ -35,15 +34,7 @@
        return confirm ('Ziur zaude inkesta bidali nahi duzula?')
     -->
             <div class="form-group">
-                @if (ViewBag.Alert != null)
-                {
-                    <input type="submit" value="Create" class="btn btn-primary" onclick="return alert(@ViewBag.Alert);" />
-                }
-                else
-                {
-                    <input type="submit" value="Create" class="btn btn-primary" onclick="return alert ('Ziur zaude inkesta bidali nahi duzula?');" />
-                }
-
+                <input type="submit" value="Create" class="btn btn-primary" onclick="return alert ('Ziur zaude inkesta bidali nahi duzula?');" />
             </div>
         </form>
     </div>

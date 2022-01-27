@@ -1,7 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
-
+@model SuperNaaahi.ViewModel.InkestaViewModel
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -16,7 +16,17 @@
 
     </div>
 
-   
-        <b><a class="nav-link inkestaLinka" asp-area="" asp-controller="Home" asp-action="Inkesta">Inkesta betetzeko klikatu hemen</a></b>
-   
+    @if (Model != null)
+    {
+
+        <b><a class="nav-link inkestaLinka" asp-area="" asp-controller="Home" asp-action="Inkesta" onclick="return alert ('Inkesta beteta daukazu iadanik')">Inkesta betetzeko klikatu hemen</a></b>
+       
+    }
+    else
+    {
+        <b><a class="nav-link inkestaLinka" asp-area="" asp-controller="Home" asp-action="Inkesta" >Inkesta betetzeko klikatu hemen</a></b>
+    }
+
+
+
 </div>

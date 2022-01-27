@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SuperNaaahi.Models;
 using SuperNaaahi.Services;
+using SuperNaaahi.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -32,6 +33,7 @@ namespace SuperNaaahi.Controllers
          */
         public IActionResult Index()
         {
+            InkestaViewModel inkestaViewModel = new InkestaViewModel();
             return View();
         }
 
@@ -88,9 +90,10 @@ namespace SuperNaaahi.Controllers
          * Inkesta bista bistaratzeko
          */
         [Authorize]
-        public IActionResult Inkesta()
+        public async Task<IActionResult> Inkesta()
         {
-            return View();
+            Inkesta inkesta = await _inkestaService.KonprobatuKorreoa(HttpContext.User.Identity.Name);
+            return View(inkesta);
         }
 
         /**
@@ -98,21 +101,21 @@ namespace SuperNaaahi.Controllers
          */
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Inkesta(Inkesta inkesta)
+        public async Task<IActionResult>Inkesta(Inkesta inkesta)
         {
-            try
+            if (ModelState.IsValid)
             {
-                _inkestaService.InkestaBete(inkesta);
-
-                return RedirectToAction(nameof(Index));
+                if((await _inkestaService.KonprobatuKorreoa(inkesta.Korreoa) != null))
+                {
+                    await _inkestaService.InkestaAldatu(inkesta);
+                }
+                else
+                {
+                    await _inkestaService.InkestaBete(inkesta);
+                }
             }
-            catch
-            {
-                ViewBag.Alert = "Erabiltzaile honek inkesta beteta dauka";
-                return View();
-            }
+            return RedirectToAction(nameof(Index));
         }
-
         /**
          * Privacy bista bistaratzeko
          */

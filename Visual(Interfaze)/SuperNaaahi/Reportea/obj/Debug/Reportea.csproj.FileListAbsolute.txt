@@ -1,0 +1,12 @@
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.csproj.AssemblyReference.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.Properties.Resources.resources
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.csproj.GenerateResource.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\RdlCompile.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\RdlCompile.compiled
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\bin\Debug\SuperNaaahiReport.rdlc
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\bin\Debug\Reportea.exe.config
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\bin\Debug\Reportea.exe
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\bin\Debug\Reportea.pdb
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.csproj.CoreCompileInputs.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.exe
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.pdb

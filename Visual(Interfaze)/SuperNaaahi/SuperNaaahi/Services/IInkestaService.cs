@@ -8,6 +8,9 @@ namespace SuperNaaahi.Services
 {
     public interface IInkestaService
     {
-        Task InkestaBete(Inkesta i);
+       Task InkestaBete(Inkesta i);
+       Task InkestaAldatu(Inkesta i);
+       Task <Inkesta> KonprobatuKorreoa(string korreoa);
+
     }
 }

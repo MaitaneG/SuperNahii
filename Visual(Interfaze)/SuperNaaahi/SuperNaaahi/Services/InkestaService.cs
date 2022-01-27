@@ -1,4 +1,5 @@
-﻿using SuperNaaahi.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SuperNaaahi.Data;
 using SuperNaaahi.Models;
 using System;
 using System.Collections.Generic;
@@ -20,26 +21,28 @@ namespace SuperNaaahi.Services
         {
             try
             {
-                Inkesta inkesta = new Inkesta();
-                inkesta = _superNaaahiDbContext.Inkesta.SingleOrDefault(
-                    i => i.Korreoa!=null);
-
-                if (inkesta == null)
-                {
-                    inkesta = i;
-                    _superNaaahiDbContext.Inkesta.Add(inkesta);
-                    _superNaaahiDbContext.SaveChanges();
-                }
-                else
-                {
-                   
-                }
+         
+                _superNaaahiDbContext.Inkesta.Add(i);
+                _superNaaahiDbContext.SaveChanges();
             }
-
             catch(Exception ex)
             {
-
             }
+        }
+        public async Task<Inkesta> KonprobatuKorreoa(string korreoa)
+        {
+            var inkesta = await _superNaaahiDbContext.Inkesta.SingleOrDefaultAsync(i => i.Korreoa == korreoa);
+            return inkesta;
+            
+        }
+        public async Task InkestaAldatu(Inkesta inkesta)
+        {
+            var inkestaEginda = await _superNaaahiDbContext.Inkesta.SingleOrDefaultAsync(i => i.Korreoa == inkesta.Korreoa);
+            inkestaEginda.Balorazioa = inkesta.Balorazioa;
+            inkestaEginda.Hobetzeko = inkesta.Hobetzeko;
+            inkestaEginda.Gomendatu = inkesta.Gomendatu;
+
+            _superNaaahiDbContext.SaveChanges();
         }
     }
 }

@@ -29,10 +29,6 @@ public class KonexioakApplication {
 				haria = new ZerbitzariHaria(hariZenbatzailea, bezeroa);
 				haria.start(); // haria martxan jarri eta buklean jarraitu
 			}
-			
-			
-
-			
 
 		} catch (IOException e) {
 			e.printStackTrace();

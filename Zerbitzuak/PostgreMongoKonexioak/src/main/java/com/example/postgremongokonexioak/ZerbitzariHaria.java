@@ -63,7 +63,7 @@ public class ZerbitzariHaria extends Thread {
 					for (int i = 0; i < erregistroak.length; i++) {
 						String[] parts = erregistroak[i].split(",");
 						puntuazioak
-								.add(new Puntuazioa(Integer.parseInt(parts[0]), parts[1], Integer.parseInt(parts[2]), parts[3]));
+								.add(new Puntuazioa(Integer.parseInt(parts[0]),parts[1],Integer.parseInt(parts[2]), parts[3]));
 					}
  
 					postgresraBidaliPuntuazioak(puntuazioak);
@@ -102,7 +102,12 @@ public class ZerbitzariHaria extends Thread {
 	 */
 	public void postgresraBidaliPuntuazioak(ArrayList<Puntuazioa> p) {
 		KonexioaPostgre konexioaPostgre = new KonexioaPostgre();
-		konexioaPostgre.insertPuntuazioa(p);
+		
+		if(konexioaPostgre.insertPuntuazioa(p)==0) {
+			System.out.println("Ez da ondo igo informazioa PostgreSQL");
+		}else {
+			System.out.println("Ondo igo informazioa PostgreSQL");
+		}
 	}
 
 	/**
@@ -112,6 +117,10 @@ public class ZerbitzariHaria extends Thread {
 	 */
 	public void mongoraBidaliPuntuazioak(ArrayList<Puntuazioa> puntuazioak) {
 		KonexioaMongo konexioaMongo = new KonexioaMongo();
-		konexioaMongo.insertPuntuazioa(puntuazioak);
+		if(konexioaMongo.insertPuntuazioa(puntuazioak)==0) {
+			System.out.println("Ez da ondo igo informazioa Mongora");
+		}else {
+			System.out.println("Ondo igo informazioa Mongora");
+		}
 	}
 }

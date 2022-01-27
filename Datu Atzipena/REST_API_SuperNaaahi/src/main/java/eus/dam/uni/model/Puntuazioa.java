@@ -13,7 +13,6 @@ import org.bson.types.ObjectId;
 public class Puntuazioa {
 
 	private ObjectId id;
-	//private int ida;
 	private String jokalari;
 	private int jokalariId;
 	private int puntuazioa;
@@ -22,10 +21,8 @@ public class Puntuazioa {
 	public Puntuazioa() {
 	}
 
-	public Puntuazioa(ObjectId id, /*int ida,*/ String jokalari, int jokalariId, int puntuazioa, LocalDateTime data) {
-		super();
+	public Puntuazioa(ObjectId id, int jokalariId, String jokalari,  int puntuazioa, LocalDateTime data) {
 		this.id = id;
-		//this.ida = ida;
 		this.jokalari = jokalari;
 		this.jokalariId=jokalariId;
 		this.puntuazioa = puntuazioa;
@@ -45,8 +42,8 @@ public class Puntuazioa {
 		return jokalariId;
 	}
 
-	public void setJokalariaId(int jokalariaId) {
-		this.jokalariId = jokalariaId;
+	public void setJokalariId(int jokalariId) {
+		this.jokalariId = jokalariId;
 	}
 	public int getPuntuazioa() {
 		return puntuazioa;
@@ -86,7 +83,7 @@ public class Puntuazioa {
 
 	@Override
 	public String toString() {
-		return "Puntuazioa [id=" + id + ", jokalaria=" + jokalari + ", jokalariaId=" + jokalariId + ", puntuazioa="
+		return "Puntuazioa [id=" + id + ", jokalaria=" + jokalari + ", jokalariId=" + jokalariId + ", puntuazioa="
 				+ puntuazioa + ", createDate=" + data + "]";
 	}
 

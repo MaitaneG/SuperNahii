@@ -30,7 +30,6 @@ public class KonexioaMongo extends Thread{
 			System.out.println("Konektatuta Mongora");
 			
 			collection.insertMany(puntuazioak);
-			System.out.println("Puntuazioak igo dira Mongora");
 			return 1;
 		}catch (Exception e) {
 			return 0;

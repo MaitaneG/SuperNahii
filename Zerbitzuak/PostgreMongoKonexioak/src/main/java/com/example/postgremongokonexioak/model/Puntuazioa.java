@@ -1,36 +1,50 @@
 package com.example.postgremongokonexioak.model;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
+import org.bson.types.ObjectId;
+
+/**
+ * 
+ * Puntuazioaren modeloa
+ *
+ */
 public class Puntuazioa {
-	private int jokalariaId;
-	private String jokalaria;
+
+	private ObjectId id;
+	//private int ida;
+	private String jokalari;
+	private int jokalariId;
 	private int puntuazioa;
 	private LocalDateTime data;
 	
-	public Puntuazioa(int jokalariaId, String jokalaria, int puntuazioa, String data) {
-		this.jokalariaId = jokalariaId;
-		this.jokalaria = jokalaria;
+	public Puntuazioa() {
+	}
+
+	public Puntuazioa(int jokalariId, String jokalari, int puntuazioa, String data) {
+		this.jokalari = jokalari;
+		this.jokalariId=jokalariId;
 		this.puntuazioa = puntuazioa;
-		this.data=LocalDateTime.parse(data);
+		this.data = LocalDateTime.parse(data);
 	}
 
-	public int getJokalariaId() {
-		return jokalariaId;
+	
+	public String getJokalari() {
+		return jokalari;
 	}
 
-	public void setJokalariaId(int jokalariaId) {
-		this.jokalariaId = jokalariaId;
+	public void setJokalari(String jokalari) {
+		this.jokalari = jokalari;
 	}
 
-	public String getJokalaria() {
-		return jokalaria;
+	public int getJokalariId() {
+		return jokalariId;
 	}
 
-	public void setJokalaria(String jokalaria) {
-		this.jokalaria = jokalaria;
+	public void setJokalariId(int jokalariId) {
+		this.jokalariId = jokalariId;
 	}
-
 	public int getPuntuazioa() {
 		return puntuazioa;
 	}
@@ -42,8 +56,34 @@ public class Puntuazioa {
 	public LocalDateTime getData() {
 		return data;
 	}
+	
 
 	public void setData(LocalDateTime data) {
 		this.data = data;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(data, id, jokalari, jokalariId, puntuazioa);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Puntuazioa other = (Puntuazioa) obj;
+		return Objects.equals(data, other.data) && Objects.equals(id, other.id)
+				&& Objects.equals(jokalari, other.jokalari) && jokalariId == other.jokalariId
+				&& puntuazioa == other.puntuazioa;
+	}
+
+	@Override
+	public String toString() {
+		return "Puntuazioa [id=" + id + ", jokalari=" + jokalari + ", jokalariId=" + jokalariId + ", puntuazioa="
+				+ puntuazioa + ", createDate=" + data + "]";
 	}
 }

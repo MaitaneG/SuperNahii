@@ -4,13 +4,16 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace SuperNaaahi.Models
+
 {
+    /**
+     * Puntuazioa bistaratzeko modeloa 
+     */
     public class PuntuazioaModel
     {
-        public int id { get; set; }
-        public string jokalaria { get; set; }
-        public int puntuazioa { get; set; }
-        public DateTime data { get; set; }
-
+        public int Id { get; set; }
+        public string Jokalari { get; set; }
+        public int Puntuazioa { get; set; }
+        public DateTime Data { get; set; }
     }
 }

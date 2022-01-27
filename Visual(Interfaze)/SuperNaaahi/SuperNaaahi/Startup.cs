@@ -1,9 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SuperNaaahi.Data;
+using SuperNaaahi.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,8 +28,25 @@ namespace SuperNaaahi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDatabaseDeveloperPageExceptionFilter();
 
+            //Gure konexioa injektatzen dugu
+            services.AddDbContext<SuperNaaahiDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("SuperNaaahi")));
+            services.AddDatabaseDeveloperPageExceptionFilter();
+
+
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddControllersWithViews();
+            //Puntuazioa injektatu
+            services.AddScoped<IPuntuazioaService, PuntuazioaService>();
+            services.AddScoped<IInkestaService, InkestaService>();
+            services.AddScoped<IForoaService, ForoaService>();
             //Session gehitzen dugu
             services.AddDistributedMemoryCache();
             services.AddSession();
@@ -33,12 +55,11 @@ namespace SuperNaaahi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //Session gehitzen dugu
-            // IMPORTANT: Lehenengo lerroan jarri
             app.UseSession();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseMigrationsEndPoint();
             }
             else
             {
@@ -51,6 +72,7 @@ namespace SuperNaaahi
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -58,6 +80,7 @@ namespace SuperNaaahi
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }

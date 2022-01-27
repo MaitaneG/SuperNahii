@@ -1,4 +1,6 @@
-﻿
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,16 +28,21 @@
                     </button>
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="General">Ranking orokorra</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="HallOfFame">Hall of Fame</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="HallOfShame">Hall of Shame</a>
+                            </li>
+                           
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="HallOfFame">HallOfFame</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="HallOfShame">HallOfShame</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Foroa">Foroa</a>
+                                    <a class="nav-link text-dark " asp-area="" asp-controller="Home" asp-action="Foroa">Foroa</a>
                                 </li>
                             
+                                <partial name="_LoginPartial"/>
                         </ul>
                     </div>
                 </div>

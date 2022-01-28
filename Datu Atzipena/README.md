@@ -8,14 +8,14 @@ Aplikazioa hau web zerbitzu bat da non MongoDB datubasetik informazioa jasotzen 
 
 ### Software-a 
 
-#### - Eclipse:
-#### - MongoDB Compass:
+##### - Eclipse:
+##### - MongoDB Compass:
 
 ### Datubaseak 
 
-#### - MongoDB:
+##### - MongoDB:
 
 ### Framework-a
 
-#### - Spring:
+##### - Spring:
 

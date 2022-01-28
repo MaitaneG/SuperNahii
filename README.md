@@ -1,10 +1,10 @@
 
 # SUPERNAAAHI
-<br>
  
 ## 1. Sarrera 📌
 
 Dokumentu honetan islatzen da erronka honetan egiteko eskatu zaizkigun lanak, helburuak eta nola planteatu eta garatu ditugun.
+
 
 ## 2. Testuingurua 📃
 SuperNaaahi produktu oro saltzen dituen supermerkatu bat da. Bere nagusiak eskatu digu bere langileentzako joku bat garatzea. Jokua online eta offline jokatu daiteke. Partiden informazioa lokalean SQLite datu base batean gordeko dira konexioa izan arte. Datu hauen mugimendua aplikazio bat egingo du.

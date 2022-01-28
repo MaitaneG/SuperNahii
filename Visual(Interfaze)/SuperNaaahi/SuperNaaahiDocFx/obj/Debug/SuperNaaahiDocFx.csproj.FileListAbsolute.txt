@@ -1,0 +1,7 @@
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahiDocFx\bin\Debug\SuperNaaahiDocFx.dll
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahiDocFx\bin\Debug\SuperNaaahiDocFx.pdb
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahiDocFx\obj\Debug\SuperNaaahiDocFx.csproj.CoreCompileInputs.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahiDocFx\obj\Debug\SuperNaaahiDocFx.dll
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahiDocFx\obj\Debug\SuperNaaahiDocFx.pdb
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahiDocFx\bin\Debug\SuperNaaahiDocFx.dll.config
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahiDocFx\bin\Debug\SuperNaaahiDocFx.xml

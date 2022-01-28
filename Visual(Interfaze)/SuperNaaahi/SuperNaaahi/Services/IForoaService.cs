@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SuperNaaahi.Services
 {
+    /// <summary>
+    /// ForoaServicen interfazeak
+    /// </summary>
      public interface IForoaService
     {
         Task Komentatu(Foroa f);

@@ -1,4 +1,3 @@
-C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.csproj.AssemblyReference.cache
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.Properties.Resources.resources
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.csproj.GenerateResource.cache
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\RdlCompile.cache
@@ -10,3 +9,4 @@ C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Repor
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.csproj.CoreCompileInputs.cache
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.exe
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.pdb
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea\obj\Debug\Reportea.csproj.AssemblyReference.cache

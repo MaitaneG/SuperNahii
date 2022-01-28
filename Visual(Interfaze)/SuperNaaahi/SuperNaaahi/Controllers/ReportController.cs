@@ -9,17 +9,30 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SuperNaaahi.Controllers
-{
+    {
+    /// <summary>
+    /// Reportea egiteko kontrolerra
+    /// </summary>
     public class ReportController : Controller
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IPuntuazioaService _puntuazioaService;
 
+        /// <summary>
+        /// ReportControlerraren konstruktorea
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
+        /// <param name="puntuazioaService"></param>
         public ReportController(IWebHostEnvironment webHostEnvironment, IPuntuazioaService puntuazioaService)
         {
             _webHostEnvironment = webHostEnvironment;
             _puntuazioaService = puntuazioaService;
         }
+
+        /// <summary>
+        /// Informea inprimtatu
+        /// </summary>
+        /// <returns>informea pdf</returns>
         public async Task<IActionResult> Inprimatu()
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);

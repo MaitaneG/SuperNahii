@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace SuperNaaahi.Models
 {
-    /**
-     * Inkesta egiteko modeloa
-     */
+    /// <summary>
+    /// Inkesta egiteko modeloa
+    /// [Key]:Primary key
+    /// [ScaffoldColumn(false)]: Datu baseko eremua ez hartzeko
+    /// [Required(ErrorMessage ="Zure korreoa derrigorrez sartu behar duzu.")]:Korreoa derrigorrezkoa izateko
+    /// [Required(ErrorMessage = "Balorazioa derrigorrez sartu behar duzu.")]: Balorazioa derrigorrezkoa izateko
+    /// </summary>
     public class Inkesta
     {
+        
         [Key]
         [Required(ErrorMessage ="Zure korreoa derrigorrez sartu behar duzu.")] // Korreoa derrigorrezkoa izateko
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "Korreoaren formatua gaizki dago.")] // Korreoaren formatua konprobatzeko

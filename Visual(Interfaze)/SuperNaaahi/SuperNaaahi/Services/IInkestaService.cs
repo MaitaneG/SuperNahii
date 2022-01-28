@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SuperNaaahi.Services
 {
+    /// <summary>
+    /// InkestaServicen interfazea
+    /// </summary>
     public interface IInkestaService
     {
        Task InkestaBete(Inkesta i);

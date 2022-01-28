@@ -8,7 +8,7 @@ Dokumentu honetan islatzen da erronka honetan egiteko eskatu zaizkigun lanak, he
 <br>
 
 ## 2. Testuingurua 📃
-![XML Fitxategia](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/SuperNaaahi/SuperNaaahi/wwwroot/images/logo_size.jpg){width:500px height:500px}
+![XML Fitxategia](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/SuperNaaahi/SuperNaaahi/wwwroot/images/logo_size.jpg)
 
 SuperNaaahi produktu oro saltzen dituen supermerkatu bat da. Bere nagusiak eskatu digu bere langileentzako joku bat garatzea. Jokua online eta offline jokatu daiteke. Partiden informazioa lokalean SQLite datu base batean gordeko dira konexioa izan arte. Datu hauen mugimendua aplikazio bat egingo du.
 

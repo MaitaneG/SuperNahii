@@ -1,5 +1,7 @@
-<p style="text-align: center;"> # SUPERNAAAHI</p>
-
+ <div style="text-align: center;">
+# SUPERNAAAHI
+</div>
+ 
 ## 1. Sarrera 📌
 
 Dokumentu honetan islatzen da erronka honetan egiteko eskatu zaizkigun lanak, helburuak eta nola planteatu eta garatu ditugun.

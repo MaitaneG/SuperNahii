@@ -16,6 +16,7 @@
             <param name="logger"></param>
             <param name="inkestaService"></param>
             <param name="foroaService"></param>
+            <param name="puntuazioaService"></param>
         </member>
         <member name="M:SuperNaaahi.Controllers.HomeController.Index">
             <summary>
@@ -28,6 +29,13 @@
             General bista (Puntuazio guztiak) bistaratzeko
             </summary>
             <returns>General View-a (Ranking orokorra) itzuli </returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.AukeratuPuntuazioa(System.String)">
+            <summary>
+            Select-ean aukeratzen duzun puntuazio kantitatea bistaratzeko
+            </summary>
+            <param name="puntua"></param>
+            <returns>View-a</returns>
         </member>
         <member name="M:SuperNaaahi.Controllers.HomeController.HallOfFame">
             <summary>
@@ -112,24 +120,76 @@
         <member name="T:SuperNaaahi.Models.Foroa">
             <summary>
             Foroa egiteko modeloa
-            [Key]:Primary key
-            [ScaffoldColumn(false)]: Datu baseko eremua ez hartzeko
-            [Required(ErrorMessage = "Zure korreoa derrigorrez sartu behar duzu.")]: Required derrigorrez bete behar duzula
-            [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "Korreoaren formatua gaizki dago.")]: RegularExpression formatua konprobatzeko
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Foroa.Id">
+            <summary>
+            Id: priamry key eta  [ScaffoldColumn(false)] id eremua ez dugu hartuko
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Foroa.Korreoa">
+            <summary>
+            Korreoa derrigorrez sartu eta formatu egokiarekin
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Foroa.Komentarioa">
+            <summary>
+            Komentarioa derrigorrez sartu
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Foroa.Data">
+            <summary>
+            [ScaffoldColumn(false)] data eramua ez dugu hartuko
             </summary>
         </member>
         <member name="T:SuperNaaahi.Models.Inkesta">
             <summary>
             Inkesta egiteko modeloa
-            [Key]:Primary key
-            [ScaffoldColumn(false)]: Datu baseko eremua ez hartzeko
-            [Required(ErrorMessage ="Zure korreoa derrigorrez sartu behar duzu.")]:Korreoa derrigorrezkoa izateko
-            [Required(ErrorMessage = "Balorazioa derrigorrez sartu behar duzu.")]: Balorazioa derrigorrezkoa izateko
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Inkesta.Korreoa">
+            <summary>
+            Korreoa derrigorrezkoa, formato egokiarekin eta primary key
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Inkesta.Balorazioa">
+            <summary>
+            Balorazioa derrigorrez ebte 1-10
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Inkesta.Hobetzeko">
+            <summary>
+            Hobetzeko komentarioa
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Inkesta.Gomendatu">
+            <summary>
+            Bai ala ez gomendatu
             </summary>
         </member>
         <member name="T:SuperNaaahi.Models.PuntuazioaModel">
             <summary>
             Puntuazioa egiteko modeloa
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.PuntuazioaModel.Id">
+            <summary>
+            Id primary key
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.PuntuazioaModel.Jokalari">
+            <summary>
+            Jokalariaren izena
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.PuntuazioaModel.Puntuazioa">
+            <summary>
+            Egin dituen puntuak
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.PuntuazioaModel.Data">
+            <summary>
+            Noiz data eta ordua
             </summary>
         </member>
         <member name="T:SuperNaaahi.Services.ForoaService">
@@ -161,10 +221,44 @@
             ForoaServicen interfazeak
             </summary>
         </member>
+        <member name="M:SuperNaaahi.Services.IForoaService.Komentatu(SuperNaaahi.Models.Foroa)">
+            <summary>
+            Foroa bete kudeatu
+            </summary>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IForoaService.KomentarioakLortu">
+            <summary>
+            Komentarioak kudeatu
+            </summary>
+            <returns>Komentarioen lista</returns>
+        </member>
         <member name="T:SuperNaaahi.Services.IInkestaService">
             <summary>
             InkestaServicen interfazea
             </summary>
+        </member>
+        <member name="M:SuperNaaahi.Services.IInkestaService.InkestaBete(SuperNaaahi.Models.Inkesta)">
+            <summary>
+            Inkesta bete kudeatu
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IInkestaService.InkestaAldatu(SuperNaaahi.Models.Inkesta)">
+            <summary>
+            Inkesta aldatu kudeatu
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IInkestaService.KonprobatuKorreoa(System.String)">
+            <summary>
+            Inkesta betetzeko konprobatu emaila
+            </summary>
+            <param name="korreoa"></param>
+            <returns>Email bereko inkesta</returns>
         </member>
         <member name="T:SuperNaaahi.Services.InkestaService">
             <summary>
@@ -202,6 +296,42 @@
             <summary>
             PuntuazioService interfazea
             </summary>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetPuntuazioak">
+            <summary>
+            Puntuazio guztiak kudeatu
+            </summary>
+            <returns> Puntuazio guztien lista</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHallOfFame">
+            <summary>
+            Puntuazio onenak kudeatu
+            </summary>
+            <returns>Puntuazio onenen lista </returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHallOfShame">
+            <summary>
+            Puntuazio txarrenak kudeatu
+            </summary>
+            <returns>Puntuazio txarrenen lista </returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetBostPuntuazio">
+            <summary>
+            Rest-apitik 5 puntuazio jaso
+            </summary>
+            <returns>5 puntuazio dauden lista </returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHamarPuntuazio">
+            <summary>
+            Rest-apitik 10 puntuazio kudeatu
+            </summary>
+            <returns>10 puntuazio dauden lista</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHamabostPuntuazio">
+            <summary>
+            Rest-apitik 15 puntuazio kudeatu
+            </summary>
+            <returns>15 puntuazio dauden lista </returns>
         </member>
         <member name="T:SuperNaaahi.Services.PuntuazioaService">
             <summary>

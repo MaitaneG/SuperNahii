@@ -1,0 +1,8 @@
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNahiDocFx\bin\Debug\SuperNahiDocFx.exe.config
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNahiDocFx\bin\Debug\SuperNahiDocFx.exe
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNahiDocFx\bin\Debug\SuperNahiDocFx.pdb
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNahiDocFx\obj\Debug\SuperNahiDocFx.Properties.Resources.resources
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNahiDocFx\obj\Debug\SuperNahiDocFx.csproj.GenerateResource.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNahiDocFx\obj\Debug\SuperNahiDocFx.csproj.CoreCompileInputs.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNahiDocFx\obj\Debug\SuperNahiDocFx.exe
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNahiDocFx\obj\Debug\SuperNahiDocFx.pdb

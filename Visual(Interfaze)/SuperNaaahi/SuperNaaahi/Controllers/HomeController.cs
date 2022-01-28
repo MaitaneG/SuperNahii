@@ -28,6 +28,7 @@ namespace SuperNaaahi.Controllers
         /// <param name="logger"></param>
         /// <param name="inkestaService"></param>
         /// <param name="foroaService"></param>
+        /// <param name="puntuazioaService"></param>
         public HomeController(ILogger<HomeController> logger, IInkestaService inkestaService, IForoaService foroaService, IPuntuazioaService puntuazioaService)
         {
             _logger = logger;
@@ -55,6 +56,11 @@ namespace SuperNaaahi.Controllers
         {
             return View();
         }
+        /// <summary>
+        /// Select-ean aukeratzen duzun puntuazio kantitatea bistaratzeko
+        /// </summary>
+        /// <param name="puntua"></param>
+        /// <returns>View-a</returns>
         public IActionResult AukeratuPuntuazioa(string puntua)
         {
             if (puntua.Equals("5"))

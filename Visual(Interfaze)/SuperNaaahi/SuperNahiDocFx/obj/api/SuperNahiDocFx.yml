@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: SuperNahiDocFx
+  commentId: N:SuperNahiDocFx
+  id: SuperNahiDocFx
+  children:
+  - SuperNahiDocFx.Form1
+  langs:
+  - csharp
+  - vb
+  name: SuperNahiDocFx
+  nameWithType: SuperNahiDocFx
+  fullName: SuperNahiDocFx
+  type: Namespace
+  assemblies:
+  - SuperNahiDocFx
+references:
+- uid: SuperNahiDocFx.Form1
+  commentId: T:SuperNahiDocFx.Form1
+  name: Form1
+  nameWithType: Form1
+  fullName: SuperNahiDocFx.Form1

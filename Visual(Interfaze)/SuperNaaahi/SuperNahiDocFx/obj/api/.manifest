@@ -1,0 +1,6 @@
+{
+  "SuperNahiDocFx": "SuperNahiDocFx.yml",
+  "SuperNahiDocFx.Form1": "SuperNahiDocFx.Form1.yml",
+  "SuperNahiDocFx.Form1.#ctor": "SuperNahiDocFx.Form1.yml",
+  "SuperNahiDocFx.Form1.Dispose(System.Boolean)": "SuperNahiDocFx.Form1.yml"
+}

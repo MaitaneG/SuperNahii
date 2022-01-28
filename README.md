@@ -12,7 +12,7 @@ SuperNaaahi produktu oro saltzen dituen supermerkatu bat da. Bere nagusiak eskat
 
 Gainera, SuperNaaahik Odoo ERP-a erabiltzen du eta partiden informazioa gordetzeko modulu bat sortzeko eskatu digu. 
 
-![XML Fitxategia](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/SuperNaaahi/SuperNaaahi/wwwroot/images/user.png)
+![XML Fitxategia](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/SuperNaaahi/SuperNaaahi/wwwroot/images/logo_size.jpg)
 
 Horrez aparte, web orrialde bat garatu behar dugu. Bertan, partiden informazioa agertuko da. Partiden informazioa REST API batetik irakurtzen du. REST API-ak erabiltzen duen datu basea MongoDb da. Gainera, erregistratuta dauden erabiltzaile guztiak inkesta bat bete ahal izango dute. Gainera, foro bat egongo da erabiltzaileak bertan idazteko.
 

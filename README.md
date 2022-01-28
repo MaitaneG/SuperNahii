@@ -1,6 +1,6 @@
-# SuperNaaahi
+# 1. Sarrera
 
-Gure proiektua bost karpetetan dago banatuta.
+Dokumentu honetan islatzen da erronka honetan egiteko eskatu zaizkigun lanak, helburuak eta nola planteatu eta garatu ditugun.
 
 ## Datu Atzipena
 Karpeta honetan REST API dago.

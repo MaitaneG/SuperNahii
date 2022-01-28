@@ -20,6 +20,9 @@ Horrez aparte, web orrialde bat garatu behar dugu. Bertan, partiden informazioa 
 
 ## 3. Karpeten banaketa 🗂️
 
+### Datu Atzipena
+Bertan REST API-aren proiektua dago. REST API-a MongoDB datubaseatik informazioa irakurtzen du.
+
 ### Jokua(Multimedia)
 Karpeta honetan jokuaren hiru bertsioen proiektuak ditugu. Ez doa ezer ez.
 

@@ -32,35 +32,39 @@ public class PuntuazioaDAO {
 	private MongoCollection<Puntuazioa> collection;
 
 	/**
-	 * 
+	 * Datuak kargatzen dira MongoDB-tik
 	 */
 	@PostConstruct
 	void datuakKargatu() {
 		collection = client.getDatabase("naaahi").getCollection("puntuazioa", Puntuazioa.class);
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public List<Puntuazioa> findAll() {
 
 		return collection.find().sort(new BasicDBObject("puntuazioa", -1)).into(new ArrayList<>());
 	}
 
-	public List<Puntuazioa> puntuazio5() {
+	public List<Puntuazioa> findBostPuntuazio() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
 				.limit(5);
 		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
 		return puntuazioas;
 	}
 	
-	public List<Puntuazioa> puntuazio10() {
+	public List<Puntuazioa> findHamarPuntuazio() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
 				.limit(10);
 		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
 		return puntuazioas;
 	}
 	
-	public List<Puntuazioa> puntuazio20() {
+	public List<Puntuazioa> findHamabostPuntuazio() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
-				.limit(20);
+				.limit(15);
 		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
 		return puntuazioas;
 	}

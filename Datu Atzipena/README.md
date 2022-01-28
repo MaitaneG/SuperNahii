@@ -2,8 +2,7 @@
 
 ## 1. Zer da
 
-Aplikazioa hau web zerbitzu bat da non MongoDB 
-datubasetik informazioa jasotzen du. 
+Aplikazioa hau web zerbitzu bat da non MongoDB datubasetik informazioa jasotzen du. 
 
 ## 2. Baliabideak
 
@@ -11,7 +10,8 @@ datubasetik informazioa jasotzen du.
 
 ##### - Eclipse
 ```
-Aplikazioa garatzeko erabili dugun software-a da. Gainera *[Eclipsen](https://www.eclipse.org/downloads/)* Spring-eko plugina instalatu dugu
+Aplikazioa garatzeko erabili dugun software-a da. 
+Gainera *[Eclipsen](https://www.eclipse.org/downloads/)* Spring-eko plugina instalatu dugu
 ```
 
 ##### - MongoDB Compass:

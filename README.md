@@ -10,7 +10,7 @@ Dokumentu honetan islatzen da erronka honetan egiteko eskatu zaizkigun lanak, he
 ## 2. Testuingurua 📃
 ![XML Fitxategia](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/SuperNaaahi/SuperNaaahi/wwwroot/images/logo_size.jpg)
 
-SuperNaaahi produktu oro saltzen dituen supermerkatu bat da. Bere nagusiak eskatu digu bere langileentzako joku bat garatzea. Jokua online eta offline jokatu daiteke. Partiden informazioa lokalean SQLite datu base batean gordeko dira konexioa izan arte. Datu hauen mugimendua aplikazio bat egingo du.
+SuperNaaahi produktu oro saltzen dituen supermerkatu bat da. Bere nagusiak eskatu digu bere langileentzako joku bat garatzea. Jokua online eta offline jokatu daiteke. Partiden informazioa lokalean * [SQLite](https://www.sqlite.org/index.html) datu base batean gordeko dira konexioa izan arte. Datu hauen mugimendua aplikazio bat egingo du.
 
 Gainera, SuperNaaahik Odoo ERP-a erabiltzen du eta partiden informazioa gordetzeko modulu bat sortzeko eskatu digu. 
 

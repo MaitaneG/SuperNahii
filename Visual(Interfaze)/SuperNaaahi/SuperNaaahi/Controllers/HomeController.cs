@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SuperNaaahi.Models;
 using SuperNaaahi.Services;
-using SuperNaaahi.ViewModel;
+
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,63 +12,110 @@ using System.Threading.Tasks;
 
 namespace SuperNaaahi.Controllers
 {
-    /**
-     * Home karpetan dauden bistak kontrolatzeko
-     */
+    ///<sumary>
+    /// Home karpetan dauden bistak kontrolatzeko
+    /// </sumary>
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IInkestaService _inkestaService;
         private readonly IForoaService _foroaService;
+        private readonly IPuntuazioaService _puntuazioaService;
 
-        public HomeController(ILogger<HomeController> logger, IInkestaService inkestaService, IForoaService foroaService)
+        /// <summary>
+        /// HomeControllerraren konstruktorea
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="inkestaService"></param>
+        /// <param name="foroaService"></param>
+        /// <param name="puntuazioaService"></param>
+        public HomeController(ILogger<HomeController> logger, IInkestaService inkestaService, IForoaService foroaService, IPuntuazioaService puntuazioaService)
         {
             _logger = logger;
             _inkestaService = inkestaService;
             _foroaService = foroaService;
+            _puntuazioaService = puntuazioaService;
+
         }
 
-        /**
-         * Index bista (Pagina nagusia) bistaratzeko
-         */
+        /// <summary>
+        /// Index bista (Pagina nagusia) bistaratzeko
+        /// </summary>
+        /// <returns> Index View-a itzuli</returns>
+
         public IActionResult Index()
         {
-            InkestaViewModel inkestaViewModel = new InkestaViewModel();
             return View();
         }
 
-        /**
-         * General bista (Puntuazio guztiak) bistaratzeko
-         */
+        /// <summary>
+        /// General bista (Puntuazio guztiak) bistaratzeko
+        /// </summary>
+        /// <returns>General View-a (Ranking orokorra) itzuli </returns>
         public IActionResult General()
         {
             return View();
         }
+        /// <summary>
+        /// Select-ean aukeratzen duzun puntuazio kantitatea bistaratzeko
+        /// </summary>
+        /// <param name="puntua"></param>
+        /// <returns>View-a</returns>
+        public IActionResult AukeratuPuntuazioa(string puntua)
+        {
+            if (puntua.Equals("5"))
+            {
+                _puntuazioaService.GetBostPuntuazio();
+            }
+            else if (puntua.Equals("10"))
+            {
+                _puntuazioaService.GetHamarPuntuazio();
 
-        /**
-         * HallOfFame bista (Puntuazio honenak) bistaratzeko
-         */
+            }
+            else if (puntua.Equals("15"))
+            {
+                _puntuazioaService.GetHamabostPuntuazio();
+            }else if (puntua.Equals("Guztiak"))
+            {
+                _puntuazioaService.GetPuntuazioak();
+            }
+            return View();
+        }
+
+        /// <summary>
+        /// HallOfFame bista (Puntuazio onenak) bistaratzeko
+        /// </summary>
+        /// <returns>Puntuazio onenaren View-a itzuli </returns>
         public IActionResult HallOfFame()
         {
             return View();
         }
-     
-        /**
-         * HallOfShame bista (Puntuazio txarrenak) bistaratzeko
-         */
+
+
+        /// <summary>
+        /// HallOfShame bista (Puntuazio txarrenak) bistaratzeko
+        /// </summary>
+        /// <returns>Puntuazio txarrenan View-a itzuli</returns>
         public IActionResult HallOfShame()
         {
             return View();
         }
 
-        /**
-         * Foroa bista bistaratzeko
-         */
+        /// <summary>
+        /// Foroa bista bistaratzeko
+        /// Authorize: Foroa egiteko logeatuta egon behar duzu
+        /// </summary>
+        /// <returns>Foroaren View-a itzuli</returns>
         [Authorize]
         public IActionResult Foroa()
         {
             return View();
         }
+        /// <summary>
+        /// Foroa egin
+        /// </summary>
+        /// <param name="Foroa"></param>
+        /// <returns>View-a itzuli</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Foroa(Foroa Foroa)
@@ -86,9 +133,11 @@ namespace SuperNaaahi.Controllers
             }
         }
 
-        /**
-         * Inkesta bista bistaratzeko
-         */
+        /// <summary>
+        /// Email bereko inkesta bistaratu inkesta orrian
+        /// Authorize: Inkesta egiteko logeatuta egon behar duzu
+        /// </summary>
+        /// <returns>Inkestaren informazioa beteta badago</returns>
         [Authorize]
         public async Task<IActionResult> Inkesta()
         {
@@ -96,9 +145,11 @@ namespace SuperNaaahi.Controllers
             return View(inkesta);
         }
 
-        /**
-         * Inkesta bat betetzen denean
-         */
+        /// <summary>
+        /// Inkesta bete, iadanik inkesta beteta badago aukera daukazu aldaketak egiteko
+        /// </summary>
+        /// <param name="inkesta"></param>
+        /// <returns>Inkesta egin eta Index View-a itzuli</returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult>Inkesta(Inkesta inkesta)
@@ -116,17 +167,20 @@ namespace SuperNaaahi.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
-        /**
-         * Privacy bista bistaratzeko
-         */
+
+        /// <summary>
+        ///  Privacy bista bistaratzeko
+        /// </summary>
+        /// <returns>Privacy View-a itzuli</returns>
         public IActionResult Privacy()
         {
             return View();
         }
 
-        /**
-         * Erroreak bistaratzeko
-         */
+        /// <summary>
+        /// Erroreak bistaratu
+        /// </summary>
+        /// <returns>Errorea View-a</returns>
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

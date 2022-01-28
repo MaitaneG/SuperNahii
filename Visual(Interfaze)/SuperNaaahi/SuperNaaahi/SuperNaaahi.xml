@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SuperNaaahi</name>
+    </assembly>
+    <members>
+        <member name="T:SuperNaaahi.Controllers.HomeController">
+            <sumary>
+             Home karpetan dauden bistak kontrolatzeko
+             </sumary>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.#ctor(Microsoft.Extensions.Logging.ILogger{SuperNaaahi.Controllers.HomeController},SuperNaaahi.Services.IInkestaService,SuperNaaahi.Services.IForoaService,SuperNaaahi.Services.IPuntuazioaService)">
+            <summary>
+            HomeControllerraren konstruktorea
+            </summary>
+            <param name="logger"></param>
+            <param name="inkestaService"></param>
+            <param name="foroaService"></param>
+            <param name="puntuazioaService"></param>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.Index">
+            <summary>
+            Index bista (Pagina nagusia) bistaratzeko
+            </summary>
+            <returns> Index View-a itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.General">
+            <summary>
+            General bista (Puntuazio guztiak) bistaratzeko
+            </summary>
+            <returns>General View-a (Ranking orokorra) itzuli </returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.AukeratuPuntuazioa(System.String)">
+            <summary>
+            Select-ean aukeratzen duzun puntuazio kantitatea bistaratzeko
+            </summary>
+            <param name="puntua"></param>
+            <returns>View-a</returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.HallOfFame">
+            <summary>
+            HallOfFame bista (Puntuazio onenak) bistaratzeko
+            </summary>
+            <returns>Puntuazio onenaren View-a itzuli </returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.HallOfShame">
+            <summary>
+            HallOfShame bista (Puntuazio txarrenak) bistaratzeko
+            </summary>
+            <returns>Puntuazio txarrenan View-a itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.Foroa">
+            <summary>
+            Foroa bista bistaratzeko
+            Authorize: Foroa egiteko logeatuta egon behar duzu
+            </summary>
+            <returns>Foroaren View-a itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.Foroa(SuperNaaahi.Models.Foroa)">
+            <summary>
+            Foroa egin
+            </summary>
+            <param name="Foroa"></param>
+            <returns>View-a itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.Inkesta">
+            <summary>
+            Email bereko inkesta bistaratu inkesta orrian
+            Authorize: Inkesta egiteko logeatuta egon behar duzu
+            </summary>
+            <returns>Inkestaren informazioa beteta badago</returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.Inkesta(SuperNaaahi.Models.Inkesta)">
+            <summary>
+            Inkesta bete, iadanik inkesta beteta badago aukera daukazu aldaketak egiteko
+            </summary>
+            <param name="inkesta"></param>
+            <returns>Inkesta egin eta Index View-a itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.Privacy">
+            <summary>
+             Privacy bista bistaratzeko
+            </summary>
+            <returns>Privacy View-a itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.HomeController.Error">
+            <summary>
+            Erroreak bistaratu
+            </summary>
+            <returns>Errorea View-a</returns>
+        </member>
+        <member name="T:SuperNaaahi.Controllers.ReportController">
+            <summary>
+            Reportea egiteko kontrolerra
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.ReportController.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,SuperNaaahi.Services.IPuntuazioaService)">
+            <summary>
+            ReportControlerraren konstruktorea
+            </summary>
+            <param name="webHostEnvironment"></param>
+            <param name="puntuazioaService"></param>
+        </member>
+        <member name="M:SuperNaaahi.Controllers.ReportController.Inprimatu">
+            <summary>
+            Informea inprimtatu
+            </summary>
+            <returns>informea pdf</returns>
+        </member>
+        <member name="T:SuperNaaahi.Data.SuperNaaahiDbContext">
+            <summary>
+            SuperNaaahi Microsoft SQL serverrera konektatzeko
+            </summary>
+        </member>
+        <member name="T:SuperNaaahi.Models.ErrorViewModel">
+            <summary>
+            Errorea bistaratzeko modeloa
+            </summary>
+        </member>
+        <member name="T:SuperNaaahi.Models.Foroa">
+            <summary>
+            Foroa egiteko modeloa
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Foroa.Id">
+            <summary>
+            Id: priamry key eta  [ScaffoldColumn(false)] id eremua ez dugu hartuko
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Foroa.Korreoa">
+            <summary>
+            Korreoa derrigorrez sartu eta formatu egokiarekin
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Foroa.Komentarioa">
+            <summary>
+            Komentarioa derrigorrez sartu
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Foroa.Data">
+            <summary>
+            [ScaffoldColumn(false)] data eramua ez dugu hartuko
+            </summary>
+        </member>
+        <member name="T:SuperNaaahi.Models.Inkesta">
+            <summary>
+            Inkesta egiteko modeloa
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Inkesta.Korreoa">
+            <summary>
+            Korreoa derrigorrezkoa, formato egokiarekin eta primary key
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Inkesta.Balorazioa">
+            <summary>
+            Balorazioa derrigorrez ebte 1-10
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Inkesta.Hobetzeko">
+            <summary>
+            Hobetzeko komentarioa
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.Inkesta.Gomendatu">
+            <summary>
+            Bai ala ez gomendatu
+            </summary>
+        </member>
+        <member name="T:SuperNaaahi.Models.PuntuazioaModel">
+            <summary>
+            Puntuazioa egiteko modeloa
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.PuntuazioaModel.Id">
+            <summary>
+            Id primary key
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.PuntuazioaModel.Jokalari">
+            <summary>
+            Jokalariaren izena
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.PuntuazioaModel.Puntuazioa">
+            <summary>
+            Egin dituen puntuak
+            </summary>
+        </member>
+        <member name="P:SuperNaaahi.Models.PuntuazioaModel.Data">
+            <summary>
+            Noiz data eta ordua
+            </summary>
+        </member>
+        <member name="T:SuperNaaahi.Services.ForoaService">
+            <summary>
+            Foroaren informazioa kudeatzeko
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.Services.ForoaService.#ctor(SuperNaaahi.Data.SuperNaaahiDbContext)">
+            <summary>
+            ForoaService knstruktorea
+            </summary>
+            <param name="superNaaahiDbContext"></param>
+        </member>
+        <member name="M:SuperNaaahi.Services.ForoaService.Komentatu(SuperNaaahi.Models.Foroa)">
+            <summary>
+            sql serverra gehitu foroa
+            </summary>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.ForoaService.KomentarioakLortu">
+            <summary>
+            SQL Serverretik komentarioak lortu gero aldatu ahal izateko
+            </summary>
+            <returns>Komentarioen lista itzuli</returns>
+        </member>
+        <member name="T:SuperNaaahi.Services.IForoaService">
+            <summary>
+            ForoaServicen interfazeak
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.Services.IForoaService.Komentatu(SuperNaaahi.Models.Foroa)">
+            <summary>
+            Foroa bete kudeatu
+            </summary>
+            <param name="f"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IForoaService.KomentarioakLortu">
+            <summary>
+            Komentarioak kudeatu
+            </summary>
+            <returns>Komentarioen lista</returns>
+        </member>
+        <member name="T:SuperNaaahi.Services.IInkestaService">
+            <summary>
+            InkestaServicen interfazea
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.Services.IInkestaService.InkestaBete(SuperNaaahi.Models.Inkesta)">
+            <summary>
+            Inkesta bete kudeatu
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IInkestaService.InkestaAldatu(SuperNaaahi.Models.Inkesta)">
+            <summary>
+            Inkesta aldatu kudeatu
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IInkestaService.KonprobatuKorreoa(System.String)">
+            <summary>
+            Inkesta betetzeko konprobatu emaila
+            </summary>
+            <param name="korreoa"></param>
+            <returns>Email bereko inkesta</returns>
+        </member>
+        <member name="T:SuperNaaahi.Services.InkestaService">
+            <summary>
+            Inkestaren informazioa kudeatzeko
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.Services.InkestaService.#ctor(SuperNaaahi.Data.SuperNaaahiDbContext)">
+            <summary>
+            InkestaService konstruktorea
+            </summary>
+            <param name="superNaaahiDbContext"></param>
+        </member>
+        <member name="M:SuperNaaahi.Services.InkestaService.InkestaBete(SuperNaaahi.Models.Inkesta)">
+            <summary>
+            SQL Serverren inkesta gorde
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.InkestaService.KonprobatuKorreoa(System.String)">
+            <summary>
+            Konprobatzea inkesta egin duen emaila
+            </summary>
+            <param name="korreoa"></param>
+            <returns>Email hori daukan inkesta itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.InkestaService.InkestaAldatu(SuperNaaahi.Models.Inkesta)">
+            <summary>
+            Inkestako datuak aldatu
+            </summary>
+            <param name="inkesta"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SuperNaaahi.Services.IPuntuazioaService">
+            <summary>
+            PuntuazioService interfazea
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetPuntuazioak">
+            <summary>
+            Puntuazio guztiak kudeatu
+            </summary>
+            <returns> Puntuazio guztien lista</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHallOfFame">
+            <summary>
+            Puntuazio onenak kudeatu
+            </summary>
+            <returns>Puntuazio onenen lista </returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHallOfShame">
+            <summary>
+            Puntuazio txarrenak kudeatu
+            </summary>
+            <returns>Puntuazio txarrenen lista </returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetBostPuntuazio">
+            <summary>
+            Rest-apitik 5 puntuazio jaso
+            </summary>
+            <returns>5 puntuazio dauden lista </returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHamarPuntuazio">
+            <summary>
+            Rest-apitik 10 puntuazio kudeatu
+            </summary>
+            <returns>10 puntuazio dauden lista</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHamabostPuntuazio">
+            <summary>
+            Rest-apitik 15 puntuazio kudeatu
+            </summary>
+            <returns>15 puntuazio dauden lista </returns>
+        </member>
+        <member name="T:SuperNaaahi.Services.PuntuazioaService">
+            <summary>
+            Puntuazioaren informazioa Rest-apitik kudeatzeko
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetPuntuazioak">
+            <summary>
+            Rest-apitik puntuazioa jaso
+            </summary>
+            <returns> Puntuazioen lista itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetHallOfFame">
+            <summary>
+            Rest-apitik puntuazio onenak jaso
+            </summary>
+            <returns>Puntuazio onenan lista itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetHallOfShame">
+            <summary>
+            Rest-apitik puntuazio txarrenak jaso
+            </summary>
+            <returns>Puntuazio txarrenan lista itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetBostPuntuazio">
+            <summary>
+            Rest-apitik 5 puntuazio jaso
+            </summary>
+            <returns>5 puntuazio dauden lista itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetHamarPuntuazio">
+            <summary>
+            Rest-apitik 10 puntuazio jaso
+            </summary>
+            <returns>10 puntuazio dauden lista itzuli</returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetHamabostPuntuazio">
+            <summary>
+            Rest-apitik 15 puntuazio jaso
+            </summary>
+            <returns>15 puntuazio dauden lista itzuli</returns>
+        </member>
+        <member name="T:SuperNaaahi.ViewComponents.ForoaViewComponent">
+            <summary>
+            Foroa view-rako konponenteen view-a kudeatzeko
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.ViewComponents.ForoaViewComponent.#ctor(SuperNaaahi.Services.IForoaService)">
+            <summary>
+            Foroa ViewConponent-earen konstruktorea
+            </summary>
+            <param name="foroaService"></param>
+        </member>
+        <member name="M:SuperNaaahi.ViewComponents.ForoaViewComponent.InvokeAsync">
+            <summary>
+            Viee-ra bidaltzen dio komentarioen informazioa
+            </summary>
+            <returns> Komentarioaren lista itzuli</returns>
+        </member>
+        <member name="T:SuperNaaahi.ViewComponents.HallOfFameViewComponent">
+            <summary>
+            Putnuazio onenaren view-rako konponenteen view-a kudeatzeko 
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.ViewComponents.HallOfFameViewComponent.#ctor(SuperNaaahi.Services.IPuntuazioaService)">
+            <summary>
+            Puntuazio onenaren ViewConponent-earen konstruktorea
+            </summary>
+            <param name="puntuazioaService"></param>
+        </member>
+        <member name="M:SuperNaaahi.ViewComponents.HallOfFameViewComponent.InvokeAsync">
+            <summary>
+            View-ra bidaltzen dio puntuazio onenen informazioa
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SuperNaaahi.ViewComponents.HallOfShameViewComponent">
+            <summary>
+            Puntuazio txarrenaren view-rako konponenteen viw-a
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.ViewComponents.HallOfShameViewComponent.#ctor(SuperNaaahi.Services.IPuntuazioaService)">
+            <summary>
+            Puntuazio txarrenaren ViewComponet-aren Konstruktorea
+            </summary>
+            <param name="puntuazioaService"></param>
+        </member>
+        <member name="M:SuperNaaahi.ViewComponents.HallOfShameViewComponent.InvokeAsync">
+            <summary>
+             View-ra bidaltzen dio puntuazio txarrenen informazioa
+            </summary>
+            <returns>Puntuazio txarrenak itzuli</returns>
+        </member>
+        <member name="T:SuperNaaahi.ViewComponents.PuntuazioakViewComponent">
+            <summary>
+            Puntuazio guztien  view-rako konponenteen viw-a
+            </summary>
+        </member>
+        <member name="M:SuperNaaahi.ViewComponents.PuntuazioakViewComponent.#ctor(SuperNaaahi.Services.IPuntuazioaService)">
+            <summary>
+            Puntuazio guzien ViewComponent-earen konstruktorea
+            </summary>
+            <param name="puntuazioaService"></param>
+        </member>
+        <member name="M:SuperNaaahi.ViewComponents.PuntuazioakViewComponent.InvokeAsync">
+            <summary>
+            View-ra bidaltzen dio puntuazio guztien informazioa
+            </summary>
+            <returns>Puntuazio guztiak itzuli </returns>
+        </member>
+    </members>
+</doc>

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 namespace Reportea
 
 {
-    /**
-     * Puntuazioa bistaratzeko modeloa 
-     */
+    /// <summary>
+    ///Puntuazioa onenak bistaratzeko modeloa
+    /// </summary>
+    
     public class PuntuazioaHallOfFame
     {
         public int Id { get; set; }

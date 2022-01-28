@@ -15,10 +15,13 @@
 
     <div class="container">
 
-        <div class="col-md-6">
+        
             <img src="~/images/logo_size.jpg" />
+            <div class="logindiv">
+                <partial name="_LoginPartial" />
         </div>
         <header>
+           
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom shadow mb-5">
                 <div class="container">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SuperNaaahi</a>
@@ -42,14 +45,18 @@
                                 <a class="nav-link text-dark " asp-area="" asp-controller="Home" asp-action="Foroa">Foroa</a>
                             </li>
 
-                            <partial name="_LoginPartial" />
-                            <a class="btn btn-borgona text-light" asp-controller="Report" asp-action="Inprimatu">Tiketa</a>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark " asp-controller="Report" asp-action="Inprimatu">Txostena</a>
+                            </li>
                         </ul>
-                        
+
+
 
                     </div>
                 </div>
             </nav>
+
+
         </header>
     </div>
 

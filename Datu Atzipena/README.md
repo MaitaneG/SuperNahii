@@ -9,10 +9,10 @@ Aplikazioa hau web zerbitzu bat da non MongoDB datubasetik informazioa jasotzen 
 ### Software-a 
 
 ##### - Eclipse
-```
+
 Aplikazioa garatzeko erabili dugun software-a da. Gainera *[Eclipsen](https://www.eclipse.org/downloads/)* 
 Spring-eko plugina instalatu dugu
-```
+
 
 ##### - MongoDB Compass:
 

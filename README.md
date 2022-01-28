@@ -1,5 +1,5 @@
  <div style="text-align: center;">
-# SUPERNAAAHI
+SUPERNAAAHI
 </div>
  
 ## 1. Sarrera 📌

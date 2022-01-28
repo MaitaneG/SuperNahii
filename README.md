@@ -22,6 +22,7 @@ Horrez aparte, web orrialde bat garatu behar dugu. Bertan, partiden informazioa 
 
 ### Datu Atzipena
 Bertan REST API-aren proiektua dago. REST API-a MongoDB datubaseatik informazioa irakurtzen du.
+
 *[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Datu%20Atzipena)*
 
 ### Jokua(Multimedia)

@@ -4,7 +4,7 @@
 
 Aplikazioa hau android-eko joku bat da. Android Studiorekin garatuta, java lenguaian.
 
-<br/>
+
 
 ## 2. Baliabideak
 

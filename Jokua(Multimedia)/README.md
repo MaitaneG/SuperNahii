@@ -19,3 +19,7 @@ Web orri hau erabili dugu, jokuaren grafikoak diseinatzeko. *[Pixelart-en](https
 <br/>
 
 ### Datubaseak
+##### - SqLite: 
+*[SqLite](https://www.sqlite.org/index.html)* datubasea erabili dugu datuak lokalean gordetzeko. Hau da, puntuazioak eta jastotako erabiltzaileen informazioa hor gordeko da, eta konexioa dagoenean, puntuazioak igoko dira eta datu basean dagoen informazioa ezabatuko da.
+
+##### - PostgreSQL: 

@@ -23,4 +23,4 @@ Web orri hau erabili dugu, jokuaren grafikoak diseinatzeko. *[Pixelart-en](https
 *[SQLite](https://www.sqlite.org/index.html)* datubasea erabili dugu datuak lokalean gordetzeko. Hau da, puntuazioak eta jastotako erabiltzaileen informazioa hor gordeko da, eta konexioa dagoenean, puntuazioak igoko dira eta datu basean dagoen informazioa ezabatuko da.
 
 ##### - PostgreSQL: 
-Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa dago. Guk garatutako beste aplikazio batekin Postgres-etik erabiltzaileen datuak pasatzen ziren SQLite-ra eta gero puntuazioak *[postgreSQL-ra](https://www.postgresql.org/)* (konexioa dagoenean)
+Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa dago. Guk garatutako beste aplikazio batekin Postgres-etik erabiltzaileen datuak pasatzen ziren SQLite-ra eta gero puntuazioak *[PostgreSQL-ra](https://www.postgresql.org/)* (konexioa dagoenean)

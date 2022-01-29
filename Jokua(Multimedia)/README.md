@@ -24,3 +24,9 @@ Web orri hau erabili dugu, jokuaren grafikoak diseinatzeko. *[Pixelart-en](https
 
 ##### - PostgreSQL: 
 Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa dago. Guk garatutako beste aplikazio batekin Postgres-etik erabiltzaileen datuak pasatzen ziren SQLite-ra eta gero puntuazioak *[PostgreSQL-ra](https://www.postgresql.org/)* (konexioa dagoenean)
+
+## 3. Garapen teknikoa
+
+<br/>
+
+## 4. Iturriak

@@ -18,6 +18,8 @@ Spring-eko plugina instalatu dugu
 
 ##### - MongoDB Compass:
 
+<br/>
+
 ### Datubaseak 
 
 ##### - MongoDB:
@@ -26,3 +28,9 @@ Spring-eko plugina instalatu dugu
 
 ##### - Spring:
 
+<br/>
+
+## 3. Garapen teknikoa
+
+
+## 4. Iturriak

@@ -13,7 +13,7 @@ Aplikazioa hau android-eko joku bat da. Android Studiorekin garatuta, java lengu
 ##### - Android Studio: 
 Aplikazio hau erabiltzen da android-eko aplikazioak garatzeko. *[Android Studio](https://www.sqlite.org/index.html)* gauza asko eskaintzen ditu garatzaileari eta aurrerago azalduko dugu nola garatu dugun.
 
-![Android logo]https://mir-s3-cdn-cf.behance.net/project_modules/disp/a9326d72465217.5be8ae1c0a8a7.png)
+![Android logo](https://mir-s3-cdn-cf.behance.net/project_modules/disp/a9326d72465217.5be8ae1c0a8a7.png)
 
 ##### - Pixelart web orria: 
 Web orri hau erabili dugu, jokuaren grafikoak diseinatzeko. *[Pixelart-en](https://www.pixilart.com/)* pixelez-pixelez margotzen duzu marrazkiak.

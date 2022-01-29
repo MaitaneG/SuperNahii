@@ -4,6 +4,8 @@
 
 Aplikazioa hau web zerbitzu bat da non MongoDB datubasetik informazioa jasotzen du. 
 
+<br/>
+
 ## 2. Baliabideak
 
 ### Software-a 

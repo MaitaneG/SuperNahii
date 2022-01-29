@@ -18,6 +18,8 @@ Aplikazio hau erabiltzen da android-eko aplikazioak garatzeko. *[Android Studio]
 ##### - Pixelart web orria: 
 Web orri hau erabili dugu, jokuaren grafikoak diseinatzeko. *[Pixelart-en](https://www.pixilart.com/)* pixelez-pixelez margotzen duzu marrazkiak.
 
+![Android logo](https://www.pixilart.com/images/public/logo_pixilart_simple_black.png?Ver=1.1)
+
 <br/>
 
 ### Datubaseak

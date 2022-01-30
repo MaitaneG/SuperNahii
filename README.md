@@ -28,7 +28,7 @@ Bertan REST API-aren proiektua dago. REST API-a *[MongoDb](https://www.mongodb.c
 ### Jokua(Multimedia)
 Karpeta honetan jokuaren hiru bertsioen proiektuak ditugu. Ez doa ezer ez.
 
-*[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Datu%20Atzipena)*
+*[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Jokua(Multimedia))*
 
 ### Visual(Interfaze)
 Bertan web orria dago. Diseinua eta REST API-ra konektatu.

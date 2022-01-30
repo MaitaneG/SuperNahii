@@ -1,12 +1,12 @@
 # REST_API_SuperNaaahi
 
-## 1. Zer da
+## 1. Zer da ❓
 
 Aplikazioa hau web zerbitzu bat da non MongoDB datubasetik informazioa jasotzen du. 
 
 <br/>
 
-## 2. Baliabideak
+## 2. Baliabideak 📝
 
 ### Software-a 
 
@@ -59,10 +59,10 @@ Spring-eko plugina instalatu dugu
 
 <br/>
 
-## 3. Garapen teknikoa
+## 3. Garapen teknikoa 💻
 
 <br/>
 
-## 4. Iturriak
+## 4. Iturriak 📌
 - [Openwebinars-eko REST API-ko garapenaren garapena](https://openwebinars.net/cursos/api-rest-spring-boot/)
 - 

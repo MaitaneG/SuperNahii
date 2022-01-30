@@ -28,7 +28,7 @@ Web orri hau erabili dugu, jokuaren grafikoak diseinatzeko. *[Pixelart-en](https
 ##### - SQLite: 
 *[SQLite](https://www.sqlite.org/index.html)* datubasea erabili dugu datuak lokalean gordetzeko. Hau da, puntuazioak eta jastotako erabiltzaileen informazioa hor gordeko da, eta konexioa dagoenean, puntuazioak igoko dira eta datu basean dagoen informazioa ezabatuko da.
 
-![SQLite logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Ftecnologiandroid.com%2Fque-es-sqlite%2F&psig=AOvVaw3fIzZ7vLbf2LcseTsKZ4Y_&ust=1643557124372000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDD-_Ol1_UCFQAAAAAdAAAAABAD)
+![SQLite logo](https://user-images.githubusercontent.com/75113982/151691713-92c56147-1c92-47f5-9540-f6220007296b.png)
 
 ##### - PostgreSQL: 
 Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa dago. Guk garatutako beste aplikazio batekin Postgres-etik erabiltzaileen datuak pasatzen ziren SQLite-ra eta gero puntuazioak *[PostgreSQL-ra](https://www.postgresql.org/)* (konexioa dagoenean)

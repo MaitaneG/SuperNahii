@@ -42,6 +42,6 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 <br/>
 
 ## 4. Iturriak
-- <a href="https://developer.android.com/docs" target="_blank">Android-eko dokumentazioa</a>
+- [Android-eko dokumentazioa](https://developer.android.com/docs)
 
 - [Hey Let's go-ren bideoak](https://www.youtube.com/playlist?list=PLsOU6EOcj51e7YesVnTrEtvJDD016p9oS)

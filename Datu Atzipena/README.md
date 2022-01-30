@@ -43,6 +43,10 @@ Spring-eko plugina instalatu dugu
 
 *[Spring-eko](https://spring.io/)* *[Spring boot](https://spring.io/projects/spring-boot)* erabili dugu web aplikazio bat erabiltzeko.
 
+![Spring logo](https://user-images.githubusercontent.com/75113982/151693228-b6f7f83e-2e3b-4e98-bdda-68ee3626a241.png)
+
+![Spring boot logo](https://user-images.githubusercontent.com/75113982/151693274-c8fc6d55-c44c-43cf-883a-09402ca6d92c.png)
+
 <br/>
 
 ## 3. Garapen teknikoa

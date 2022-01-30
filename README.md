@@ -20,12 +20,12 @@ Horrez aparte, web orrialde bat garatu behar dugu. Bertan, partiden informazioa 
 
 ## 3. Karpeten banaketa 🗂️
 
-### Datu Atzipena
+### Datu Atzipena 🗃️
 Bertan REST API-aren proiektua dago. Proiektuaren izena *REST_API_SuperNaaahi* da. REST API-a *[MongoDb](https://www.mongodb.com)* datubaseatik informazioa irakurtzen du.
 
 *[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Datu%20Atzipena)*
 
-### Jokua(Multimedia)
+### Jokua(Multimedia) 🎮
 Karpeta honetan SuperNaaahi enpresaren jokua dago. Jokua *SuperNaaahiGame* deitzen da.
 
 *[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Jokua(Multimedia))*
@@ -35,7 +35,7 @@ Bertan web orria dago. Web orria *SuperNaaahi* deitzen da.
 
 *[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Visual(Interfaze)/SuperNaaahi)*
 
-### Zerbitzuak
+### Zerbitzuak 🖥️
 Aplikazio honek android-eko SQLite datubasea eta PostgreSQL eta MongoDB datubaseak konektatzen du. Aplikazio hau, *PostgreMongoKonexioak* deitzen da
 
 *[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Zerbitzuak)*

@@ -31,6 +31,8 @@ Spring-eko plugina instalatu dugu
 
 ##### - MongoDB:
 
+*[MongoDB](https://docs.mongodb.com/)* datubasea erabili dugu, REST API-ak irakurtzeko. SQLitetik jasoko du informazio guztia. 
+
 ### Framework-a
 
 ##### - Spring:

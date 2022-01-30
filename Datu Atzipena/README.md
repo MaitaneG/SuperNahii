@@ -37,7 +37,7 @@ Spring-eko plugina instalatu dugu
 
 <br/>
 
-### Framework-a
+### Framework-ak
 
 ##### - Spring:
 
@@ -46,6 +46,16 @@ Spring-eko plugina instalatu dugu
 ![Spring logo](https://user-images.githubusercontent.com/75113982/151693228-b6f7f83e-2e3b-4e98-bdda-68ee3626a241.png)
 
 ![Spring boot logo](https://user-images.githubusercontent.com/75113982/151693274-c8fc6d55-c44c-43cf-883a-09402ca6d92c.png)
+
+<br/>
+
+### API-ak
+
+##### - Swagger:
+
+*[Swagger](https://swagger.io/tools/swaggerhub/?&utm_medium=ppcg&utm_source=aw&utm_term=swagger&utm_content=511173019641&utm_campaign=SEM_SwaggerHub_PR_EMEA_ENG_EXT_Prospecting&awsearchcpc=1&gclid=Cj0KCQiAi9mPBhCJARIsAHchl1yPtZe1HLLCBcUDyq6WZdyXKC-NQKZkq-ax4C4JFgmrO-_ASH8ZtiEaAkKYEALw_wcB&gclsrc=aw.ds)* erabili dugu gure REST API-aren dokumentazioa eta proba kasuak sortzeko.
+
+![Spring boot logo](https://user-images.githubusercontent.com/75113982/151693411-b6408fb1-a16d-427e-a43d-fbdaaef4c18d.png)
 
 <br/>
 

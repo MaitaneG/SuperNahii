@@ -42,3 +42,5 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 <br/>
 
 ## 4. Iturriak
+- [Android-eko dokumentazioa](https://www.postgresql.org/)
+

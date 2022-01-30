@@ -35,6 +35,8 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 
 ![PostgreSQL logo](https://user-images.githubusercontent.com/75113982/151692026-094271f1-ff91-49c6-a708-dbeeb58b9a14.png)
 
+<br/>
+
 ## 3. Garapen teknikoa
 
 <br/>

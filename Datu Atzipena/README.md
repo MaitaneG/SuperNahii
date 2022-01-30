@@ -21,6 +21,10 @@ Spring-eko plugina instalatu dugu
 
 ##### - MongoDB Compass:
 
+*[MongoDB Compass](https://www.mongodb.com/products/compass)* erabili dugu Mongoko datubasea kudetzeko.
+
+![MongoDB Compass logo](https://user-images.githubusercontent.com/75113982/151692742-415e9507-7019-4d1b-b945-fdf5c0a7fc68.png)
+
 <br/>
 
 ### Datubaseak 

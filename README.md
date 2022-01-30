@@ -21,21 +21,21 @@ Horrez aparte, web orrialde bat garatu behar dugu. Bertan, partiden informazioa 
 ## 3. Karpeten banaketa 🗂️
 
 ### Datu Atzipena
-Bertan REST API-aren proiektua dago. REST API-a *[MongoDb](https://www.mongodb.com)* datubaseatik informazioa irakurtzen du.
+Bertan REST API-aren proiektua dago. Proiektuaren izena *REST_API_SuperNaaahi* da. REST API-a *[MongoDb](https://www.mongodb.com)* datubaseatik informazioa irakurtzen du.
 
 *[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Datu%20Atzipena)*
 
 ### Jokua(Multimedia)
-Karpeta honetan jokuaren hiru bertsioen proiektuak ditugu. Ez doa ezer ez.
+Karpeta honetan SuperNaaahi enpresaren jokua dago. Jokua *SuperNaaahiGame* deitzen da.
 
 *[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Jokua(Multimedia))*
 
 ### Visual(Interfaze)
-Bertan web orria dago. Diseinua eta REST API-ra konektatu.
+Bertan web orria dago. Web orria *SuperNaaahi* deitzen da. 
 
-*[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Jokua(Multimedia))*
+*[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Visual(Interfaze)/SuperNaaahi)*
 
 ### Zerbitzuak
-Android-eko sqlite, postgre eta Mongo konektatzen du.
+Aplikazio honek android-eko SQLite datubasea eta PostgreSQL eta MongoDB datubaseak konektatzen du. Aplikazio hau, *PostgreMongoKonexioak* deitzen da
 
-*[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Jokua(Multimedia))*
+*[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Zerbitzuak)*

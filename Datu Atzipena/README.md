@@ -41,7 +41,7 @@ Spring-eko plugina instalatu dugu
 
 ##### - Spring:
 
-*[Spring-eko](https://spring.io/)* *[Spring boot](https://spring.io/projects/spring-boot) erabili dugu web aplikazio bat erabiltzeko.
+*[Spring-eko](https://spring.io/)* *[Spring boot](https://spring.io/projects/spring-boot)* erabili dugu web aplikazio bat erabiltzeko.
 
 <br/>
 

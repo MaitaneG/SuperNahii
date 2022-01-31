@@ -33,7 +33,7 @@ namespace SuperNaaahi.Controllers
         /// Informea inprimtatu
         /// </summary>
         /// <returns>informea pdf</returns>
-        public async Task<IActionResult> Inprimatu()
+        public async Task<IActionResult> InprimatuHallOf()
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
@@ -53,5 +53,29 @@ namespace SuperNaaahi.Controllers
             return File(result.MainStream, "application/pdf");
 
         }
+        public async Task<IActionResult> InprimatuRankingOrokorra()
+        {
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+            string mimtype = "";
+            int extension = 1;
+            var path = $"{_webHostEnvironment.WebRootPath}\\Reports\\SuperNaaahiRankingOrokorReport.rdlc";
+            Dictionary<string, string> parameters = new Dictionary<string, string>();
+           
+
+
+            var rankingOrokor = await _puntuazioaService.GetPuntuazioak();
+
+            var kopurua = await _puntuazioaService.GetPartaideKopurua();
+            parameters.Add("langileKopurua", kopurua.ToString());
+
+            LocalReport localReport = new LocalReport(path);
+            
+            localReport.AddDataSource("DataSetRanking", rankingOrokor);
+            var result = localReport.Execute(RenderType.Pdf, extension, parameters, mimtype);
+            return File(result.MainStream, "application/pdf");
+
+        }
+
     }
 }

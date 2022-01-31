@@ -127,6 +127,21 @@ namespace SuperNaaahi.Services
             return puntuazioaList;
         }
 
+        public async Task <int> GetPartaideKopurua()
+        {
+           int kopurua;
+
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync(rutaTodos + "partehartzaileKopurua/"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    kopurua = JsonConvert.DeserializeObject <int> (apiResponse);
+                }
+            }
+            return kopurua;
+        }
+
 
 
 

@@ -101,7 +101,7 @@
             <param name="webHostEnvironment"></param>
             <param name="puntuazioaService"></param>
         </member>
-        <member name="M:SuperNaaahi.Controllers.ReportController.Inprimatu">
+        <member name="M:SuperNaaahi.Controllers.ReportController.InprimatuHallOf">
             <summary>
             Informea inprimtatu
             </summary>
@@ -327,6 +327,12 @@
             Rest-apitik 15 puntuazio kudeatu
             </summary>
             <returns>15 puntuazio dauden lista </returns>
+        </member>
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetPartaideKopurua">
+            <summary>
+            Rest-apitik partaide guztien kopurua kudeatu
+            </summary>
+            <returns>Partaide kopurua</returns>
         </member>
         <member name="T:SuperNaaahi.Services.PuntuazioaService">
             <summary>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tQiq1LgGRlekxu0m4R9bFwRiP3nNb311k56+ZW6vczlaC7kiSvrM9YQH9lavG0J05X6lFae/m5kojcqJATn6cg==",
+  "dgSpecHash": "D8eyGtQuLSSPREtdEtTkjock6d0QJO1KvBdBsBB5ujNpDuYYEGJu/e5ihXuLIad2qJtF3OR3jpc9ZanqBcELUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
+  "projectFilePath": "C:\\Users\\arambarri.oihana\\Desktop\\VisualOfiziala - copia\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arambarri.oihana\\.nuget\\packages\\aspnetcore.reporting\\2.1.0\\aspnetcore.reporting.2.1.0.nupkg.sha512",
     "C:\\Users\\arambarri.oihana\\.nuget\\packages\\aspnetcore.reportingservices\\2.1.0\\aspnetcore.reportingservices.2.1.0.nupkg.sha512",

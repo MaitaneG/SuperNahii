@@ -43,6 +43,11 @@ namespace SuperNaaahi.Services
         /// </summary>
         /// <returns>15 puntuazio dauden lista </returns>
         Task<List<PuntuazioaModel>> GetHamabostPuntuazio();
+        /// <summary>
+        /// Rest-apitik partaide guztien kopurua kudeatu
+        /// </summary>
+        /// <returns>Partaide kopurua</returns>
+        Task<int> GetPartaideKopurua();
    
 
 

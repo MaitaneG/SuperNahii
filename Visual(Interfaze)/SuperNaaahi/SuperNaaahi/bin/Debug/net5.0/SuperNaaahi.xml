@@ -112,11 +112,6 @@
             SuperNaaahi Microsoft SQL serverrera konektatzeko
             </summary>
         </member>
-        <member name="T:SuperNaaahi.Models.ErrorViewModel">
-            <summary>
-            Errorea bistaratzeko modeloa
-            </summary>
-        </member>
         <member name="T:SuperNaaahi.Models.Foroa">
             <summary>
             Foroa egiteko modeloa

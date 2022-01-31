@@ -528,3 +528,6 @@ C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Super
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\SuperNaaahi.xml
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\SuperNaaahi.csproj.AssemblyReference.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\docfx.json
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\_site\manifest.json
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\_site\search-stopwords.json

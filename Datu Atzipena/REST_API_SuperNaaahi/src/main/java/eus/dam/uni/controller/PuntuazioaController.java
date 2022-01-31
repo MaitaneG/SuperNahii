@@ -76,4 +76,13 @@ public class PuntuazioaController {
 	public List<Puntuazioa> getHamabostPuntuazio() {
 		return puntuazoaDao.findHamabostPuntuazio();
 	}
+	
+	/**
+	 * 
+	 * @return Partehartutako langileen kopurua
+	 */
+	@GetMapping("puntuazioak/partehartzaileKopurua")
+	public int countPartehartzaileak() {
+		return puntuazoaDao.countPartehartzaileak();
+	}
 }

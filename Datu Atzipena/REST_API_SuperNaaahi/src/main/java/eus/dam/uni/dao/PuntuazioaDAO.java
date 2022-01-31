@@ -41,45 +41,73 @@ public class PuntuazioaDAO {
 
 	/**
 	 * 
-	 * @return
+	 * @return Puntuazio guztiak
 	 */
 	public List<Puntuazioa> findAll() {
 
 		return collection.find().sort(new BasicDBObject("puntuazioa", -1)).into(new ArrayList<>());
 	}
 
+	/**
+	 * 
+	 * @return Bost puntuazio
+	 */
 	public List<Puntuazioa> findBostPuntuazio() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
 				.limit(5);
 		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
 		return puntuazioas;
 	}
-	
+
+	/**
+	 * 
+	 * @return Hamar puntuazio
+	 */
 	public List<Puntuazioa> findHamarPuntuazio() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
 				.limit(10);
 		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
 		return puntuazioas;
 	}
-	
+
+	/**
+	 * 
+	 * @return Hamabost puntuazio
+	 */
 	public List<Puntuazioa> findHamabostPuntuazio() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
 				.limit(15);
 		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
 		return puntuazioas;
 	}
-	
+
+	/**
+	 * 
+	 * @return Bost onenak
+	 */
 	public List<Puntuazioa> findHallOfFame() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
-				.limit(2);
+				.limit(5);
 		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
 		return puntuazioas;
 	}
 
+	/**
+	 * 
+	 * @return Bost txarrenak
+	 */
 	public List<Puntuazioa> findHallOfShame() {
 		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", +1))
-				.limit(2);
+				.limit(5);
 		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
 		return puntuazioas;
+	}
+
+	/**
+	 * 
+	 * @return Partehartutako langile kopurua
+	 */
+	public int countPartehartzaileak() {
+		return Math.toIntExact(collection.countDocuments());
 	}
 }

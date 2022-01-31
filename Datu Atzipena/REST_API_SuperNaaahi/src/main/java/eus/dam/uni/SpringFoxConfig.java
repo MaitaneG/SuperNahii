@@ -11,7 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * 
- * Swagger-a konfiguratzeko (momentuz ez da funtzionatzen)
+ * Swagger-a konfiguratzeko
  *
  */
 @Configuration

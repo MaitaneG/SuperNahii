@@ -66,8 +66,8 @@ namespace SuperNaaahi.Controllers
 
             var rankingOrokor = await _puntuazioaService.GetPuntuazioak();
 
-            var kopurua = await _puntuazioaService.GetPartaideKopurua();
-            parameters.Add("langileKopurua", kopurua.ToString());
+            var kopurua = await _puntuazioaService.GetPartidaKopurua();
+            parameters.Add("partidaKopurua", kopurua.ToString());
 
             LocalReport localReport = new LocalReport(path);
             

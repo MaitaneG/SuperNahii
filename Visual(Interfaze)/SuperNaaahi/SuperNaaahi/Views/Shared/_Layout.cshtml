@@ -10,18 +10,21 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="icon" href="/images/logo_size.jpg">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css" />
+
+
 </head>
 <body>
 
     <div class="container">
 
-        
-            <img src="~/images/logo_size.jpg" />
-            <div class="logindiv">
-                <partial name="_LoginPartial" />
+
+        <img src="~/images/logo_size.jpg" />
+        <div class="logindiv">
+            <partial name="_LoginPartial" />
         </div>
         <header>
-           
+
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom shadow mb-5">
                 <div class="container">
                     <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SuperNaaahi</a>
@@ -45,16 +48,15 @@
                                 <a class="nav-link text-dark " asp-area="" asp-controller="Home" asp-action="Foroa">Foroa</a>
                             </li>
 
-                            <li class="nav-item">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link text-dark dropdown-toggle"data-toggle="dropdown" >Txostenak</a>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item " asp-controller="Report" asp-action="InprimatuHallOf">HallOfFame / HallOfShame</a>
-                                            <a class="dropdown-item"  asp-controller="Report" asp-action="InprimatuRankingOrokorra">Ranking Orokorra</a>
-                                    
-                                        </div>
-                                    </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Txostenak</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" asp-controller="Report" asp-action="InprimatuHallOf">HallOfFame / HallOfShame</a>
+                                    <a class="dropdown-item" asp-controller="Report" asp-action="InprimatuRankingOrokorra">Ranking Orokorra</a>
+
+                                </div>
                             </li>
+
                         </ul>
 
                     </div>
@@ -64,7 +66,19 @@
 
         </header>
     </div>
-
+    <!--
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <b>Partidak</b>
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="nav-link dropdown" asp-area="" asp-controller="Home" asp-action="Partidak">Partidak</a>
+             <a class="nav-link dropdown" asp-area="" asp-controller="Home" asp-action="HallOfFame">HallOfFame</a>
+             <a class="nav-link dropdown" asp-area="" asp-controller="Home" asp-action="HallOfShame">HallOfShame</a>
+         </div>
+     </li>
+    -->
+    
 
 
     <div class="container">
@@ -81,6 +95,15 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tabla').DataTable();
+        });
+    </script>
+
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

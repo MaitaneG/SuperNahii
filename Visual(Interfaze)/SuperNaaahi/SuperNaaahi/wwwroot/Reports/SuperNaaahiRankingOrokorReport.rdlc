@@ -376,15 +376,11 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Partaide kopurua: </Value>
+                    <Value>Partida Kopurua: </Value>
                     <Style />
                   </TextRun>
                   <TextRun>
-                    <Value>=Parameters!langileKopurua.Value</Value>
-                    <Style />
-                  </TextRun>
-                  <TextRun>
-                    <Value xml:space="preserve"> </Value>
+                    <Value>=Parameters!partidaKopurua.Value</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
@@ -408,10 +404,10 @@
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>5.79167in</Height>
+        <Height>4.02084in</Height>
         <Style />
       </Body>
-      <Width>7.07292in</Width>
+      <Width>6.83334in</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -425,7 +421,7 @@
     </ReportSection>
   </ReportSections>
   <ReportParameters>
-    <ReportParameter Name="langileKopurua">
+    <ReportParameter Name="partidaKopurua">
       <DataType>Integer</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
@@ -438,7 +434,7 @@
         <CellDefinition>
           <ColumnIndex>0</ColumnIndex>
           <RowIndex>0</RowIndex>
-          <ParameterName>langileKopurua</ParameterName>
+          <ParameterName>partidaKopurua</ParameterName>
         </CellDefinition>
       </CellDefinitions>
     </GridLayoutDefinition>

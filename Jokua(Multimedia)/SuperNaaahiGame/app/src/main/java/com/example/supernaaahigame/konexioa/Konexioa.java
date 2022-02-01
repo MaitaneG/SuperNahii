@@ -20,8 +20,8 @@ import java.sql.Connection;
 import java.util.ArrayList;
 
 public class Konexioa extends Thread {
-    //    private final String ip = "192.168.65.187";
-    private final String ip = "192.168.65.7";
+        private final String ip = "192.168.65.187";
+//    private final String ip = "192.168.65.7";
     private final int puerto = 9000;
     private boolean konektatuta;
     private ArrayList<User> users;

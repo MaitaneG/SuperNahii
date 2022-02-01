@@ -30,7 +30,7 @@ public class JokuaActivity extends AppCompatActivity {
 
         Konexioa kon=new Konexioa();
         kon.bidaliMezua(new Puntuazioa(Konexioa.actualUser.getId(),Konexioa.actualUser.getName(),240, LocalDateTime.now()));
-        kon.bidaliMezua(new Puntuazioa(Konexioa.actualUser.getId(),Konexioa.actualUser.getName(),280, LocalDateTime.now()));
+        kon.bidaliMezua(new Puntuazioa(Konexioa.actualUser.getId(),Konexioa.actualUser.getName(),20, LocalDateTime.now()));
         setContentView(jokuaView);
     }
 

@@ -72,59 +72,25 @@ namespace SuperNaaahi.Services
             }
             return puntuazioaList;
         }
+        
+     
         /// <summary>
-        /// Rest-apitik 5 puntuazio jaso
+        /// Rest-apitik partida kopurua jaso 
         /// </summary>
-        /// <returns>5 puntuazio dauden lista itzuli</returns>
-        public async Task<List<PuntuazioaModel>> GetBostPuntuazio()
+        /// <returns>Partida kopurua</returns>
+        public async Task <int> GetPartidaKopurua()
         {
-            List<PuntuazioaModel> puntuazioaList = new List<PuntuazioaModel>();
+           int kopurua;
 
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync(rutaTodos + "bostPuntuazio/"))
+                using (var response = await httpClient.GetAsync(rutaTodos + "partidaKopurua/"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
-                    puntuazioaList = JsonConvert.DeserializeObject<List<PuntuazioaModel>>(apiResponse);
+                    kopurua = JsonConvert.DeserializeObject <int> (apiResponse);
                 }
             }
-            return puntuazioaList;
-        }
-        /// <summary>
-        /// Rest-apitik 10 puntuazio jaso
-        /// </summary>
-        /// <returns>10 puntuazio dauden lista itzuli</returns>
-        public async Task<List<PuntuazioaModel>> GetHamarPuntuazio()
-        {
-            List<PuntuazioaModel> puntuazioaList = new List<PuntuazioaModel>();
-
-            using (var httpClient = new HttpClient())
-            {
-                using (var response = await httpClient.GetAsync(rutaTodos + "hamarPuntuazio/"))
-                {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    puntuazioaList = JsonConvert.DeserializeObject<List<PuntuazioaModel>>(apiResponse);
-                }
-            }
-            return puntuazioaList;
-        }
-        /// <summary>
-        /// Rest-apitik 15 puntuazio jaso
-        /// </summary>
-        /// <returns>15 puntuazio dauden lista itzuli</returns>
-        public async Task<List<PuntuazioaModel>> GetHamabostPuntuazio()
-        {
-            List<PuntuazioaModel> puntuazioaList = new List<PuntuazioaModel>();
-
-            using (var httpClient = new HttpClient())
-            {
-                using (var response = await httpClient.GetAsync(rutaTodos + "hamabostPuntuazio/"))
-                {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    puntuazioaList = JsonConvert.DeserializeObject<List<PuntuazioaModel>>(apiResponse);
-                }
-            }
-            return puntuazioaList;
+            return kopurua;
         }
 
 

@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ABB264A9-38A1-4654-B76D-3019E1DA1AA7}</ProjectGuid>
+    <ProjectGuid>{C9439C5C-388D-423D-B7C5-B8D027049B5F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Reportea</RootNamespace>
     <AssemblyName>Reportea</AssemblyName>
@@ -54,8 +54,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PuntuazioaHallOfShame.cs" />
-    <Compile Include="PuntuazioaHallOfFame.cs" />
+    <Compile Include="PuntuazioaModel.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,10 +64,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Content Include="SuperNaaahiReport.rdlc">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="Properties\DataSources\PuntuazioaHallOfFame.datasource" />
+    <EmbeddedResource Include="SuperNaaahiRankingOrokorReport.rdlc" />
+    <EmbeddedResource Include="SuperNaaahiReport.rdlc" />
+    <None Include="Properties\DataSources\SuperNaaahi.Models.PuntuazioaModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,9 +80,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

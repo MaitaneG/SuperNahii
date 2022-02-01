@@ -6,10 +6,10 @@
         <Source>Embedded</Source>
         <Value>logo_size</Value>
         <Sizing>FitProportional</Sizing>
-        <Top>0.76412cm</Top>
-        <Left>3.38349cm</Left>
-        <Height>1.87042cm</Height>
-        <Width>2.32021cm</Width>
+        <Top>1.16099cm</Top>
+        <Left>2.10398cm</Left>
+        <Height>3.35209cm</Height>
+        <Width>3.405cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -26,7 +26,7 @@
                 <Value>SUPERNAAAHI</Value>
                 <Style>
                   <FontStyle>Normal</FontStyle>
-                  <FontSize>16pt</FontSize>
+                  <FontSize>18pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <TextDecoration>Underline</TextDecoration>
                 </Style>
@@ -42,7 +42,7 @@
                 <Value>LEHIAKETA</Value>
                 <Style>
                   <FontStyle>Normal</FontStyle>
-                  <FontSize>16pt</FontSize>
+                  <FontSize>18pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                   <TextDecoration>Underline</TextDecoration>
                 </Style>
@@ -54,10 +54,10 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox2</rd:DefaultName>
-        <Top>1.16099cm</Top>
-        <Left>7.21995cm</Left>
-        <Height>1.47354cm</Height>
-        <Width>4.66958cm</Width>
+        <Top>1.66369cm</Top>
+        <Left>6.69079cm</Left>
+        <Height>1.8175cm</Height>
+        <Width>5.78021cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -90,8 +90,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox3</rd:DefaultName>
-        <Top>4.09787cm</Top>
-        <Left>6.84954cm</Left>
+        <Top>4.60057cm</Top>
+        <Left>6.69079cm</Left>
         <Height>0.78521cm</Height>
         <Width>4.06104cm</Width>
         <ZIndex>2</ZIndex>
@@ -125,8 +125,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox3</rd:DefaultName>
-        <Top>7.53593cm</Top>
-        <Left>6.84954cm</Left>
+        <Top>8.35613cm</Top>
+        <Left>6.21454cm</Left>
         <Height>0.78521cm</Height>
         <Width>4.53729cm</Width>
         <ZIndex>3</ZIndex>
@@ -364,8 +364,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetHallOfFame</DataSetName>
-        <Top>5.50016cm</Top>
-        <Left>5.18266cm</Left>
+        <Top>6.00286cm</Top>
+        <Left>5.02391cm</Left>
         <Height>1.2cm</Height>
         <Width>7.5cm</Width>
         <ZIndex>4</ZIndex>
@@ -599,8 +599,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetHallOfShame</DataSetName>
-        <Top>9.46891cm</Top>
-        <Left>5.50016cm</Left>
+        <Top>9.97161cm</Top>
+        <Left>5.02391cm</Left>
         <Height>1.2cm</Height>
         <Width>7.5cm</Width>
         <ZIndex>5</ZIndex>
@@ -614,7 +614,7 @@
     <Height>5.72917in</Height>
     <Style />
   </Body>
-  <Width>7.5625in</Width>
+  <Width>6.16667in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>

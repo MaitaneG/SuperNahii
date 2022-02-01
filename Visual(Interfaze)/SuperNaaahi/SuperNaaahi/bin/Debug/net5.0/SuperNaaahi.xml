@@ -24,18 +24,11 @@
             </summary>
             <returns> Index View-a itzuli</returns>
         </member>
-        <member name="M:SuperNaaahi.Controllers.HomeController.General">
+        <member name="M:SuperNaaahi.Controllers.HomeController.General(System.String)">
             <summary>
             General bista (Puntuazio guztiak) bistaratzeko
             </summary>
             <returns>General View-a (Ranking orokorra) itzuli </returns>
-        </member>
-        <member name="M:SuperNaaahi.Controllers.HomeController.AukeratuPuntuazioa(System.String)">
-            <summary>
-            Select-ean aukeratzen duzun puntuazio kantitatea bistaratzeko
-            </summary>
-            <param name="puntua"></param>
-            <returns>View-a</returns>
         </member>
         <member name="M:SuperNaaahi.Controllers.HomeController.HallOfFame">
             <summary>
@@ -101,7 +94,7 @@
             <param name="webHostEnvironment"></param>
             <param name="puntuazioaService"></param>
         </member>
-        <member name="M:SuperNaaahi.Controllers.ReportController.Inprimatu">
+        <member name="M:SuperNaaahi.Controllers.ReportController.InprimatuHallOf">
             <summary>
             Informea inprimtatu
             </summary>
@@ -110,11 +103,6 @@
         <member name="T:SuperNaaahi.Data.SuperNaaahiDbContext">
             <summary>
             SuperNaaahi Microsoft SQL serverrera konektatzeko
-            </summary>
-        </member>
-        <member name="T:SuperNaaahi.Models.ErrorViewModel">
-            <summary>
-            Errorea bistaratzeko modeloa
             </summary>
         </member>
         <member name="T:SuperNaaahi.Models.Foroa">
@@ -315,23 +303,11 @@
             </summary>
             <returns>Puntuazio txarrenen lista </returns>
         </member>
-        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetBostPuntuazio">
+        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetPartidaKopurua">
             <summary>
-            Rest-apitik 5 puntuazio jaso
+            Rest-apitik partaide guztien kopurua kudeatu
             </summary>
-            <returns>5 puntuazio dauden lista </returns>
-        </member>
-        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHamarPuntuazio">
-            <summary>
-            Rest-apitik 10 puntuazio kudeatu
-            </summary>
-            <returns>10 puntuazio dauden lista</returns>
-        </member>
-        <member name="M:SuperNaaahi.Services.IPuntuazioaService.GetHamabostPuntuazio">
-            <summary>
-            Rest-apitik 15 puntuazio kudeatu
-            </summary>
-            <returns>15 puntuazio dauden lista </returns>
+            <returns>Partaide kopurua</returns>
         </member>
         <member name="T:SuperNaaahi.Services.PuntuazioaService">
             <summary>
@@ -356,23 +332,11 @@
             </summary>
             <returns>Puntuazio txarrenan lista itzuli</returns>
         </member>
-        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetBostPuntuazio">
+        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetPartidaKopurua">
             <summary>
-            Rest-apitik 5 puntuazio jaso
+            Rest-apitik partida kopurua jaso 
             </summary>
-            <returns>5 puntuazio dauden lista itzuli</returns>
-        </member>
-        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetHamarPuntuazio">
-            <summary>
-            Rest-apitik 10 puntuazio jaso
-            </summary>
-            <returns>10 puntuazio dauden lista itzuli</returns>
-        </member>
-        <member name="M:SuperNaaahi.Services.PuntuazioaService.GetHamabostPuntuazio">
-            <summary>
-            Rest-apitik 15 puntuazio jaso
-            </summary>
-            <returns>15 puntuazio dauden lista itzuli</returns>
+            <returns>Partida kopurua</returns>
         </member>
         <member name="T:SuperNaaahi.ViewComponents.ForoaViewComponent">
             <summary>

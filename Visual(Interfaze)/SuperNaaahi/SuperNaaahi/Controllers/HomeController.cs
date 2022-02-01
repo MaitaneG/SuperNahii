@@ -52,36 +52,13 @@ namespace SuperNaaahi.Controllers
         /// General bista (Puntuazio guztiak) bistaratzeko
         /// </summary>
         /// <returns>General View-a (Ranking orokorra) itzuli </returns>
-        public IActionResult General()
+        public IActionResult General(string puntua)
         {
             return View();
         }
-        /// <summary>
-        /// Select-ean aukeratzen duzun puntuazio kantitatea bistaratzeko
-        /// </summary>
-        /// <param name="puntua"></param>
-        /// <returns>View-a</returns>
-        public IActionResult AukeratuPuntuazioa(string puntua)
-        {
-            if (puntua.Equals("5"))
-            {
-                _puntuazioaService.GetBostPuntuazio();
-            }
-            else if (puntua.Equals("10"))
-            {
-                _puntuazioaService.GetHamarPuntuazio();
-
-            }
-            else if (puntua.Equals("15"))
-            {
-                _puntuazioaService.GetHamabostPuntuazio();
-            }else if (puntua.Equals("Guztiak"))
-            {
-                _puntuazioaService.GetPuntuazioak();
-            }
-            return View();
-        }
-
+  
+      
+      
         /// <summary>
         /// HallOfFame bista (Puntuazio onenak) bistaratzeko
         /// </summary>

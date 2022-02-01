@@ -3,11 +3,13 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>aspnet-SuperNaaahi-25BB136B-44CC-4115-9F54-68A1CC91FF3D</UserSecretsId>
+    <Nullable>warnings</Nullable>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\SuperNaaahi.xml</DocumentationFile>
+    <DocumentationFile>C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\SuperNaaahi.xml</DocumentationFile>
     <PlatformTarget>ARM64</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
   </PropertyGroup>
 
   <ItemGroup>

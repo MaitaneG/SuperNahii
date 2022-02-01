@@ -1,6 +1,7 @@
 package eus.dam.uni.dao;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -18,7 +19,6 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.model.Filters;
 
 /**
  * 
@@ -50,39 +50,6 @@ public class PuntuazioaDAO {
 
 	/**
 	 * 
-	 * @return Bost puntuazio
-	 */
-	public List<Puntuazioa> findBostPuntuazio() {
-		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
-				.limit(5);
-		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
-		return puntuazioas;
-	}
-
-	/**
-	 * 
-	 * @return Hamar puntuazio
-	 */
-	public List<Puntuazioa> findHamarPuntuazio() {
-		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
-				.limit(10);
-		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
-		return puntuazioas;
-	}
-
-	/**
-	 * 
-	 * @return Hamabost puntuazio
-	 */
-	public List<Puntuazioa> findHamabostPuntuazio() {
-		FindIterable<Puntuazioa> puntuazioakFindIterable = collection.find().sort(new BasicDBObject("puntuazioa", -1))
-				.limit(15);
-		ArrayList<Puntuazioa> puntuazioas = Lists.newArrayList(puntuazioakFindIterable);
-		return puntuazioas;
-	}
-
-	/**
-	 * 
 	 * @return Bost onenak
 	 */
 	public List<Puntuazioa> findHallOfFame() {
@@ -107,7 +74,7 @@ public class PuntuazioaDAO {
 	 * 
 	 * @return Partehartutako langile kopurua
 	 */
-	public int countPartehartzaileak() {
+	public int countPartidak() { 
 		return Math.toIntExact(collection.countDocuments());
 	}
 }

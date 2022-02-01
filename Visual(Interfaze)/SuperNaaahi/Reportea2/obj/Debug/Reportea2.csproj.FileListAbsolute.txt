@@ -10,3 +10,15 @@ C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Repor
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\Reportea2.exe
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\Reportea2.pdb
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\bin\Debug\SuperNaaahiOrokorra.rdlc
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\bin\Debug\SuperNaaahiOrokorra.rdlc
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\bin\Debug\Reportea2.exe.config
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\bin\Debug\Reportea2.exe
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\bin\Debug\Reportea2.pdb
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\Reportea2.csproj.AssemblyReference.cache
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\Reportea2.Properties.Resources.resources
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\Reportea2.csproj.GenerateResource.cache
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\RdlCompile.cache
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\RdlCompile.compiled
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\Reportea2.csproj.CoreCompileInputs.cache
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\Reportea2.exe
+C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Reportea2\obj\Debug\Reportea2.pdb

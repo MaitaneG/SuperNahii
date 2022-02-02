@@ -2,22 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-<<<<<<< HEAD
-    <UserSecretsId>aspnet-SuperNaaahi-25BB136B-44CC-4115-9F54-68A1CC91FF3D</UserSecretsId>
-    <Nullable>warnings</Nullable>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Users\gallastegui.maitane\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\SuperNaaahi.xml</DocumentationFile>
-    <PlatformTarget>ARM64</PlatformTarget>
-    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-=======
     <UserSecretsId>aspnet-SuperNaaahi-5F18D762-EC92-478F-8752-DBF99AD067C8</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>C:\Users\arambarri.oihana\Desktop\VisualOfiziala - copia\SuperNaaahi\SuperNaaahi\SuperNaaahi.xml</DocumentationFile>
->>>>>>> 17aa605cc0c2c1bf795b93e8138478754b27dd40
   </PropertyGroup>
 
   <ItemGroup>

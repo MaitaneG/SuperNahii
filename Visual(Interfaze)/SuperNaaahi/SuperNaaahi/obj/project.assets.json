@@ -6547,23 +6547,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Users\\arambarri.oihana\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gallastegui.maitane\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
+      "projectUniqueName": "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
       "projectName": "SuperNaaahi",
-      "projectPath": "C:\\Users\\gallastegui.maitane\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gallastegui.maitane\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi\\obj\\",
+      "projectPath": "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi\\SuperNaaahi.csproj",
+      "packagesPath": "C:\\Users\\arambarri.oihana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\arambarri.oihana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

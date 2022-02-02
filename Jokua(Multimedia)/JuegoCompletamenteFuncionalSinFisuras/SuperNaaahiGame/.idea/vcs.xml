@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Datu Atzipenak/Curso-Spring-core-5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Datu Atzipenak/Curso_hibernate_ejemplos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Datu Atzipenak/Datu-atzipena2021_Maitane" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Datu Atzipenak/orm-adibideak" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Interfaze/ERRONKA3-RESTAPI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Interfaze/InterfazeenGarapena2021_Maitane" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Multimedia/Multimedia_programazioa2021_Maitane" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ShareArt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SuperNahii" vcs="Git" />
   </component>
 </project>

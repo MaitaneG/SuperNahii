@@ -23,7 +23,37 @@ public class Konexioa extends Thread {
     private ArrayList<User> users;
     public static User actualUser;
 
-    public boolean bidaliMezua(Puntuazioa puntuazioa) {
+
+    public boolean konexioaKonprobatu(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    // Socket-a sortu
+                    Socket sk = new Socket(ip, puerto);
+                    BufferedReader entrada = new BufferedReader(new
+                            InputStreamReader(sk.getInputStream()));
+
+                    PrintWriter salida = new PrintWriter(
+                            new OutputStreamWriter(sk.getOutputStream()), true);
+
+                    salida.println("Hor zaude?");
+
+                    if(entrada.readLine() != null){
+                        konektatuta = true;
+                    }
+
+                }catch (Exception ex) {
+                    ex.printStackTrace();
+                    System.err.println("Konexioa gaizki egin da");
+                    konektatuta = false;
+                }
+            }
+        });
+        return konektatuta;
+    }
+
+    public boolean bidaliPuntuzioak(Puntuazioa puntuazioa) {
         new Thread(
                 new Runnable() {
                     @Override
@@ -38,7 +68,7 @@ public class Konexioa extends Thread {
 
                             salida.println(puntuazioa.toString());
                             salida.println("bukatu");
-                            konektatuta = true;
+
                             sk.close();
                         } catch (Exception ex) {
                             ex.printStackTrace();
@@ -66,7 +96,7 @@ public class Konexioa extends Thread {
                                     new OutputStreamWriter(sk.getOutputStream()), true);
                             salida.println("Erabiltzaileak bidali");
 
-                            String borrau="DELETE FROM Txapelketa";
+                            String borrau="DELETE FROM Erabiltzaileak";
                             Login.db.execSQL(borrau);
                             String jaso="";
                             while ((jaso=entrada.readLine()) != null) {
@@ -75,7 +105,7 @@ public class Konexioa extends Thread {
                                 for (int i = 0; i < erregistroak.length; i++) {
                                     String[] parts = erregistroak[i].split(",");
                                     users.add(new User(Integer.parseInt((parts[0])),(parts[1]),(parts[2]), parts[3]));
-                                    String insert_query = "INSERT INTO Txapelketa(id,izena,email,password) VALUES ("+users.get(i).getId()+",'"+ users.get(i).getName() + "', '" + users.get(i).getEmail() +  "', '" + users.get(i).getPass() + "')";
+                                    String insert_query = "INSERT INTO Erabiltzaileak(id,izena,email,password) VALUES ("+users.get(i).getId()+",'"+ users.get(i).getName() + "', '" + users.get(i).getEmail() +  "', '" + users.get(i).getPass() + "')";
                                     Login.db.execSQL(insert_query);
 
                                 }
@@ -95,7 +125,7 @@ public class Konexioa extends Thread {
 
     public boolean login(User u) {
 
-        Cursor c = Login.db.rawQuery("select * from Txapelketa where email='" + u.getEmail() + "' and password='" + u.getPass() + "';", null);
+        Cursor c = Login.db.rawQuery("select * from Erabiltzaileak where email='" + u.getEmail() + "' and password='" + u.getPass() + "';", null);
         while(c.moveToNext()){
             User a=new User(c.getInt(0),c.getString(1),c.getString(2),c.getString(3));
             actualUser=a;

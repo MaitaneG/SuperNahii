@@ -2,6 +2,7 @@ package com.example.supernaaahigame.view;
 
 import android.content.Intent;
 import android.graphics.Point;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -18,6 +19,8 @@ import com.example.supernaaahigame.R;
 public class MainActivity extends AppCompatActivity {
 
     public static float pointX,pointY = 0;
+    public static MediaPlayer hasierakoMusika;
+    public static boolean piztuta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,16 @@ public class MainActivity extends AppCompatActivity {
         hasiJokua.startAnimation(anB);
 
         findViewById(R.id.imageButtonHasiJokua).setOnClickListener(this::jokatu);
+
+        // Abestia zehazten da
+        hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
+
+        // Musika ez badago jarrita, abestia hasten da
+        if (!hasierakoMusika.isPlaying()) {
+            hasierakoMusika.start();
+        }
+
+        piztuta = true;
 
     }
 

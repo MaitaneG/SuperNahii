@@ -1,11 +1,14 @@
 package com.example.supernaaahigame.view;
 
 import android.graphics.Point;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+
+import com.example.supernaaahigame.R;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -23,6 +26,11 @@ public class GameActivity extends AppCompatActivity {
         getWindowManager().getDefaultDisplay().getSize(point);
 
         gameView = new GameView(this, point.x, point.y);
+
+        if(!MainActivity.piztuta){
+            MainActivity.hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
+            MainActivity.hasierakoMusika.start();
+        }
 
         setContentView(gameView);
     }

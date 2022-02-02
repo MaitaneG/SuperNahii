@@ -51,11 +51,15 @@ public class Login extends AppCompatActivity {
 
 
         db = openOrCreateDatabase("Txapelketa", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS Txapelketa(id INTEGER,izena VARCHAR,email VARCHAR, password VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Erabiltzaileak(id INTEGER PRIMARY KEY AUTOINCREMENT,izena VARCHAR,email VARCHAR, password VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Puntuazioak(id INTEGER PRIMARY KEY AUTOINCREMENT,jokalaria VARCHAR,puntuak int, data DATETIME);");
         hasieratu();
 
         konexioa = new Konexioa();
-        konexioa.erabiltzaileakLortu();
+        if(konexioa.konexioaKonprobatu()){
+            konexioa.erabiltzaileakLortu();
+        }
+
 
     }
 

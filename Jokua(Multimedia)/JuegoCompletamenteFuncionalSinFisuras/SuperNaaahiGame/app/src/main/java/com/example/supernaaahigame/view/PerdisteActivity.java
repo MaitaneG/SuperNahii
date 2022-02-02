@@ -33,6 +33,8 @@ public class PerdisteActivity extends AppCompatActivity {
         atzeraBotoia.setOnClickListener(this::atzeraJoan);
         pairatuBotoia.setOnClickListener(this::berriroJolastu);
 
+        MainActivity.hasierakoMusika.stop();
+        MainActivity.piztuta=false;
 
         puntuazioaLabel.setText("Puntuak: "+String.valueOf(GameActivity.puntuak));
     }

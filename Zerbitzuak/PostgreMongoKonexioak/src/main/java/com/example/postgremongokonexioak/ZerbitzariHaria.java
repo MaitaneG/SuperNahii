@@ -69,6 +69,10 @@ public class ZerbitzariHaria extends Thread {
 					postgresraBidaliPuntuazioak(puntuazioak);
 					mongoraBidaliPuntuazioak(puntuazioak);
 				}
+				
+				if(jasotakoTestua.equals("Hor zaude?")) {
+					irteeraFluxua.println("Bai");
+				}
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

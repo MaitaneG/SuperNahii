@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Datu Atzipenak/Curso-Spring-core-5" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Datu Atzipenak/Curso_hibernate_ejemplos" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Datu Atzipenak/Datu-atzipena2021_Maitane" vcs="Git" />

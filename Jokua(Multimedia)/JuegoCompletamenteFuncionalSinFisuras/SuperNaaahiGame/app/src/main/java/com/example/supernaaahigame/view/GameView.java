@@ -156,7 +156,7 @@ public class GameView extends SurfaceView implements Runnable {
         background2.x -= backgroundSpeed;
 
         if (tic % backgroundSpeedRatio == 0) {
-            backgroundSpeed=+100;
+            backgroundSpeed = +100;
             rodolfoSaltoKendu();
             rodolfoSadKendu();
         }
@@ -218,15 +218,10 @@ public class GameView extends SurfaceView implements Runnable {
 
 
     private void gameOver() {
-        try {
-            Thread.sleep(500);
 
-            activity.startActivity(new Intent(activity, PerdisteActivity.class));
-            activity.finish();
+        activity.startActivity(new Intent(activity, PerdisteActivity.class));
+        activity.finish();
 
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     private void sleep() {

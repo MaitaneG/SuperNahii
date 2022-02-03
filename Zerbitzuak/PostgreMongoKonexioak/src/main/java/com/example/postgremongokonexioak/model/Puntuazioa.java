@@ -29,6 +29,11 @@ public class Puntuazioa {
 		this.data = LocalDateTime.parse(data);
 	}
 
+	public Puntuazioa(int jokalariId, String jokalari, int puntuazioa) {
+		this.jokalari = jokalari;
+		this.jokalariId=jokalariId;
+		this.puntuazioa = puntuazioa;
+	}
 	
 	public String getJokalari() {
 		return jokalari;

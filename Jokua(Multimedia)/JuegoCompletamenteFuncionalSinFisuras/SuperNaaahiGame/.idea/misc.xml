@@ -3,26 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/gallastegui.maitane/Desktop/SuperNahii/Jokua(Multimedia)/JuegoCompletamenteFuncionalSinFisuras/SuperNaaahiGame/app/src/main/res/layout/activity_login.xml" value="0.28306159420289856" />
-        <entry key="..\:/Users/garate.hegoi/Desktop/JuegoBien31-01-2022/AdarbakarZikintsua/app/src/main/res/layout/activity_gameover.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/garate.hegoi/Desktop/JuegoBien31-01-2022/AdarbakarZikintsua/app/src/main/res/layout/activity_login.xml" value="0.18802083333333333" />
-        <entry key="..\:/Users/garate.hegoi/Desktop/JuegoBien31-01-2022/AdarbakarZikintsua/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/mantecon.julen/Documents/AndroidStudio/AdarbakarZikintsua/app/src/main/res/layout/activity_juegasion.xml" value="0.2015625" />
-        <entry key="..\:/Users/mantecon.julen/Documents/AndroidStudio/AdarbakarZikintsua/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
-        <entry key="..\:/Users/mantecon.julen/Documents/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/drawable/pause.xml" value="0.3828125" />
-        <entry key="..\:/Users/mantecon.julen/Documents/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/mantecon.julen/Documents/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/layout/points_form.xml" value="0.33" />
-        <entry key="..\:/Users/mantecon.julen/Documents/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
-        <entry key="..\:/Users/mantecon.julen/Documents/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
-        <entry key="..\:/Users/moreno.manuel/Desktop/JuegoBien31-01-2022/AdarbakarZikintsua/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/moreno.manuel/Desktop/JuegoBien31-01-2022/AdarbakarZikintsua/app/src/main/res/layout/points_form.xml" value="0.3509963768115942" />
-        <entry key="..\:/Users/moreno.manuel/Downloads/AdarbakarZikintsua/AdarbakarZikintsua/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/peralta.laura/Documents/GitHub/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/layout/activity_login.xml" value="0.31979166666666664" />
-        <entry key="..\:/Users/peralta.laura/Documents/GitHub/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/layout/activity_main.xml" value="0.31979166666666664" />
-        <entry key="..\:/Users/peralta.laura/Documents/GitHub/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/layout/points_form.xml" value="0.403125" />
-        <entry key="..\:/Users/uribe.markel/Documents/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/uribe.markel/Documents/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/uribe/OneDrive/Documentos/GIt/adarbakar-zikintsuak/AdarbakarZikintsua/app/src/main/res/layout/points_form.xml" value="0.2695035460992908" />
+        <entry key="..\:/Users/gallastegui.maitane/Desktop/SuperNaaahiGame/app/src/main/res/layout/activity_perdiste.xml" value="0.22" />
+        <entry key="..\:/Users/gallastegui.maitane/Desktop/SuperNahii/Jokua(Multimedia)/JuegoCompletamenteFuncionalSinFisuras/SuperNaaahiGame/app/src/main/res/layout/activity_perdiste.xml" value="0.5" />
+        <entry key="..\:/Users/gallastegui.maitane/Desktop/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/gallastegui.maitane/Desktop/app/src/main/res/layout/activity_perdiste.xml" value="0.16" />
       </map>
     </option>
   </component>

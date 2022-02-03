@@ -10,12 +10,18 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.supernaaahigame.R;
+import com.example.supernaaahigame.konexioa.Konexioa;
+import com.example.supernaaahigame.model.Puntuazioa;
+import com.example.supernaaahigame.model.User;
+
+import java.time.LocalDateTime;
 
 
 public class PerdisteActivity extends AppCompatActivity {
     private ImageButton atzeraBotoia;
     private ImageButton pairatuBotoia;
     private TextView puntuazioaLabel;
+    private Konexioa konexioa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +43,19 @@ public class PerdisteActivity extends AppCompatActivity {
         MainActivity.piztuta=false;
 
         puntuazioaLabel.setText("Puntuak: "+String.valueOf(GameActivity.puntuak));
+
+        konexioa = new Konexioa();
+        if(konexioa.konexioaKonprobatu()){
+            puntuazioakBidali();
+        }
+
+    }
+
+    private void puntuazioakBidali() {
+        Konexioa konexioa=new Konexioa();
+
+        Puntuazioa puntuazioa = new Puntuazioa(Konexioa.actualUser,GameActivity.puntuak, LocalDateTime.now());
+        konexioa.bidaliPuntuzioak(puntuazioa);
     }
 
     private void berriroJolastu(View view) {

@@ -218,10 +218,7 @@ public class GameView extends SurfaceView implements Runnable {
 
 
     private void gameOver() {
-
         activity.startActivity(new Intent(activity, PerdisteActivity.class));
-        activity.finish();
-
     }
 
     private void sleep() {

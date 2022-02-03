@@ -6,18 +6,20 @@ public class User {
     String email;
     String pass;
 
-    public User( int id,String name ,String email, String pass) {
-        this.id=id;
-        this.name=name;
+    public User(int id, String name, String email, String pass) {
+        this.id = id;
+        this.name = name;
         this.email = email;
         this.pass = pass;
     }
-    public User( int id ,String email, String pass) {
-        this.id=id;
+
+    public User(int id, String email, String pass) {
+        this.id = id;
         this.email = email;
         this.pass = pass;
     }
-    public User( String email, String pass) {
+
+    public User(String email, String pass) {
         this.email = email;
         this.pass = pass;
     }
@@ -61,5 +63,10 @@ public class User {
                 ", pass='" + pass + '\'' +
                 '}';
     }
+
+    public String toString1() {
+        return id + "," + name + ',';
+    }
+
 }
 

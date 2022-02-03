@@ -25,7 +25,7 @@ public class Konexioa extends Thread {
 
 
     public boolean konexioaKonprobatu(){
-        new Thread(new Runnable() {
+        Thread thread= new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -42,7 +42,7 @@ public class Konexioa extends Thread {
                     if(entrada.readLine() != null){
                         konektatuta = true;
                     }
-
+                    sk.close();
                 }catch (Exception ex) {
                     ex.printStackTrace();
                     System.err.println("Konexioa gaizki egin da");
@@ -50,6 +50,12 @@ public class Konexioa extends Thread {
                 }
             }
         });
+        thread.start();
+        try {
+            thread.join();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         return konektatuta;
     }
 
@@ -69,7 +75,6 @@ public class Konexioa extends Thread {
                             salida.println(puntuazioa.toString());
                             salida.println("bukatu");
 
-                            sk.close();
                         } catch (Exception ex) {
                             ex.printStackTrace();
                             System.err.println("Konexioa gaizki egin da");
@@ -78,6 +83,7 @@ public class Konexioa extends Thread {
                     }
                 }
         ).start();
+
         return konektatuta;
     }
 
@@ -95,7 +101,6 @@ public class Konexioa extends Thread {
                             PrintWriter salida = new PrintWriter(
                                     new OutputStreamWriter(sk.getOutputStream()), true);
                             salida.println("Erabiltzaileak bidali");
-
                             String borrau="DELETE FROM Erabiltzaileak";
                             Login.db.execSQL(borrau);
                             String jaso="";
@@ -119,7 +124,6 @@ public class Konexioa extends Thread {
 
                     }
                 }).start();
-
         return users;
     }
 

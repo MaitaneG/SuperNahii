@@ -58,7 +58,7 @@ public class Login extends AppCompatActivity {
         konexioa = new Konexioa();
         if(konexioa.konexioaKonprobatu()){
             konexioa.erabiltzaileakLortu();
-        }
+       }
 
 
     }

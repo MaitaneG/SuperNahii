@@ -6,9 +6,7 @@
           "files": [
             "**.csproj"
           ],
-          "src":"C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi"
-
-
+          "src": "C:\\Users\\arambarri.oihana\\Desktop\\SuperNahii\\Visual(Interfaze)\\SuperNaaahi\\SuperNaaahi"
         }
       ],
       "dest": "api",

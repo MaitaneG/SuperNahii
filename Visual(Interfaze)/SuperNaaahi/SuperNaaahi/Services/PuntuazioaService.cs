@@ -14,7 +14,7 @@ namespace SuperNaaahi.Services
     /// </summary>
     public class PuntuazioaService: IPuntuazioaService
     {
-        private Uri rutaTodos = new Uri("http://192.168.65.7:8080/puntuazioak/");
+        private Uri rutaTodos = new Uri("http://192.168.65.11:8080/puntuazioak/");
 
         /// <summary>
         /// Rest-apitik puntuazioa jaso

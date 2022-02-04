@@ -60,6 +60,16 @@ Spring-eko plugina instalatu dugu
 <br/>
 
 ## 3. Garapen teknikoa 💻
+### Garapena
+
+<br/>
+
+### Funtzionaltasuna
+
+<br/>
+
+### Diagrama
+![Diagrama](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi_Diagrama.svg)
 
 <br/>
 

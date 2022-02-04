@@ -12,6 +12,10 @@ public class User {
         this.email = email;
         this.pass = pass;
     }
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public User(int id, String email, String pass) {
         this.id = id;

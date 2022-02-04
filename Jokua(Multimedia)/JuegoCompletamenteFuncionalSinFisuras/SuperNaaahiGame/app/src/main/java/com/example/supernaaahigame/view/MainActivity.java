@@ -48,14 +48,30 @@ public class MainActivity extends AppCompatActivity {
         // Abestia zehazten da
         hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
 
+
         // Musika ez badago jarrita, abestia hasten da
+//        if (piztuta) {
+//            view.setBackgroundResource(R.drawable.musicaoff);
+//            hasierakoMusika.pause();
+//            piztuta = false;
+//            // Ez badago piztuta pizten du
+//        } else {
+//            view.setBackgroundResource(R.drawable.musika_jarrita);
+//            hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
+//            hasierakoMusika.start();
+//            piztuta = true;
+//        }
         if (!hasierakoMusika.isPlaying()) {
+            hasierakoMusika.setVolume(0.5f,0.5f);
             hasierakoMusika.start();
+
         }
 
         piztuta = true;
 
+
     }
+
 
     public void jokatu(View v){
         Intent intent = new Intent(MainActivity.this, GameActivity.class);

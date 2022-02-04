@@ -46,7 +46,6 @@ public class GameView extends SurfaceView implements Runnable {
     private int rodolfoSalto = 3500;
     private int rodolfoDepre = 4000;
 
-
     public GameView(GameActivity activity, int sX, int sY) {
         super(activity);
 
@@ -128,6 +127,10 @@ public class GameView extends SurfaceView implements Runnable {
             CarreyBitmap[i] = Bitmap.createScaledBitmap(CarreyBitmap[i], carrey.width, carrey.height, false);
         }
         TurnoEnemigo();
+          /*  GameActivity.hipoMusika.start();
+        }else{
+            GameActivity.grinchMusika.start();
+        }*/
     }
 
 
@@ -269,6 +272,7 @@ public class GameView extends SurfaceView implements Runnable {
         isBloqueao = true;
 
         try {
+            GameActivity.aiiiMusika.start();
             Thread.sleep(rodolfoDepre);
             isTocandoFondo = false;
             Thread.sleep(200);
@@ -285,6 +289,7 @@ public class GameView extends SurfaceView implements Runnable {
         isJump = true;
         isBloqueao = true;
         try {
+            GameActivity.naaahiMusika.start();
             Thread.sleep(rodolfoSalto);
             isJump = false;
             Thread.sleep(200);
@@ -297,14 +302,17 @@ public class GameView extends SurfaceView implements Runnable {
     public static boolean TurnoEnemigo() {
         double r = Math.random();
         if (r < 0.5 && c1 < 3) {
+            //GameActivity.grinchMusika.start();
             c1++;
             c2 = 0;
             orden = true;
         } else if (r >= 0.5 && c2 < 3) {
 
+            //GameActivity.hipoMusika.start();
             c2++;
             c1 = 0;
             orden = false;
+
         }
         return orden;
     }

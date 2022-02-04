@@ -44,18 +44,18 @@ public class PerdisteActivity extends AppCompatActivity {
 
         puntuazioaLabel.setText("Puntuak: "+String.valueOf(GameActivity.puntuak));
 
-        konexioa = new Konexioa();
-        if(konexioa.konexioaKonprobatu()){
-            puntuazioakBidali();
-        }
+        puntuazioakBidali();
+
 
     }
 
     private void puntuazioakBidali() {
         Konexioa konexioa=new Konexioa();
 
-        Puntuazioa puntuazioa = new Puntuazioa(Konexioa.actualUser,GameActivity.puntuak, LocalDateTime.now());
-        konexioa.bidaliPuntuzioak(puntuazioa);
+        Puntuazioa puntuazioa = new Puntuazioa(Konexioa.actualUser,GameActivity.puntuak, String.valueOf(LocalDateTime.now()));
+        if(!konexioa.bidaliPuntuzioa(puntuazioa)) {
+            Konexioa.insertSqlitePuntuazioa(puntuazioa);
+        }
     }
 
     private void berriroJolastu(View view) {

@@ -8,10 +8,10 @@ public class Puntuazioa {
     private int puntuak;
     private LocalDateTime data;
 
-    public Puntuazioa(User jokalari, int puntuak, LocalDateTime data) {
+    public Puntuazioa(User jokalari, int puntuak, String data) {
         this.jokalari = jokalari;
         this.puntuak = puntuak;
-        this.data = data;
+        this.data = LocalDateTime.parse(data);
     }
 
     public User getJokalari() {

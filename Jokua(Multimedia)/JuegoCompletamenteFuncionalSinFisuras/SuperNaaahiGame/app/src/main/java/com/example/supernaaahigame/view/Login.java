@@ -38,7 +38,6 @@ public class Login extends AppCompatActivity {
     Konexioa konexioa;
 
 
-
     /**
      * Layout-a sortzen denean
      *
@@ -48,19 +47,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
-
-        db = openOrCreateDatabase("Txapelketa", Context.MODE_PRIVATE, null);
-        db.execSQL("CREATE TABLE IF NOT EXISTS Erabiltzaileak(id INTEGER PRIMARY KEY AUTOINCREMENT,izena VARCHAR,email VARCHAR, password VARCHAR);");
-        db.execSQL("CREATE TABLE IF NOT EXISTS Puntuazioak(id INTEGER PRIMARY KEY AUTOINCREMENT,jokalaria VARCHAR,puntuak int, data DATETIME);");
         hasieratu();
-
-        konexioa = new Konexioa();
-        if(konexioa.konexioaKonprobatu()){
-            konexioa.erabiltzaileakLortu();
-       }
-
-
     }
 
     /**
@@ -77,36 +64,39 @@ public class Login extends AppCompatActivity {
 
         loginBotoia.setOnClickListener(this::botoiaSakatu);
 
+        db = openOrCreateDatabase("Txapelketa", Context.MODE_PRIVATE, null);
+        db.execSQL("CREATE TABLE IF NOT EXISTS Erabiltzaileak(id INTEGER PRIMARY KEY AUTOINCREMENT,izena VARCHAR,email VARCHAR, password VARCHAR);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Puntuazioak(id INTEGER PRIMARY KEY AUTOINCREMENT, jokalariaId INT,jokalaria VARCHAR,puntuak int, data DATETIME);");
 
-
-
+        konexioa = new Konexioa();
+        konexioa.erabiltzaileakLortu();
+        konexioa.bidaliPuntuazioak();
 
     }
+
     /**
      * Logina balidatu eta jokua hasi
+     *
      * @param view
      */
     private void botoiaSakatu(View view) {
-        String user=emaila.getText().toString();
-        String pass=pasahitza.getText().toString();
-        User us=new User(user,pass);
-        if(us.getEmail().equals("")&& us.getPass().equals("")){
+        String user = emaila.getText().toString();
+        String pass = pasahitza.getText().toString();
+        User us = new User(user, pass);
+        if (us.getEmail().equals("") && us.getPass().equals("")) {
             Toast.makeText(this, "Eremu guztiak bete behar dira", Toast.LENGTH_SHORT).show();
         } else {
-            if(konexioa.login(us)){
+            if (konexioa.login(us)) {
                 Toast.makeText(this, "Logeatu zara", Toast.LENGTH_SHORT).show();
-                Intent i=new Intent(Login.this, MainActivity.class);
+                Intent i = new Intent(Login.this, MainActivity.class);
                 startActivity(i);
 
-            }
-            else{
+            } else {
                 Toast.makeText(this, "Ez zara logeatu ", Toast.LENGTH_SHORT).show();
             }
         }
 
     }
-
-
 
 
 }

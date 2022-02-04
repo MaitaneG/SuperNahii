@@ -12,7 +12,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.net.SocketAddress;
 import java.util.ArrayList;
 
 public class Konexioa extends Thread {
@@ -24,42 +26,46 @@ public class Konexioa extends Thread {
     public static User actualUser;
 
 
-    public boolean konexioaKonprobatu(){
-        Thread thread= new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    // Socket-a sortu
-                    Socket sk = new Socket(ip, puerto);
-                    BufferedReader entrada = new BufferedReader(new
-                            InputStreamReader(sk.getInputStream()));
+//    public boolean konexioaKonprobatu(){
+//        Thread thread= new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try {
+//                    // Socket-a sortu
+//                    Socket sk = new Socket();
+//                    SocketAddress adress =new InetSocketAddress(ip, puerto);
+//                    sk.connect(adress, 30000);
+//
+//                    sk.setSoTimeout(2*1000);
+//                    BufferedReader entrada = new BufferedReader(new
+//                            InputStreamReader(sk.getInputStream()));
+//
+//                    PrintWriter salida = new PrintWriter(
+//                            new OutputStreamWriter(sk.getOutputStream()), true);
+//
+//                    salida.println("Hor zaude?");
+//
+//                    if(entrada.readLine() != null){
+//                        konektatuta = true;
+//                    }
+//
+//                }catch (Exception ex) {
+//                    ex.printStackTrace();
+//                    System.err.println("Konexioa gaizki egin da");
+//                    konektatuta = false;
+//                }
+//            }
+//        });
+//        thread.start();
+//        try {
+//            thread.join();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return konektatuta;
+//    }
 
-                    PrintWriter salida = new PrintWriter(
-                            new OutputStreamWriter(sk.getOutputStream()), true);
-
-                    salida.println("Hor zaude?");
-
-                    if(entrada.readLine() != null){
-                        konektatuta = true;
-                    }
-                    sk.close();
-                }catch (Exception ex) {
-                    ex.printStackTrace();
-                    System.err.println("Konexioa gaizki egin da");
-                    konektatuta = false;
-                }
-            }
-        });
-        thread.start();
-        try {
-            thread.join();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return konektatuta;
-    }
-
-    public boolean bidaliPuntuzioak(Puntuazioa puntuazioa) {
+    public boolean bidaliPuntuzioa(Puntuazioa puntuazioa) {
         new Thread(
                 new Runnable() {
                     @Override
@@ -74,7 +80,14 @@ public class Konexioa extends Thread {
 
                             salida.println(puntuazioa.toString());
                             salida.println("bukatu");
-
+                            ArrayList<Puntuazioa>puntuazioas=new ArrayList<>();
+                            Cursor c = Login.db.rawQuery("SELECT * FROM Puntuazioak ;", null);
+                            while(c.moveToNext()){
+                                Puntuazioa p=new Puntuazioa( new User(c.getInt(0),c.getString(1)),c.getInt(3),c.getString(4));
+                                puntuazioas.add(p);
+                            }
+                            String borrau="DELETE FROM Puntuazioak";
+                            Login.db.execSQL(borrau);
                         } catch (Exception ex) {
                             ex.printStackTrace();
                             System.err.println("Konexioa gaizki egin da");
@@ -85,6 +98,47 @@ public class Konexioa extends Thread {
         ).start();
 
         return konektatuta;
+    }
+    public void bidaliPuntuazioak(){
+        Thread t1=new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Socket sk = new Socket(ip, puerto);
+                    PrintWriter salida = new PrintWriter(
+                            new OutputStreamWriter(sk.getOutputStream()), true);
+
+                    ArrayList<Puntuazioa>puntuazioas=new ArrayList<>();
+                    String puntuazioString="";
+                    int i=0;
+                    Cursor c = Login.db.rawQuery("SELECT * FROM Puntuazioak ;", null);
+                    while(c.moveToNext()){
+                        Puntuazioa p=new Puntuazioa( new User(c.getInt(1),c.getString(2)),c.getInt(3),c.getString(4));
+                        puntuazioas.add(p);
+                        puntuazioString=puntuazioString+puntuazioas.get(i).toString();
+                        i++;
+                    }
+
+                    salida.println(puntuazioString);
+                    String borrau="DELETE FROM Puntuazioak";
+                    Login.db.execSQL(borrau);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        t1.start();
+    }
+
+    public static boolean insertSqlitePuntuazioa(Puntuazioa puntuazioa){
+        try{
+            String insert_query = "INSERT INTO Puntuazioak(jokalariaId,jokalaria,puntuak,data) VALUES ("+puntuazioa.getJokalari().getId()+",'"+ puntuazioa.getJokalari().getName() + "', " + puntuazioa.getPuntuak() + ", '" + puntuazioa.getData() + "')";
+            Login.db.execSQL(insert_query);
+            return true;
+        }catch (Exception e){
+            e.getMessage();
+            return false;
+        }
     }
 
     public ArrayList<User> erabiltzaileakLortu() {
@@ -114,14 +168,10 @@ public class Konexioa extends Thread {
                                     Login.db.execSQL(insert_query);
 
                                 }
-
                             }
-
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-
-
                     }
                 }).start();
         return users;
@@ -138,6 +188,7 @@ public class Konexioa extends Thread {
         return false;
 
     }
+
 
 
 }

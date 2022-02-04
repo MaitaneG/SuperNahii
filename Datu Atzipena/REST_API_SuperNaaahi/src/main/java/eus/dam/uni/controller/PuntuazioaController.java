@@ -52,33 +52,6 @@ public class PuntuazioaController {
 	
 	/**
 	 * 
-	 * @return Bost puntuazio
-	 */
-	@GetMapping("puntuazioak/bostPuntuazio")
-	public List<Puntuazioa> getBostPuntuazio() {
-		return puntuazoaDao.findBostPuntuazio();
-	}
-	
-	/**
-	 * 
-	 * @return Hamar puntuazio
-	 */
-	@GetMapping("puntuazioak/hamarPuntuazio")
-	public List<Puntuazioa> getHamarPuntuazio() {
-		return puntuazoaDao.findHamarPuntuazio();
-	}
-	
-	/**
-	 * 
-	 * @return Hogei puntuazio
-	 */
-	@GetMapping("puntuazioak/hamabostPuntuazio")
-	public List<Puntuazioa> getHamabostPuntuazio() {
-		return puntuazoaDao.findHamabostPuntuazio();
-	}
-	
-	/**
-	 * 
 	 * @return Partehartutako langileen kopurua
 	 */
 	@GetMapping("puntuazioak/partehartzaileKopurua")

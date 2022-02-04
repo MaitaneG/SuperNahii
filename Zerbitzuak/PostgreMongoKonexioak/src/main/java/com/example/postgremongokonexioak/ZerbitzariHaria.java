@@ -55,7 +55,7 @@ public class ZerbitzariHaria extends Thread {
 
 				// Puntuazioak jasotzen ditu
 				if (jasotakoTestua != null && !jasotakoTestua.equals("bukatu")
-						&& !jasotakoTestua.equals("Erabiltzaileak bidali")) {
+						&& !jasotakoTestua.equals("Erabiltzaileak bidali")&& !jasotakoTestua.equals("Hor zaude?")) {
 					
 					System.out.println("Bezerotik jasotakoa: " + jasotakoTestua);
 					String[] erregistroak = jasotakoTestua.split(";");
@@ -70,8 +70,10 @@ public class ZerbitzariHaria extends Thread {
 					mongoraBidaliPuntuazioak(puntuazioak);
 				}
 				
-				if(jasotakoTestua.equals("Hor zaude?")) {
-					irteeraFluxua.println("Bai");
+				if(jasotakoTestua != null && jasotakoTestua.equals("Hor zaude?")) {
+					System.out.println("Bezerotik jasotakoa: " + jasotakoTestua);
+					bidaliBeharrekoTestua="Bai";
+					irteeraFluxua.println(bidaliBeharrekoTestua);
 				}
 
 			} catch (IOException e) {

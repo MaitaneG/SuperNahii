@@ -63,6 +63,16 @@ Spring-eko plugina instalatu dugu
 ### Garapena
 Spring framework-a erabili dugu, bere funtzionaltasun bat oso erabilgarria delako gure beharretarako: Spring boot. Spring boot-ekin Web zerbitzuak erraz egin dezakegu.
 
+Proiektua hainbat karpetetan banatuta dago:
+  - eus.dam.uni: hor Aplikazio orokorra (RestApiApplication), Mongoren konexioa (SpringConfiguration) eta SpringFox-ren konfigurazioa (SpringFoxConfig) dago.
+
+<br/>
+
+### Diagramak
+
+#### REST_API_SuperNaaahi
+![Diagrama](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi_Diagrama.svg)
+
 <br/>
 
 ### Funtzionaltasuna
@@ -73,13 +83,6 @@ REST API-a MongoDB-tik puntuazioen datuak irakurtzen du. Web zerbitzu hau, hainb
   - **/puntuazioak/puntuazioKopurua:** puntuazio guztien kopurua bueltatzen du.
 
 Gainera Swagger-a konfiguratu dugu, horrela gure REST API-ak dituen funtzionaltasunak ikusi eta konprobatu daiteke.
-
-<br/>
-
-### Diagramak
-
-#### REST_API_SuperNaaahi
-![Diagrama](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi_Diagrama.svg)
 
 <br/>
 

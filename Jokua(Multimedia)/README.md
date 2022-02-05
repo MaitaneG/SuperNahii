@@ -47,6 +47,13 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 <br/>
 
 ### Funtzionaltasuna
+Joku hau jolasteko SuperNaaahi enpresaren langile bat izan behar zara. Horregatik, jokua zabaltzen duzunean, zure korreoa eta pasahitza sartu behar duzu, jakitzeko enpresaren langilea zaren edo ez. Login-eko pantailan zaudenean eta konexioa dagoenean, erabiltzaile guztiak gordeko dira SQLiten eta SQiten dauden puntuazioak igoko dira PostgreSQL-ra eta MongoDB-ra.
+
+Behin zure korreoarekin sartzen zarenean, kargatzeko pantaila agertuko da. Bertan musika kentzeko edo jartzeko botoia agertuko da, eta gainera jokua hasteko botoia.
+
+Jokuaren pertsonai nagusia orein bat da eta hainbat etsai agertuko dira eta sahiestu behar dira, salto egiten eta makurtzen. Etsaiak Grinch-ak eta deabruak dira. Behin, oreinak Grinch-a edo deabrua ikutzen duenean jolasa bukatzen da, eta Game Over pantailara joango da.
+
+Game Over pantailan puntuazioak igoko dira zerbitzarira konexioa badago, eta ez badago SQLiten gordeko dira, konexioa dagoenean igotzeko. Pantaila honetan bi aukera izango dituzu: berriro jolastea edo login pantailara joatea.
 
 <br/>
 

@@ -71,6 +71,7 @@ REST API-a MongoDB-tik puntuazioen datuak irakurtzen du. Web zerbitzu hau, hainb
   - **/puntuazioak/hallOfShame:** bost puntuazio txikienak bueltatzen du.
   - **/puntuazioak/puntuazioKopurua:** puntuazio guztien kopurua bueltatzen du.
 
+Gainera Swagger-a konfiguratu dugu, horrela gure REST API-ak dituen funtzionaltasunak ikusi eta konprobatu daiteke.
 <br/>
 
 ### Diagramak

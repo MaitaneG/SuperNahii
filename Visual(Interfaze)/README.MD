@@ -22,6 +22,9 @@ Microsoft SQL Server-eko datubasea kudeatzeko erabili dugu.
 ### Datubaseak
 
 ##### - Microsoft SQL Server:
+Datu base hau erabili dugu, web orrialdearen foroaren komentarioak eta erabiltzaileek betetako inkesten informazioa gordetzeko eta gero bistaratzeko. *[Microsoft SQL Server](https://www.microsoft.com/es-es/sql-server/sql-server-downloads)* aukeratu dugu, Visual Studiok datu base hau erabiltzen duelako.
+
+![Microsoft SQL Server](https://user-images.githubusercontent.com/75113982/152648909-a1f6023e-4a30-4d59-87ea-cff2bdac047a.png)
 
 <br/>
 

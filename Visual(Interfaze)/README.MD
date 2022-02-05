@@ -29,4 +29,4 @@
 ## 4. Iturriak
   - [Microsoft-eko dokumentazioa](https://docs.microsoft.com/es-es/aspnet/mvc/overview/getting-started/introduction/getting-started)
   
-  - [gavilanch2 YouTube-eko kanaleko kurtso bat](https://www.youtube.com/watch?v=YzC-FYg66xA&list=PL0kIvpOlieSNWR3YPSjh9P2p43SFnNBlB)
+  - [**gavilanch2** YouTube-eko kanaleko kurtso bat](https://www.youtube.com/watch?v=YzC-FYg66xA&list=PL0kIvpOlieSNWR3YPSjh9P2p43SFnNBlB)

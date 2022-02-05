@@ -68,7 +68,9 @@ Spring-eko plugina instalatu dugu
 
 <br/>
 
-### Diagrama
+### Diagramak
+
+#### REST_API_SuperNaaahi
 ![Diagrama](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi_Diagrama.svg)
 
 <br/>

@@ -1,6 +1,7 @@
 # SUPERNAAAHI
 
 ## 1. Zer da
+SuperNaaahi enpresak lehiaketa bat antolatu du bere langileen artean. Lehiaketa horren helburua, beraientzako garatutako jokuan puntu gehien lortzea da. Orduan, bere web orria SuperNaaahi deitzen da eta lehiaketa horren informazio guztia agertzen da. Gainera erabiltzaileak inkesta bat bete dezakete eta foroan parte hartu. 
 
 <br/>
 

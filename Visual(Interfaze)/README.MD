@@ -1,11 +1,11 @@
 # SUPERNAAAHI
 
-## 1. Zer da
+## 1. Zer da ❓
 SuperNaaahi enpresak lehiaketa bat antolatu du bere langileen artean. Lehiaketa horren helburua, beraientzako garatutako jokuan puntu gehien lortzea da. Orduan, bere web orria SuperNaaahi deitzen da eta lehiaketa horren informazio guztia agertzen da. Gainera erabiltzaileak inkesta bat bete dezakete eta foroan parte hartu. 
 
 <br/>
 
-## 2. Baliabideak
+## 2. Baliabideak 📝
 ### Software-a 
 
 ##### - Visual Studio: 
@@ -29,7 +29,7 @@ Datu base hau erabili dugu, web orrialdearen foroaren komentarioak eta erabiltza
 
 <br/>
 
-## 3. Garapen teknikoa
+## 3. Garapen teknikoa 💻
 ### Garapena
 
 <br/>
@@ -42,7 +42,7 @@ Datu base hau erabili dugu, web orrialdearen foroaren komentarioak eta erabiltza
 
 <br/>
 
-## 4. Iturriak
+## 4. Iturriak 📌
   - [Microsoft-eko dokumentazioa](https://docs.microsoft.com/es-es/aspnet/mvc/overview/getting-started/introduction/getting-started)
   
   - [**gavilanch2** YouTube-eko kanaleko kurtso bat](https://www.youtube.com/watch?v=YzC-FYg66xA&list=PL0kIvpOlieSNWR3YPSjh9P2p43SFnNBlB)

@@ -66,10 +66,10 @@ Spring-eko plugina instalatu dugu
 
 ### Funtzionaltasuna
 REST API-a MongoDB-tik puntuazioen datuak irakurtzen du. Web zerbitzu hau, hainbat operazio egiten du jasotako informazioarekin: 
-  - /puntuazioak: puntuazio guztiak bueltatzen du.
-  - /puntuazioak/hallOfFame: bost puntuazio handienak bueltatzen du.
-  - /puntuazioak/hallOfShame: bost puntuazio txikienak bueltatzen du.
-  - /puntuazioak/puntuazioKopurua: puntuazio guztien kopurua bueltatzen du.
+  - **/puntuazioak:** puntuazio guztiak bueltatzen du.
+  - **/puntuazioak/hallOfFame:** bost puntuazio handienak bueltatzen du.
+  - **/puntuazioak/hallOfShame:** bost puntuazio txikienak bueltatzen du.
+  - **/puntuazioak/puntuazioKopurua:** puntuazio guztien kopurua bueltatzen du.
 
 <br/>
 

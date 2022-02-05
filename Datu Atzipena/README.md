@@ -64,8 +64,10 @@ Spring-eko plugina instalatu dugu
 Spring framework-a erabili dugu, bere funtzionaltasun bat oso erabilgarria delako gure beharretarako: Spring boot. Spring boot-ekin Web zerbitzuak erraz egin dezakegu.
 
 Proiektua hainbat karpetetan banatuta dago:
-  - **eus.dam.uni:** hor Aplikazio orokorra ([RestApiApplication](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/RestApiApplication.java)), Mongoren konexioa [(SpringConfiguration)](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/SpringConfiguration.java) eta SpringFox-ren konfigurazioa [(SpringFoxConfig)](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/SpringFoxConfig.java) dago.
-
+  - **eus.dam.uni:** hor Aplikazio orokorra ([RestApiApplication](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/RestApiApplication.java)), Mongoren konexioa ([SpringConfiguration](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/SpringConfiguration.java)) eta SpringFox-ren konfigurazioa ([SpringFoxConfig](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/SpringFoxConfig.java)) dago.
+  - **eus.dam.uni.controller:** bertan REST zerbitzuaren kontroladorea dago. PuntuazioaController-ean hainbat GET operazio daude. Kontroladorea egiteko anotazio hauek jarri behar dira: **@RestController** eta **@RequestMapping("/")**. Gero GET operazio bakoitzeko **@GetMapping("")** jarri behar da.
+  - **eus.dam.uni.dao:**: bertan DAO-a dago. Aplikazio hau datuak kudeatzen duenez, **@Repository** anotazioa jarri behar da. Datu guztiak gordetzen duen metodoari **@PostConstruct** bat jarri diogu. Bean-a sortu bezain laster datuak kargatzeko. Gainera MongoClient objektua autoinjektatu dugu **@Autowired** erabiliz 
+  
 <br/>
 
 ### Diagramak

@@ -61,6 +61,7 @@ Spring-eko plugina instalatu dugu
 
 ## 3. Garapen teknikoa 💻
 ### Garapena
+Spring framework-a erabili dugu, bere funtzionaltasun bat oso erabilgarria delako gure beharretarako: Spring boot. Spring boot-ekin Web zerbitzuak erraz egin dezakegu.
 
 <br/>
 

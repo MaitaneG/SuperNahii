@@ -60,6 +60,26 @@ Spring-eko plugina instalatu dugu
 <br/>
 
 ## 3. Garapen teknikoa 💻
+### Garapena
+Spring framework-a erabili dugu, bere funtzionaltasun bat oso erabilgarria delako gure beharretarako: Spring boot. Spring boot-ekin Web zerbitzuak erraz egin dezakegu.
+
+<br/>
+
+### Funtzionaltasuna
+REST API-a MongoDB-tik puntuazioen datuak irakurtzen du. Web zerbitzu hau, hainbat operazio egiten du jasotako informazioarekin: 
+  - **/puntuazioak:** puntuazio guztiak bueltatzen du.
+  - **/puntuazioak/hallOfFame:** bost puntuazio handienak bueltatzen du.
+  - **/puntuazioak/hallOfShame:** bost puntuazio txikienak bueltatzen du.
+  - **/puntuazioak/puntuazioKopurua:** puntuazio guztien kopurua bueltatzen du.
+
+Gainera Swagger-a konfiguratu dugu, horrela gure REST API-ak dituen funtzionaltasunak ikusi eta konprobatu daiteke.
+
+<br/>
+
+### Diagramak
+
+#### REST_API_SuperNaaahi
+![Diagrama](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi_Diagrama.svg)
 
 <br/>
 

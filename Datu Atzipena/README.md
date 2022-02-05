@@ -64,7 +64,7 @@ Spring-eko plugina instalatu dugu
 Spring framework-a erabili dugu, bere funtzionaltasun bat oso erabilgarria delako gure beharretarako: Spring boot. Spring boot-ekin Web zerbitzuak erraz egin dezakegu.
 
 Proiektua hainbat karpetetan banatuta dago:
-  - eus.dam.uni: hor Aplikazio orokorra (RestApiApplication), Mongoren konexioa (SpringConfiguration) eta SpringFox-ren konfigurazioa (SpringFoxConfig) dago.
+  - **eus.dam.uni:** hor Aplikazio orokorra [(RestApiApplication)](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/RestApiApplication.java), Mongoren konexioa [(SpringConfiguration)](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/SpringConfiguration.java) eta SpringFox-ren konfigurazioa [(SpringFoxConfig)](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/SpringFoxConfig.java) dago.
 
 <br/>
 

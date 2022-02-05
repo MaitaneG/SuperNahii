@@ -25,7 +25,6 @@ Aplikazioa garatzeko erabili dugun software-a da. *[Eclipserekin](https://www.ec
 
 <br/>
 
-
 ##### - DBeaver Community:
 
 *[DBeaver Community](https://dbeaver.io/)* erabili dugu PostgreSQL datubasea kudetzeko.
@@ -33,3 +32,23 @@ Aplikazioa garatzeko erabili dugun software-a da. *[Eclipserekin](https://www.ec
 ![DBeaver Community logo](https://user-images.githubusercontent.com/75113982/152296737-716a8112-8469-458c-b6cf-fa07d4598992.png)
 
 <br/>
+
+### Datubaseak
+
+<br/>
+
+## 3. Garapen teknikoa
+### Garapena
+
+<br/>
+
+### Diagrama
+
+<br/>
+
+### Funtzionaltasuna
+
+<br/>
+
+## 4. Iturriak
+  

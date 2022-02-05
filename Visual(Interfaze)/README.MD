@@ -7,9 +7,16 @@
 ## 2. Baliabideak
 ### Software-a 
 
+##### - Visual Studio: 
+ASP .NET web orrialdea garatzeko erabili dugun software-a da. *[Android Studio](https://visualstudio.microsoft.com/es/downloads/)* Visual Studio-k tresna asko dauzka garapenean laguntzen duena.
+
+##### - Microsoft SQL Server Managment:
+
 <br/>
 
 ### Datubaseak
+
+##### - Microsoft SQL Server:
 
 <br/>
 

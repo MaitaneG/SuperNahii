@@ -38,6 +38,15 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 <br/>
 
 ## 3. Garapen teknikoa
+### Garapena
+
+<br/>
+
+### Diagrama
+
+<br/>
+
+### Funtzionaltasuna
 
 <br/>
 

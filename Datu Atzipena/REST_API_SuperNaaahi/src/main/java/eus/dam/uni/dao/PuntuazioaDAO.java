@@ -72,9 +72,9 @@ public class PuntuazioaDAO {
 
 	/**
 	 * 
-	 * @return Partehartutako langile kopurua
+	 * @return Puntuazio kopurua
 	 */
-	public int countPartehartzaileak() {
+	public int countPuntuzioak() {
 		return Math.toIntExact(collection.countDocuments());
 	}
 }

@@ -1,12 +1,12 @@
 # SuperNaaahiGame
 
-## 1. Zer da
+## 1. Zer da ❓
 
 Aplikazioa hau android-eko joku bat da. Android Studiorekin garatuta, java lenguaian.
 
 <br/>
 
-## 2. Baliabideak
+## 2. Baliabideak 📝
 
 ### Software-a 
 
@@ -37,7 +37,7 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 
 <br/>
 
-## 3. Garapen teknikoa
+## 3. Garapen teknikoa 💻
 ### Garapena
 
 <br/>
@@ -57,7 +57,7 @@ Game Over pantailan puntuazioak igoko dira zerbitzarira konexioa badago, eta ez 
 
 <br/>
 
-## 4. Iturriak
+## 4. Iturriak 📌
 - [Android-eko dokumentazioa](https://developer.android.com/docs)
 
 - [Hey Let's go-ren bideoak](https://www.youtube.com/playlist?list=PLsOU6EOcj51e7YesVnTrEtvJDD016p9oS)

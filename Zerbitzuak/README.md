@@ -37,7 +37,7 @@ Aplikazioa garatzeko erabili dugun software-a da. *[Eclipserekin](https://www.ec
 
 <br/>
 
-## 3. Garapen teknikoa
+## 3. Garapen teknikoa 💻
 ### Garapena
 
 <br/>
@@ -46,9 +46,9 @@ Aplikazioa garatzeko erabili dugun software-a da. *[Eclipserekin](https://www.ec
 
 <br/>
 
-### Funtzionaltasuna
+### Funtzionaltasuna 
 
 <br/>
 
-## 4. Iturriak
+## 4. Iturriak 📌
   

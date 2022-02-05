@@ -8,7 +8,7 @@
 ### Software-a 
 
 ##### - Visual Studio: 
-ASP .NET web orrialdea garatzeko erabili dugun software-a da. *[Android Studio](https://visualstudio.microsoft.com/es/downloads/)* Visual Studio-k tresna asko dauzka garapenean laguntzen duena.
+ASP .NET web orrialdea garatzeko erabili dugun software-a da. *[Visual Studio-k](https://visualstudio.microsoft.com/es/downloads/)* tresna asko dauzka garapenean laguntzen duena.
 
 ##### - Microsoft SQL Server Managment:
 

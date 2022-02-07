@@ -55,6 +55,11 @@ Jokuaren ideia sortu eta gero, **datu basearen konexioa**, erabiltzaileak hartu,
 
 <br/>
 
+### Diagrama
+
+
+<br/>
+
 ### Funtzionaltasuna
 Joku hau jolasteko SuperNaaahi enpresaren langile bat izan behar zara. Horregatik, jokua zabaltzen duzunean, zure korreoa eta pasahitza sartu behar duzu, jakitzeko enpresaren langilea zaren edo ez. Login-eko pantailan zaudenean eta konexioa dagoenean, erabiltzaile guztiak gordeko dira SQLiten eta SQiten dauden puntuazioak igoko dira PostgreSQL-ra eta MongoDB-ra.
 

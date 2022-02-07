@@ -35,6 +35,17 @@ Aplikazioa garatzeko erabili dugun software-a da. *[Eclipserekin](https://www.ec
 
 ### Datubaseak
 
+##### - MongoDB:
+
+*[MongoDB](https://docs.mongodb.com/)* datubasea erabili dugu, REST API-ak irakurtzeko. Aplikazio honek SQLiten dagoen informazioa MongoDB-ra igoko du.
+
+![MongoDB logo](https://user-images.githubusercontent.com/75113982/151693035-14ce5dc9-5b22-499e-8531-50bb79425db0.png)
+
+##### - PostgreSQL: 
+Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa dago. Aplikazio honekin Postgres-etik erabiltzaileen datuak pasatzen dira SQLite-ra eta gero puntuazioak *[PostgreSQL-ra](https://www.postgresql.org/)* (konexioa dagoenean)
+
+![PostgreSQL logo](https://user-images.githubusercontent.com/75113982/151692026-094271f1-ff91-49c6-a708-dbeeb58b9a14.png)
+
 <br/>
 
 ## 3. Garapen teknikoa 💻

@@ -39,10 +39,24 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 
 ## 3. Garapen teknikoa 💻
 ### Garapena
+Lehenengo, **jokoaren mekanika** egin genuen: Pertsonaiak diseinatu eta dagokion klaseak sortu. Bertan, erabiltzailea erabili egingo zuen pertsonaiaren saltoa eta makurketa, fondoaren argazkia, errepikapena eta abiadura zehaztuz. Azkenengoz, beste **etsaien (enemigo) irteera ausazkoa** egitea. 
+
+Jokuaren basea egin ondoren, hau **hobetzea** eta falta ziren elementuak egiten jarraitu genuen: Puntuazioa, pertsonaiaren saltoa eta makurketa jolasaren azkartasunarekin bat egitea eta game-over zatia.
+
+Jokuaren ideia sortu eta gero, **datu basearen konexioa**, erabiltzaileak hartu, hauen loginaren funtzionalitatea, erabiltzailea ateratako puntuazioa gordetzea eta datu basera konexio berri bat bidaltzea egin genuen.
+
+**SuperNaaahiGame hiru karpetatan banatuta dago:**
+
+  **1. com.example.supernaaahigame.konexioa:** Karpeta hau, klase bakar bat du, eta bere izenak dioen bezala, *[Konexio.java klasea](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/konexioa/Konexioa.java)*, konexioaz arduratzen den klasea da. Lehenengoz, Ip-a eta portua deklaratzen du. Honen bidez, datu basearekin konexioa egiten du eta erabiltzaileak hartzen ditu logina egiteko.
+
+  **2. com.example.supernaaahigame.model:** Model karpeta, jokoaren barruan egiten duen metodoak eta objetuak daude. Honen barruan, *[Background.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/model/Background.java)*, *[Demonico.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/model/Demonico.java)*, *[JimCarrey.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/model/JimCarrey.java)*, *[Puntuazioa.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/model/Puntuazioa.java)*, *[Rodolfo.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/model/Rodolfo.java)* eta *[User.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/model/User.java)* klaseak daude. Objetu eta metodo hauek, gero Game View klasean erabiliko dira jokuaren funtzionaltasuna osatzeko.
+
+  **3. com.example.supernaaahi.view:** Azkenengoz, view karpetan, *[GameActivity.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/view/GameActivity.java)*, *[GameView.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/view/GameView.java)*, *[GameView.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/view/Login.java)*, *[MainActivity.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/view/MainActivity.java)* eta *[PerdisteActivity.java](https://github.com/MaitaneG/SuperNahii/blob/main/Jokua(Multimedia)/SuperNaaahiGame/app/src/main/java/com/example/supernaaahigame/view/PerdisteActivity.java)* klaseak daude. Lehenengoz, logina daukagu, non erabiltzailea bere korreo eta pasahitza jarri behar du logeatzeko eta menu printzipalan sartzeko. Gero, Main Activity-a menu printzipalaz arduratzen da, hau da jolasa martxan jartzen duen activity-a. Jolasa GameActivity-an exekutatzen da, honek jolasaren puntuak eta mugikorraren erresoluzioa hartzen du. GameActivity-aren barruan, GameView klasea irudikatzen da, non jolasaren exekuzio guztia gertatzen da. Partida bat jokatu ondoren, PerdisteActivity-ra bidaltzen du, hemen, erabiltzaileak partidaren puntuazioa ikusi ahal du eta partida berri bat jolasteko aukera du edo menu printzipalera bidali bere datuak gordetzen prosezu honetan.
 
 <br/>
 
 ### Diagrama
+
 
 <br/>
 

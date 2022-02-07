@@ -63,11 +63,8 @@ Web orriaren proiektua SuperNaaahi da. Bertan Controllerrak , Data, Modelsak, Ze
 Beste proiektua Reportea da. Bertan bi reporte daude:
 
   -Ranking orokorra ([SuperNaaahiRankingOrokorReport.rdlc](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/SuperNaaahi/Reportea/SuperNaaahiRankingOrokorReport.rdlc))
+  
   -HallOfFame/HallOfShame ([SuperNaaahiReport.rdlc](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/SuperNaaahi/Reportea/SuperNaaahiReport.rdlc))
-
-<br/>
-
-### Diagrama
 
 <br/>
 

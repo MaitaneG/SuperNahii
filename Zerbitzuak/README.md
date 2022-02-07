@@ -70,7 +70,16 @@ Aplikazio honek socket bat erabiltzen du informazioa elkar bidaltzeko. Baldin et
   
 <br/>
 
-### Diagrama
+### Trigger-ak
+
+PostgreSQL datu basean 3 Trigger ditugu gauza zehatz batzuk konpontzeko:
+
+  - **copy_user**: Odoo-ko erabiltzaileak pasahitza Androitik ezin da irakurri hash-eatuta dagoenenko, trigger honekin app_user sortutako taulara kopiatzen ditu.
+  - **drop_user**: Erabiltzaile bat ezabatzen badugu, trigger honek app_user taulan ere ezabatzen ditu.
+  - **update_ranking**: puntuazio taulan Jokalari_id, Jokalariaren izena, departamentua eta adina errepikatuko da beti, trigger honek departamentua bilatu eta adina kalkulatu
+    egiten du eta puntuazio taulan gorde egiten ditu.
+    
+    *[Trigger Linka](https://github.com/MaitaneG/SuperNahii/blob/main/PostgreSQL/triggers.sql)*
 
 <br/>
 

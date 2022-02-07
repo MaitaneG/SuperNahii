@@ -62,4 +62,6 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 <br/>
 
 ## 4. Iturriak 📌
+  - *[Klaseko proiektua](https://elearning20.hezkuntza.net/012053/course/view.php?id=220)* --> Socket-ena egiteko
+  - *[MongoDB-ren dokumentazioa](https://elearning20.hezkuntza.net/012053/course/view.php?id=220)* --> Mongo-ren konexioak egiteko
   

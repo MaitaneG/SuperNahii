@@ -38,6 +38,10 @@ Datu base hau erabili dugu, web orrialdearen foroaren komentarioak eta erabiltza
 
 <br/>
 
+### Usagarritasun irizpideak
+
+<br/>
+
 ### Funtzionaltasuna
 
 <br/>

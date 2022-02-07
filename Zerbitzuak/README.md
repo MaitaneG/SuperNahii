@@ -50,6 +50,11 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 
 ## 3. Garapen teknikoa 💻
 ### Garapena
+Garatu dugun aplikazioa PostgreMongoKonexioak deitzen da eta aplikazio honek egiten duena hau da: Android-eko SQLite datubasea eta PostgreSQL-eko eta MongoDB-eko datubasea konekatzea socket batzuk erabiliz informazioa bidaltzeko.
+
+Aplikazio honek socket bat erabiltzen du informazioa elkar bidaltzeko. Baldin eta zer mezu jasotzen duen aplikazioa, android-eko aplikaziotik, gauza bat edo beste bat egingo du. Bezeroa konektatzen den bakoitzean, hari bat sortuko du eta honek socket bat zabalduko du, egin beharrekoa egiteko. Proiektua horrela dago banatuta: 
+
+  - **com.example.postgremongokonexioak:** Karpeta honetan, Lau klase daude: KonexioakAplication.java, KonexioaMongo.java, KonexioaPostgre.java eta ZerbitzariHaria.java. 
 
 <br/>
 

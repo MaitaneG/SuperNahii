@@ -59,6 +59,11 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 
 ### Funtzionaltasuna 
 
+Aplikazio honek Socket bat zabalik edukiko du, eta bezero baten zain egongo da. Behin bezero bat konektatzen denean, bezeroaren mezu baten zain egongo da. Bezeroa konektatzen den bakoitzeko, hari bat sortu eta hasten du. Baldin eta zer mezu jasotzen duen, gauza bat edo beste bat egingo du:
+
+  - **"Erabiltzaileak bidali"**: hau jasotzean, PostgreSQL datubasera konektatzen da eta erabiltzaile guztien informazioa jasotzen du eta android-era bidaltzen dio.
+  - **Puntuazioen string-a**: puntuazio bat edo asko jasotzen duenean, string hori banatu egiten du puntuazioetan eta PostgreSQL-ra eta MongoDB-ra igotzen du.
+
 <br/>
 
 ## 4. Iturriak 📌

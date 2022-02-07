@@ -54,7 +54,7 @@ public class PerdisteActivity extends AppCompatActivity {
 
         Puntuazioa puntuazioa = new Puntuazioa(Konexioa.actualUser,GameActivity.puntuak, String.valueOf(LocalDateTime.now()));
         if(!konexioa.bidaliPuntuzioa(puntuazioa)) {
-            Konexioa.insertSqlitePuntuazioa(puntuazioa);
+            konexioa.insertSqlitePuntuazioa(puntuazioa);
         }
     }
 

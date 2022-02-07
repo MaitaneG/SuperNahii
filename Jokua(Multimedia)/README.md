@@ -44,6 +44,22 @@ Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa
 
 ### Diagrama
 
+Lehenengoz, jokoaren mekanika egin genuen: Pertsonaiak diseinatu eta dagokion klaseak sortu, erabiltzailea erabili egingo zuen pertsonaiaren saltoa eta makurketa, fondoaren argazkia, errepikapena eta abiadura, azkenengoz, beste pertsonaien irteera ausazkoa egitea. 
+
+Jokuaren basea egin ondoren, hau hobetzea eta falta ziren elementuak egitea jarraitu genuen: Puntuazioa, pertsonaiaren saltoa eta makurketa jolasaren azkartasunarekin bat egitea eta game-over zatia.
+
+Jokuaren ideia sortu eta gero, datu basearen konexioa, erabiltzaileak hartu, hauen loginaren funtzionalitatea, erabiltzailea ateratako puntuazioa gordetzea eta datu basera konexio berri bat bidaltzea egin genuen.
+
+SuperNaaahiGame hiru karpetatan banatuta dago:
+Konexioa:
+Karpeta hau, klase bakar bat du, eta bere izenak dioen bezala, Konexio klasea, konexioaz arduratzen den klasea da. Lehenengoz, Ip-a eta portua deklaratzen du. Honen bidez, datu basearekin konexioa egiten du eta erabiltzaileak hartzen ditu logina egiteko.
+
+Model:
+Model karpeta, jokoaren barruan egiten duen metodoak eta objetuak daude. Honen barruan, Background, Demonico, JimCarrey, Puntuazioa, Rodolfo eta User klaseak daude. Objetu eta metodo hauek, gero Game View klasean erabiliko dira jokuaren funtzionaltasuna osatzeko.
+
+View:
+Azkenengoz, view karpetan, GameActivity, GameView, Logina, Main Activity eta PerdisteActivity klaseak daude. Lehenengoz, logina daukagu, non erabiltzailea bere korreo eta pasahitza jarri behar du logeatzeko eta menu printzipalan sartzeko. Gero, Main Activity-a menu printzipalaz arduratzen da, hau da jolasa martxan jartzen duen activity-a. Jolasa GameActivity-an exekutatzen da, honek jolasaren puntuak eta mugikorraren erresoluzioa hartzen du. GameActivity-aren barruan, GameView klasea irudikatzen da, non jolasaren exekuzio guztia gertatzen da. Partida bat jokatu ondoren, PerdisteActivity-ra bidaltzen du, hemen, erabiltzaileak partidaren puntuazioa ikusi ahal du eta partida berri bat jolasteko aukera du edo menu printzipalera bidali bere datuak gordetzen prosezu honetan.
+
 <br/>
 
 ### Funtzionaltasuna

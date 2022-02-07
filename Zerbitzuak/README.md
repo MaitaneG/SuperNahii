@@ -55,9 +55,16 @@ Garatu dugun aplikazioa PostgreMongoKonexioak deitzen da eta aplikazio honek egi
 Aplikazio honek socket bat erabiltzen du informazioa elkar bidaltzeko. Baldin eta zer mezu jasotzen duen aplikazioa, android-eko aplikaziotik, gauza bat edo beste bat egingo du. Bezeroa konektatzen den bakoitzean, hari bat sortuko du eta honek socket bat zabalduko du, egin beharrekoa egiteko. Proiektua horrela dago banatuta: 
 
   - **com.example.postgremongokonexioak:** Karpeta honetan, Lau klase daude: *[KonexioakAplication.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioakApplication.java)*, *[KonexioaMongo.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioaMongo.java)*, *[KonexioaPostgre.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioaPostgre.java)* eta *[ZerbitzariHaria.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/ZerbitzariHaria.java)*. 
+  
     - **KonexioakApplication:** aplikazio orokorra da. Bertan Zerbitzariaren Socket-a sortzen da eta bezero baten zain geratzen da. Behin bezero bat konektazen denean, hari bat sortu eta hasten du.
-    - **ZerbitzariHaria:** Klase hau hari bat da. Bertan 
+    
+    - **ZerbitzariHaria:** Klase hau hari bat da. Bertan Bezeroak mezu bat sartzeko zain dago. Behin mezua sartzean, depende zer mezu jasotzen duen, gauza bat edo beste bat egingo du.
+    
+    - **KonexioaMongo:** Bertan MongoDB-rako konexioa eta puntuazioen txertaketa dago.
+    
+    - **KonexioaPostgre:** bertan PostgreSQL-rako konexioa, erabiltzaileak lortzeko metodoa, puntuazioak lortzeko metodoa eta puntuazioak gehitzeko metodoa.
 
+ - **com.example.postgremongokonexioak.model**
 <br/>
 
 ### Diagrama

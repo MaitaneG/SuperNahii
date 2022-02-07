@@ -53,8 +53,43 @@ Gure Web orriko index printzipala hau da:
 
 Menu bat daukagu bost aukerekin: Ranking orokorra, HallOfFame, HallOfShame, Foroa eta Txotenak.
 
-1.Ranking orokorra:
+#### 1. Ranking orokorra:
+
 Ranking orokorrean partida guztiak agertuko dira jokalari izena, puntuak eta datarekin.
+
+![Ranking orokorra](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/Kapturak/Captura%20de%20pantalla%202022-02-07%20091006.png)
+
+#### 2. HallOfFame:
+
+Puntuazio onenak dituzten 5 partida agertuko dira.
+
+![Hall of fame](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/Kapturak/Captura%20de%20pantalla%202022-02-07%20091449.png)
+
+#### 3. HallOfShame:
+
+Puntuazio txarrenak dituzten 5 partida agertuko dira.
+
+![Hall of shame](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/Kapturak/Captura%20de%20pantalla%202022-02-07%20091902.png)
+
+#### 4. Foroa:
+
+Foroa betetzeko derrigorrez logeatu egin behar da.  
+
+![Login](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/Kapturak/Captura%20de%20pantalla%202022-02-07%20092214.png)
+
+Logeatu eta gero, Foroa agertzen da. Eskubian formulario bat dago foroa egiteko eta ezkerrean berriz, foroa ikusteko formularioa. Guk idazten dugun komentarioa
+gris ilunez agertuko da eta beste langile batek idatzi duen komentarioa gris argiz.
+
+![Foroa](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/Kapturak/Captura%20de%20pantalla%202022-02-07%20092431.png)
+
+#### 5. Txostena:
+
+Txostenetan bi txosten ditugu bat 5 partida puntuazio onenekin eta 5 partida puntuazio txarrenekin, bigarren txostena berriz, ranking orokorra.
+
+HallOfFame/HallOfShame Txostena:
+
+![HallOfFame txostena](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/Kapturak/Captura%20de%20pantalla%202022-02-07%20093407.png)
+
 
 
 

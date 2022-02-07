@@ -31,7 +31,7 @@ Web orri hau erabili dugu, jokuaren grafikoak diseinatzeko. *[Pixelart-en](https
 ![SQLite logo](https://user-images.githubusercontent.com/75113982/151691713-92c56147-1c92-47f5-9540-f6220007296b.png)
 
 ##### - PostgreSQL: 
-Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa dago. Guk garatutako beste aplikazio batekin Postgres-etik erabiltzaileen datuak pasatzen ziren SQLite-ra eta gero puntuazioak *[PostgreSQL-ra](https://www.postgresql.org/)* (konexioa dagoenean)
+Odook erabiltzen duen datubasea da. Bertan langileen eta puntuazioen informazioa dago. Guk garatutako beste aplikazio batekin Postgres-etik erabiltzaileen datuak pasatzen dira SQLite-ra eta gero puntuazioak *[PostgreSQL-ra](https://www.postgresql.org/)* (konexioa dagoenean)
 
 ![PostgreSQL logo](https://user-images.githubusercontent.com/75113982/151692026-094271f1-ff91-49c6-a708-dbeeb58b9a14.png)
 

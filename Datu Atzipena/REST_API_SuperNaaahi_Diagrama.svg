@@ -1,136 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="74cm" height="26cm" viewBox="-606 -378 1463 505" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="78cm" height="25cm" viewBox="-683 -407 1542 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
-    <rect style="fill: #ffffff" x="-604.672" y="-356.63" width="493.488" height="246.041"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-604.672" y="-356.63" width="493.488" height="246.041"/>
-    <rect style="fill: #ffffff" x="-604.672" y="-376.63" width="88.7" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-604.672" y="-376.63" width="88.7" height="20"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-602.672" y="-362.63">eus.dam.uni</text>
+    <rect style="fill: #ffffff" x="-681.007" y="-369.716" width="493.488" height="246.041"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-681.007" y="-369.716" width="493.488" height="246.041"/>
+    <rect style="fill: #ffffff" x="-681.007" y="-389.716" width="88.7" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-681.007" y="-389.716" width="88.7" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-679.007" y="-375.716">eus.dam.uni</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-395.58" y="-191.639" width="264.1" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-395.58" y="-191.639" width="264.1" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-263.53" y="-171.639">RestApiApplication</text>
-    <rect style="fill: #ffffff" x="-395.58" y="-163.639" width="264.1" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-395.58" y="-163.639" width="264.1" height="8"/>
-    <rect style="fill: #ffffff" x="-395.58" y="-155.639" width="264.1" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-395.58" y="-155.639" width="264.1" height="20"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-392.58" y="-142.439">+main(args:String[]): static void</text>
+    <rect style="fill: #ffffff" x="-471.915" y="-204.725" width="210.2" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-471.915" y="-204.725" width="210.2" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-366.815" y="-184.725">RestApiApplication</text>
+    <rect style="fill: #ffffff" x="-471.915" y="-176.725" width="210.2" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-471.915" y="-176.725" width="210.2" height="8"/>
+    <rect style="fill: #ffffff" x="-471.915" y="-168.725" width="210.2" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-471.915" y="-168.725" width="210.2" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-468.915" y="-155.525">+main(args:String[]): void</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-468.915" y1="-153.925" x2="-268.715" y2="-153.925"/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-589.398" y="-319.652" width="456.6" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-589.398" y="-319.652" width="456.6" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-361.098" y="-299.652">SpringConfiguration</text>
-    <rect style="fill: #ffffff" x="-589.398" y="-291.652" width="456.6" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-589.398" y="-291.652" width="456.6" height="20"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-586.398" y="-278.452">-connectionString: String = "mongodb://192.168.65.2:27017"</text>
-    <rect style="fill: #ffffff" x="-589.398" y="-271.652" width="456.6" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-589.398" y="-271.652" width="456.6" height="20"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-586.398" y="-258.452">+mongoClient(): MongoClient</text>
+    <rect style="fill: #ffffff" x="-665.733" y="-332.738" width="456.6" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-665.733" y="-332.738" width="456.6" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-437.433" y="-312.738">SpringConfiguration</text>
+    <rect style="fill: #ffffff" x="-665.733" y="-304.738" width="456.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-665.733" y="-304.738" width="456.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-662.733" y="-291.538">-connectionString: String = "mongodb://192.168.65.2:27017"</text>
+    <rect style="fill: #ffffff" x="-665.733" y="-284.738" width="456.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-665.733" y="-284.738" width="456.6" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-662.733" y="-271.538">+mongoClient(): MongoClient</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-586.952" y="-193.379" width="143" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-586.952" y="-193.379" width="143" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-515.452" y="-173.379">SpringFoxConfig</text>
-    <rect style="fill: #ffffff" x="-586.952" y="-165.379" width="143" height="8"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-586.952" y="-165.379" width="143" height="8"/>
-    <rect style="fill: #ffffff" x="-586.952" y="-157.379" width="143" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-586.952" y="-157.379" width="143" height="20"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-583.952" y="-144.179">+api(): Docket</text>
+    <rect style="fill: #ffffff" x="-663.287" y="-206.465" width="143" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-663.287" y="-206.465" width="143" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-591.787" y="-186.465">SpringFoxConfig</text>
+    <rect style="fill: #ffffff" x="-663.287" y="-178.465" width="143" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-663.287" y="-178.465" width="143" height="8"/>
+    <rect style="fill: #ffffff" x="-663.287" y="-170.465" width="143" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-663.287" y="-170.465" width="143" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-660.287" y="-157.265">+api(): Docket</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-64.9694" y="-278.826" width="332.357" height="177.348"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-64.9694" y="-278.826" width="332.357" height="177.348"/>
-    <rect style="fill: #ffffff" x="-64.9694" y="-298.826" width="173.4" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-64.9694" y="-298.826" width="173.4" height="20"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-62.9694" y="-284.826">eus.dam.uni.controller</text>
+    <rect style="fill: #ffffff" x="-117.314" y="-385.696" width="332.357" height="177.348"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-117.314" y="-385.696" width="332.357" height="177.348"/>
+    <rect style="fill: #ffffff" x="-117.314" y="-405.696" width="173.4" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-117.314" y="-405.696" width="173.4" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-115.314" y="-391.696">eus.dam.uni.controller</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-40.5944" y="-253.108" width="279.5" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-40.5944" y="-253.108" width="279.5" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="99.1556" y="-233.108">PuntuazioaController</text>
-    <rect style="fill: #ffffff" x="-40.5944" y="-225.108" width="279.5" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-40.5944" y="-225.108" width="279.5" height="20"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37.5944" y="-211.908">-puntuazoaDao: PuntuazioaDAO</text>
-    <rect style="fill: #ffffff" x="-40.5944" y="-205.108" width="279.5" height="68"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-40.5944" y="-205.108" width="279.5" height="68"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37.5944" y="-191.908">+getPuntuazioak(): List&lt;Puntuazioa&gt;</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37.5944" y="-175.908">+getHallOfFame(): List&lt;Puntuazioa&gt;</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37.5944" y="-159.908">+getHallOfShame(): List&lt;Puntuazioa&gt;</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-37.5944" y="-143.908">+countPuntuazioak(): int</text>
+    <rect style="fill: #ffffff" x="-92.9387" y="-359.978" width="279.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-92.9387" y="-359.978" width="279.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="46.8113" y="-339.978">PuntuazioaController</text>
+    <rect style="fill: #ffffff" x="-92.9387" y="-331.978" width="279.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-92.9387" y="-331.978" width="279.5" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-89.9387" y="-318.778">-puntuazoaDao: PuntuazioaDAO</text>
+    <rect style="fill: #ffffff" x="-92.9387" y="-311.978" width="279.5" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-92.9387" y="-311.978" width="279.5" height="68"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-89.9387" y="-298.778">+getPuntuazioak(): List&lt;Puntuazioa&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-89.9387" y="-282.778">+getHallOfFame(): List&lt;Puntuazioa&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-89.9387" y="-266.778">+getHallOfShame(): List&lt;Puntuazioa&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-89.9387" y="-250.778">+countPuntuazioak(): int</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-514.342" y="-75.462" width="357.754" height="200.979"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-514.342" y="-75.462" width="357.754" height="200.979"/>
-    <rect style="fill: #ffffff" x="-514.342" y="-95.462" width="119.5" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-514.342" y="-95.462" width="119.5" height="20"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-512.342" y="-81.462">eus.dam.uni.dao</text>
+    <rect style="fill: #ffffff" x="-130.484" y="-109.268" width="357.754" height="200.979"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-130.484" y="-109.268" width="357.754" height="200.979"/>
+    <rect style="fill: #ffffff" x="-130.484" y="-129.268" width="119.5" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-130.484" y="-129.268" width="119.5" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-128.484" y="-115.268">eus.dam.uni.dao</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-490.344" y="-50.4816" width="318" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-490.344" y="-50.4816" width="318" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-331.344" y="-30.4816">PuntuazioaDAO</text>
-    <rect style="fill: #ffffff" x="-490.344" y="-22.4816" width="318" height="36"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-490.344" y="-22.4816" width="318" height="36"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-487.344" y="-9.2816">-client: MongoClient</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-487.344" y="6.7184">-collection: MongoCollection&lt;Puntuazioa&gt;</text>
-    <rect style="fill: #ffffff" x="-490.344" y="13.5184" width="318" height="84"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-490.344" y="13.5184" width="318" height="84"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-487.344" y="26.7184">+datuakKargatu(): void</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-487.344" y="42.7184">+findAll(): List&lt;Puntuazioa&gt;</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-487.344" y="58.7184">+findHallOfFame(): List&lt;Puntuazioa&gt;</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-487.344" y="74.7184">+findHallOfShame(): List&lt;Puntuazioa&gt;</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-487.344" y="90.7184">+countPuntuzioak(): int</text>
+    <rect style="fill: #ffffff" x="-106.486" y="-84.2873" width="318" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-106.486" y="-84.2873" width="318" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="52.514" y="-64.2873">PuntuazioaDAO</text>
+    <rect style="fill: #ffffff" x="-106.486" y="-56.2873" width="318" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-106.486" y="-56.2873" width="318" height="36"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-103.486" y="-43.0873">-client: MongoClient</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-103.486" y="-27.0873">-collection: MongoCollection&lt;Puntuazioa&gt;</text>
+    <rect style="fill: #ffffff" x="-106.486" y="-20.2873" width="318" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-106.486" y="-20.2873" width="318" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-103.486" y="-7.08727">+datuakKargatu(): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-103.486" y="8.91273">+findAll(): List&lt;Puntuazioa&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-103.486" y="24.9127">+findHallOfFame(): List&lt;Puntuazioa&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-103.486" y="40.9127">+findHallOfShame(): List&lt;Puntuazioa&gt;</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-103.486" y="56.9127">+countPuntuzioak(): int</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="325.916" y="-338.988" width="530.013" height="403.107"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="325.916" y="-338.988" width="530.013" height="403.107"/>
-    <rect style="fill: #ffffff" x="325.916" y="-358.988" width="134.9" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="325.916" y="-358.988" width="134.9" height="20"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="327.916" y="-344.988">eus.dam.uni.model</text>
+    <rect style="fill: #ffffff" x="328.097" y="-361.889" width="530.013" height="403.107"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="328.097" y="-361.889" width="530.013" height="403.107"/>
+    <rect style="fill: #ffffff" x="328.097" y="-381.889" width="134.9" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="328.097" y="-381.889" width="134.9" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="330.097" y="-367.889">eus.dam.uni.model</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="351.592" y="-321.01" width="433.5" height="28"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="351.592" y="-321.01" width="433.5" height="28"/>
-    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="568.342" y="-301.01">Puntuazioa</text>
-    <rect style="fill: #ffffff" x="351.592" y="-293.01" width="433.5" height="84"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="351.592" y="-293.01" width="433.5" height="84"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-279.81">-id: ObjectId</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-263.81">-jokalari: String</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-247.81">-jokalariId: int</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-231.81">-puntuazioa: int</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-215.81">-data: LocalDateTime</text>
-    <rect style="fill: #ffffff" x="351.592" y="-209.01" width="433.5" height="228"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="351.592" y="-209.01" width="433.5" height="228"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-195.81">+Puntuazioa()</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-179.81">+Puntuazioa(id:ObjectId,jokalariId:int,jokalari:String,</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-163.81">            puntuazioa:int,data:LocalDateTime)</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-147.81">+getJokalari(): String</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-131.81">+setJokalari(jokalari:String): void</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-115.81">+getJokalariId(): int</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-99.81">+setJokalariId(jokalariId:int): void</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-83.81">+getPuntuazioa(): int</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-67.81">+setPuntuazioa(puntuazioa:int): void</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-51.81">+getData(): LocalDateTime</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-35.81">+setData(data:LocalDateTime): void</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-19.81">+hashCode(): int</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="-3.81">+equals(obj:Object): boolean</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="354.592" y="12.19">+toString(): String</text>
+    <rect style="fill: #ffffff" x="353.773" y="-343.911" width="433.5" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="353.773" y="-343.911" width="433.5" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="570.523" y="-323.911">Puntuazioa</text>
+    <rect style="fill: #ffffff" x="353.773" y="-315.911" width="433.5" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="353.773" y="-315.911" width="433.5" height="84"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-302.711">-id: ObjectId</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-286.711">-jokalari: String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-270.711">-jokalariId: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-254.711">-puntuazioa: int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-238.711">-data: LocalDateTime</text>
+    <rect style="fill: #ffffff" x="353.773" y="-231.911" width="433.5" height="228"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="353.773" y="-231.911" width="433.5" height="228"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-218.711">+Puntuazioa()</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-202.711">+Puntuazioa(id:ObjectId,jokalariId:int,jokalari:String,</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-186.711">            puntuazioa:int,data:LocalDateTime)</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-170.711">+getJokalari(): String</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-154.711">+setJokalari(jokalari:String): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-138.711">+getJokalariId(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-122.711">+setJokalariId(jokalariId:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-106.711">+getPuntuazioa(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-90.7106">+setPuntuazioa(puntuazioa:int): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-74.7106">+getData(): LocalDateTime</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-58.7106">+setData(data:LocalDateTime): void</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-42.7106">+hashCode(): int</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-26.7106">+equals(obj:Object): boolean</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="356.773" y="-10.7106">+toString(): String</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-14.7058" y="-23.3906" width="253.261" height="93.4542"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-14.7058" y="-23.3906" width="253.261" height="93.4542"/>
-    <rect style="fill: #ffffff" x="-14.7058" y="-43.3906" width="142.6" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-14.7058" y="-43.3906" width="142.6" height="20"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-12.7058" y="-29.3906">src.main.resources</text>
+    <rect style="fill: #ffffff" x="-622.117" y="-58.2868" width="253.261" height="93.4542"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-622.117" y="-58.2868" width="253.261" height="93.4542"/>
+    <rect style="fill: #ffffff" x="-622.117" y="-78.2868" width="142.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-622.117" y="-78.2868" width="142.6" height="20"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-620.117" y="-64.2868">src.main.resources</text>
   </g>
   <g>
-    <polygon style="fill: #ffffff" points="21.0978,13.3813 196.498,13.3813 208.498,25.3813 208.498,47.3813 21.0978,47.3813 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="21.0978,13.3813 196.498,13.3813 208.498,25.3813 208.498,47.3813 21.0978,47.3813 "/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="196.498,13.3813 196.498,25.3813 208.498,25.3813 "/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="28.0978" y="37.0313">
-      <tspan x="28.0978" y="37.0313">application.properties</tspan>
+    <polygon style="fill: #ffffff" points="-586.314,-21.5149 -410.914,-21.5149 -398.914,-9.5149 -398.914,12.4851 -586.314,12.4851 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-586.314,-21.5149 -410.914,-21.5149 -398.914,-9.5149 -398.914,12.4851 -586.314,12.4851 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" points="-410.914,-21.5149 -410.914,-9.5149 -398.914,-9.5149 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-579.314" y="2.1351">
+      <tspan x="-579.314" y="2.1351">application.properties</tspan>
     </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-143.483,-297.022 -158.558,-297.022 -158.558,-8.77801 -130.484,-8.77801 "/>
+    <polygon style="fill: #ffffff" points="-118.312,-297.022 -132.312,-292.222 -146.312,-297.022 -132.312,-301.822 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-118.312,-297.022 -132.312,-292.222 -146.312,-297.022 -132.312,-301.822 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="-134.484" y="-20.778"> 1</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="253.446,-8.77801 283.097,-8.77801 283.097,-160.335 328.097,-160.335 "/>
+    <polygon style="fill: #ffffff" points="228.274,-8.77801 242.274,-13.578 256.274,-8.77801 242.274,-3.97801 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="228.274,-8.77801 242.274,-13.578 256.274,-8.77801 242.274,-3.97801 "/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="324.097" y="-172.335"> n</text>
   </g>
 </svg>

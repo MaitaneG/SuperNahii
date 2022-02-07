@@ -56,15 +56,18 @@ Aplikazio honek socket bat erabiltzen du informazioa elkar bidaltzeko. Baldin et
 
   - **com.example.postgremongokonexioak:** Karpeta honetan, Lau klase daude: *[KonexioakAplication.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioakApplication.java)*, *[KonexioaMongo.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioaMongo.java)*, *[KonexioaPostgre.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioaPostgre.java)* eta *[ZerbitzariHaria.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/ZerbitzariHaria.java)*. 
   
-    - **KonexioakApplication:** aplikazio orokorra da. Bertan Zerbitzariaren Socket-a sortzen da eta bezero baten zain geratzen da. Behin bezero bat konektazen denean, hari bat sortu eta hasten du.
+    - **KonexioakApplication.java:** aplikazio orokorra da. Bertan Zerbitzariaren Socket-a sortzen da eta bezero baten zain geratzen da. Behin bezero bat konektazen denean, hari bat sortu eta hasten du.
     
-    - **ZerbitzariHaria:** Klase hau hari bat da. Bertan Bezeroak mezu bat sartzeko zain dago. Behin mezua sartzean, depende zer mezu jasotzen duen, gauza bat edo beste bat egingo du.
+    - **ZerbitzariHaria.java:** Klase hau hari bat da. Bertan Bezeroak mezu bat sartzeko zain dago. Behin mezua sartzean, depende zer mezu jasotzen duen, gauza bat edo beste bat egingo du.
     
-    - **KonexioaMongo:** Bertan MongoDB-rako konexioa eta puntuazioen txertaketa dago.
+    - **KonexioaMongo.java:** Bertan MongoDB-rako konexioa eta puntuazioen txertaketa dago.
     
-    - **KonexioaPostgre:** bertan PostgreSQL-rako konexioa, erabiltzaileak lortzeko metodoa, puntuazioak lortzeko metodoa eta puntuazioak gehitzeko metodoa.
+    - **KonexioaPostgre.java:** bertan PostgreSQL-rako konexioa, erabiltzaileak lortzeko metodoa, puntuazioak lortzeko metodoa eta puntuazioak gehitzeko metodoa.
 
- - **com.example.postgremongokonexioak.model**
+ - **com.example.postgremongokonexioak.model:** Karpeta honetan objetuen modeloak daude. Kasu honetan honek dira modeloak: *[Puntuazioa.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/model/Puntuazioa.java)* eta *[User.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/model/Puntuazioa.java)*
+    - **Puntuazioa.java**: gure Puntuazio.java klaseak puntuazioen informazioa kudeatzeko erabiliko dugu, eta atributu hauek ditu: ida, jokalari, jokalariId, puntuazioa eta data. 
+    - **User**: gure User.java klaseak gure erabiltzaileen informazioa kudeatzeko erabiliko dugu, eta atributu hauek ditu: id, name, email eta password.
+  
 <br/>
 
 ### Diagrama
@@ -83,4 +86,5 @@ Aplikazio honek Socket bat zabalik edukiko du, eta bezero baten zain egongo da. 
 ## 4. Iturriak 📌
   - *[Klaseko proiektua](https://elearning20.hezkuntza.net/012053/course/view.php?id=220)* --> Socket-ena egiteko
   - *[MongoDB-ren dokumentazioa](https://elearning20.hezkuntza.net/012053/course/view.php?id=220)* --> Mongo-ren konexioak egiteko
+  - *[Javaren dokumentazioa](https://docs.oracle.com/javase/7/docs/api/)*
   

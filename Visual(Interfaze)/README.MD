@@ -44,8 +44,19 @@ Datu base hau erabili dugu, web orrialdearen foroaren komentarioak eta erabiltza
 
 ### Funtzionaltasuna
 
+
 Gure Web orriko index printzipala hau da:
-(https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/Kapturak/Captura%20de%20pantalla%202022-02-07%20085355.png)
+
+<br/>
+
+![Gure Web orriko index printzipala hau da:](https://github.com/MaitaneG/SuperNahii/blob/main/Visual(Interfaze)/Kapturak/Captura%20de%20pantalla%202022-02-07%20085355.png)
+
+Menu bat daukagu bost aukerekin: Ranking orokorra, HallOfFame, HallOfShame, Foroa eta Txotenak.
+
+1.Ranking orokorra:
+Ranking orokorrean partida guztiak agertuko dira jokalari izena, puntuak eta datarekin.
+
+
 
 
 

@@ -20,16 +20,19 @@ import com.example.supernaaahigame.model.Rodolfo;
 
 import java.util.Random;
 
+/**
+ * Jokuaren elementu guztiak marrazten duen bista da
+ */
 public class GameView extends SurfaceView implements Runnable {
 
     public static float screenRatioX, screenRatioY;
-    public static float inputX, inputY, inputX1, inputY1;
+    //public static float inputX, inputY, inputX1, inputY1;
     public static Paint paint = null, pu = null, pe = null, pt = null, score = null;
     private final Background background1, background2;
     public static final boolean debug = false;
     public static int screenX, screenY;
     private Thread thread;
-    private Random random;
+    //private Random random;
     public static boolean isPlaying, isGameOver = false, isJump, isTocandoFondo, isBloqueao;
     public static Rodolfo rodolfo;
     public static Demonico demonico;
@@ -46,9 +49,17 @@ public class GameView extends SurfaceView implements Runnable {
     private int rodolfoSalto = 3500;
     private int rodolfoDepre = 4000;
 
+    /**
+     * GameView-ren konstruktorea
+     *
+     * @param activity
+     * @param sX
+     * @param sY
+     */
     public GameView(GameActivity activity, int sX, int sY) {
         super(activity);
 
+        // Atributo batzuk hasieratu
         isGameOver = false;
         rodolfo = null;
         tic = 0;
@@ -56,6 +67,7 @@ public class GameView extends SurfaceView implements Runnable {
         Demonico.enemy1Speed = 25;
         JimCarrey.enemy2Speed = 25;
 
+        // Oreinaren marrazkiak
         rodolfoBitmap = new Bitmap[]{
                 BitmapFactory.decodeResource(getResources(), R.drawable.reno1),
                 BitmapFactory.decodeResource(getResources(), R.drawable.reno2),
@@ -63,27 +75,32 @@ public class GameView extends SurfaceView implements Runnable {
                 BitmapFactory.decodeResource(getResources(), R.drawable.renodown)
         };
 
+        // Oreina objektua sortu
         rodolfo = new Rodolfo(rodolfoBitmap);
 
+        // Marrazkiak eskalatu
         for (int i = 0; i < 4; i++) {
             rodolfoBitmap[i] = Bitmap.createScaledBitmap(rodolfoBitmap[i], rodolfo.width, rodolfo.height, false);
         }
 
+        // Puntuak zerora jarri
         GameActivity.puntuak = 0;
 
         this.activity = activity;
 
+        // Pantailaren width, height, screenRatioX eta screenRatioY zehaztu
         this.screenX = sX;
         this.screenY = sY;
         screenRatioX = 1920f / screenX;
         screenRatioY = 1080f / screenY;
 
+        // Fondo objekuak sortu eta jarri bigarren fondoaren x-a
         background1 = new Background(screenX, screenY, getResources());
         background2 = new Background(screenX, screenY, getResources());
 
         background2.x = screenX;
 
-
+        // Debug-aren paint objektua sortu eta erabili
         paint = new Paint();
         pe = new Paint();
         pu = new Paint();
@@ -104,47 +121,59 @@ public class GameView extends SurfaceView implements Runnable {
         score.setStyle(Paint.Style.FILL);
         score.setTextSize(80);
 
-
+        // Deabruaren marrakiak
         DemBitmap = new Bitmap[]{
                 BitmapFactory.decodeResource(getResources(), R.drawable.enemy1),
                 BitmapFactory.decodeResource(getResources(), R.drawable.enemy2)
         };
 
+        // Deabru objektua sortu
         demonico = new Demonico(DemBitmap);
 
+        // Marrazkiak eskalatu
         for (int i = 0; i < DemBitmap.length; i++) {
             DemBitmap[i] = Bitmap.createScaledBitmap(DemBitmap[i], demonico.width, demonico.height, false);
         }
 
+        // Grinch-aren marrakiak
         CarreyBitmap = new Bitmap[]{
                 BitmapFactory.decodeResource(getResources(), R.drawable.grinch1),
                 BitmapFactory.decodeResource(getResources(), R.drawable.grinch1)
         };
 
+        // Grinch objektua sortu
         carrey = new JimCarrey(CarreyBitmap);
 
+        // Grinch-ak eskalatu
         for (int i = 0; i < CarreyBitmap.length; i++) {
             CarreyBitmap[i] = Bitmap.createScaledBitmap(CarreyBitmap[i], carrey.width, carrey.height, false);
         }
         TurnoEnemigo();
+
+        /**
+         * Behekoa kendu daiteke
+         */
           /*  GameActivity.hipoMusika.start();
         }else{
             GameActivity.grinchMusika.start();
         }*/
     }
 
-
+    /**
+     * View-aren haria da
+     */
     @Override
     public void run() {
-
         while (isPlaying) {
             update();
             draw();
             sleep();
         }
-
     }
 
+    /**
+     * Jokuaren aldaketak egiten du
+     */
     private void update() {
         tic++;
         rodolfo.update();
@@ -173,6 +202,9 @@ public class GameView extends SurfaceView implements Runnable {
         }
     }
 
+    /**
+     * Jokuaren aldaketak marrazten du
+     */
     private void draw() {
         if (getHolder().getSurface().isValid()) {
             Canvas canvas = getHolder().lockCanvas();
@@ -207,23 +239,34 @@ public class GameView extends SurfaceView implements Runnable {
         }
     }
 
+    /**
+     * Saltoaren denbora kontrolatzeko
+     */
     private void rodolfoSaltoKendu() {
         if (rodolfoSalto > 500) {
             rodolfoSalto = rodolfoSalto - 20;
         }
     }
 
+    /**
+     * Maurtzearen denbora kontrolatzeko
+     */
     private void rodolfoSadKendu() {
         if (rodolfoDepre > 500) {
             rodolfoDepre = rodolfoDepre - 20;
         }
     }
 
-
+    /**
+     * GameOver pantailara doa
+     */
     private void gameOver() {
         activity.startActivity(new Intent(activity, PerdisteActivity.class));
     }
 
+    /**
+     * FPS-en kontrola kudeatzeko
+     */
     private void sleep() {
         try {
             Thread.sleep(30);
@@ -232,13 +275,18 @@ public class GameView extends SurfaceView implements Runnable {
         }
     }
 
-
+    /**
+     * Jokua berrezkuaratzen denean
+     */
     public void resume() {
         isPlaying = true;
         thread = new Thread(this);
         thread.start();
     }
 
+    /**
+     * Jokua pausatzen denean
+     */
     public void pause() {
         try {
             isPlaying = false;
@@ -248,14 +296,23 @@ public class GameView extends SurfaceView implements Runnable {
         }
     }
 
+    /**
+     * Pantaila klikatzean
+     *
+     * @param event
+     * @return
+     */
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
+            // Pantaila klikatzen denean
             case MotionEvent.ACTION_DOWN:
+                // Pantailaren eskumaldea klikatzean
                 if (event.getX() > screenX / 2) {
                     if (!isBloqueao) {
                         RodolfoSalta();
                     }
+                    // Pantailaren ezkerraldea klikatzean
                 } else {
                     if (!isBloqueao) {
                         RodolfoDeprimio();
@@ -266,8 +323,10 @@ public class GameView extends SurfaceView implements Runnable {
         return true;
     }
 
+    /**
+     * Makurtzearen aldaketak egiten du
+     */
     private void RodolfoDeprimio() {
-
         isTocandoFondo = true;
         isBloqueao = true;
 
@@ -299,20 +358,23 @@ public class GameView extends SurfaceView implements Runnable {
         }
     }
 
+    /**
+     * @return zer etsai agertuko den
+     */
     public static boolean TurnoEnemigo() {
         double r = Math.random();
+        // Grinch-a agertuko da
         if (r < 0.5 && c1 < 3) {
             //GameActivity.grinchMusika.start();
             c1++;
             c2 = 0;
             orden = true;
+            // Deabrua agertukok da
         } else if (r >= 0.5 && c2 < 3) {
-
             //GameActivity.hipoMusika.start();
             c2++;
             c1 = 0;
             orden = false;
-
         }
         return orden;
     }

@@ -20,22 +20,12 @@ import com.example.supernaaahigame.model.User;
  * Login Layout-aren klasea
  */
 public class Login extends AppCompatActivity {
-    /**
-     * Atributoak
-     */
-    // Botoia
     private ImageButton loginBotoia;
-    // Idazteko labelak
     private EditText emaila, pasahitza;
-    // Konexioa
-    //Konektatu konexioa;
     private static boolean login = false;
-    // Intent-a
     private Intent intent;
-
     public static SQLiteDatabase db;
-
-    Konexioa konexioa;
+    private Konexioa konexioa;
 
 
     /**
@@ -54,24 +44,21 @@ public class Login extends AppCompatActivity {
      * Konponente guztiak hasieratu
      */
     private void hasieratu() {
-        // Labelak
-
+        // EditText
         emaila = findViewById(R.id.editTextEmailLogin);
         pasahitza = findViewById(R.id.editPasswordLogin);
-        // Jolasa hasteko botoia
+        // ImageButton
         loginBotoia = findViewById(R.id.loginbtn);
-        // Botoiari listenerra jarri
-
+        // OnClickListener
         loginBotoia.setOnClickListener(this::botoiaSakatu);
-
+        // Datubasea
         db = openOrCreateDatabase("Txapelketa", Context.MODE_PRIVATE, null);
         db.execSQL("CREATE TABLE IF NOT EXISTS Erabiltzaileak(id INTEGER PRIMARY KEY AUTOINCREMENT,izena VARCHAR,email VARCHAR, password VARCHAR);");
         db.execSQL("CREATE TABLE IF NOT EXISTS Puntuazioak(id INTEGER PRIMARY KEY AUTOINCREMENT, jokalariaId INT,jokalaria VARCHAR,puntuak int, data DATETIME);");
-
+        // Konexioa
         konexioa = new Konexioa();
         konexioa.erabiltzaileakLortu();
         konexioa.bidaliPuntuazioak();
-
     }
 
     /**
@@ -83,20 +70,20 @@ public class Login extends AppCompatActivity {
         String user = emaila.getText().toString();
         String pass = pasahitza.getText().toString();
         User us = new User(user, pass);
+        // Gakoak hutsik badaude
         if (us.getEmail().equals("") && us.getPass().equals("")) {
             Toast.makeText(this, "Eremu guztiak bete behar dira", Toast.LENGTH_SHORT).show();
         } else {
+            // Konexioa ondo egin bada
             if (konexioa.login(us)) {
                 Toast.makeText(this, "Logeatu zara", Toast.LENGTH_SHORT).show();
+
+                // Hasiera pantailara doia
                 Intent i = new Intent(Login.this, MainActivity.class);
                 startActivity(i);
-
             } else {
                 Toast.makeText(this, "Ez zara logeatu ", Toast.LENGTH_SHORT).show();
             }
         }
-
     }
-
-
 }

@@ -54,7 +54,7 @@ Garatu dugun aplikazioa PostgreMongoKonexioak deitzen da eta aplikazio honek egi
 
 Aplikazio honek socket bat erabiltzen du informazioa elkar bidaltzeko. Baldin eta zer mezu jasotzen duen aplikazioa, android-eko aplikaziotik, gauza bat edo beste bat egingo du. Bezeroa konektatzen den bakoitzean, hari bat sortuko du eta honek socket bat zabalduko du, egin beharrekoa egiteko. Proiektua horrela dago banatuta: 
 
-  - **com.example.postgremongokonexioak:** Karpeta honetan, Lau klase daude: KonexioakAplication.java, KonexioaMongo.java, KonexioaPostgre.java eta ZerbitzariHaria.java. 
+  - **com.example.postgremongokonexioak:** Karpeta honetan, Lau klase daude: *[KonexioakAplication.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioakApplication.java)*, *[KonexioaMongo.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioaMongo.java)*, *[KonexioaPostgre.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/KonexioaPostgre.java)* eta *[ZerbitzariHaria.java](https://github.com/MaitaneG/SuperNahii/blob/main/Zerbitzuak/PostgreMongoKonexioak/src/main/java/com/example/postgremongokonexioak/ZerbitzariHaria.java)*. 
 
 <br/>
 

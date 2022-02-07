@@ -232,8 +232,6 @@ C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Super
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\SuperNaaahi.StaticWebAssets.xml
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\appsettings.json
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\docfx.json
-C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\_site\manifest.json
-C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\_site\search-stopwords.json
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\SuperNaaahi.exe
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\SuperNaaahi.deps.json
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\SuperNaaahi.runtimeconfig.json
@@ -345,3 +343,5 @@ C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\Super
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\ref\SuperNaaahi.dll
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\SuperNaaahi.pdb
 C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\obj\Debug\net5.0\SuperNaaahi.genruntimeconfig.cache
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\_site\manifest.json
+C:\Users\arambarri.oihana\Desktop\SuperNahii\Visual(Interfaze)\SuperNaaahi\SuperNaaahi\bin\Debug\net5.0\_site\search-stopwords.json

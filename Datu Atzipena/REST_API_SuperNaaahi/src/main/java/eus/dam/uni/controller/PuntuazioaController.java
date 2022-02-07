@@ -54,8 +54,8 @@ public class PuntuazioaController {
 	 * 
 	 * @return Partehartutako langileen kopurua
 	 */
-	@GetMapping("puntuazioak/puntuazioKopurua")
-	public int countPuntuazioak() {
-		return puntuazoaDao.countPuntuzioak();
+	@GetMapping("puntuazioak/partidaKopurua")
+	public int countPartidak() {
+		return puntuazoaDao.countPartidak();
 	}
 }

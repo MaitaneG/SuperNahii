@@ -74,7 +74,7 @@ public class PuntuazioaDAO {
 	 * 
 	 * @return Puntuazio kopurua
 	 */
-	public int countPuntuzioak() {
+	public int countPartidak() {
 		return Math.toIntExact(collection.countDocuments());
 	}
 }

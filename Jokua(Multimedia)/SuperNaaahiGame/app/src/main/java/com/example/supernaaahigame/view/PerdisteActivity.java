@@ -52,7 +52,6 @@ public class PerdisteActivity extends AppCompatActivity {
 
         // Musika itzali
         MainActivity.hasierakoMusika.stop();
-        MainActivity.piztuta = false;
 
         // Puntuazioa bistaratu
         puntuazioaLabel.setText("Puntuak: " + String.valueOf(GameActivity.puntuak));

@@ -50,16 +50,6 @@ public class Konexioa extends Thread {
                     salida.println(puntuazioa.toString());
                     salida.println("bukatu");
 
-                    /**
-                     * Behekoa borratu daiteke
-                     **/
-                    ArrayList<Puntuazioa> puntuazioas = new ArrayList<>();
-                    Cursor c = Login.db.rawQuery("SELECT * FROM Puntuazioak ;", null);
-                    while (c.moveToNext()) {
-                        Puntuazioa p = new Puntuazioa(new User(c.getInt(0), c.getString(1)), c.getInt(3), c.getString(4));
-                        puntuazioas.add(p);
-                    }
-
                     // SQLiten dauden Puntuazioa edo puntuazioak ezabatzen ditu
                     String borrau = "DELETE FROM Puntuazioak";
                     Login.db.execSQL(borrau);
@@ -90,18 +80,12 @@ public class Konexioa extends Thread {
                             new OutputStreamWriter(sk.getOutputStream()), true);
 
                     // Puntuazioen string bat sortu SQLite-tik lortutako informazioarekin
-                    /**
-                     * ArrayList kendu daiteke
-                     **/
-                    ArrayList<Puntuazioa> puntuazioas = new ArrayList<>();
                     String puntuazioString = "";
-                    int i = 0;
                     Cursor c = Login.db.rawQuery("SELECT * FROM Puntuazioak ;", null);
                     while (c.moveToNext()) {
                         Puntuazioa p = new Puntuazioa(new User(c.getInt(1), c.getString(2)), c.getInt(3), c.getString(4));
-                        puntuazioas.add(p);
-                        puntuazioString = puntuazioString + puntuazioas.get(i).toString();
-                        i++;
+
+                        puntuazioString = puntuazioString + p.toString();
                     }
 
                     // Puntuazioen string-a bidali
@@ -142,10 +126,6 @@ public class Konexioa extends Thread {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                /**
-                 * ArrayList-a borratu daiteke
-                 */
-                users = new ArrayList<>();
                 try {
                     // Socket-a sortu
                     Socket sk = new Socket(ip, puerto);
@@ -173,8 +153,8 @@ public class Konexioa extends Thread {
                         String[] erregistroak = jaso.split(";");
                         for (int i = 0; i < erregistroak.length; i++) {
                             String[] parts = erregistroak[i].split(",");
-                            users.add(new User(Integer.parseInt((parts[0])), (parts[1]), (parts[2]), parts[3]));
-                            String insert_query = "INSERT INTO Erabiltzaileak(id,izena,email,password) VALUES (" + users.get(i).getId() + ",'" + users.get(i).getName() + "', '" + users.get(i).getEmail() + "', '" + users.get(i).getPass() + "')";
+                            User user = new User(Integer.parseInt((parts[0])), (parts[1]), (parts[2]), parts[3]);
+                            String insert_query = "INSERT INTO Erabiltzaileak(id,izena,email,password) VALUES (" + user.getId() + ",'" + user.getName() + "', '" + user.getEmail() + "', '" + user.getPass() + "')";
                             Login.db.execSQL(insert_query);
                         }
                     }

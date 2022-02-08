@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ImageView tituloa;
     private ImageButton hasiJokua;
+    private ImageButton musikaBotoia;
     public static float pointX, pointY = 0;
     public static MediaPlayer hasierakoMusika;
     public static boolean piztuta;
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         tituloa = findViewById(R.id.imageView);
         // ImageButton
         hasiJokua = findViewById(R.id.imageButtonHasiJokua);
+        musikaBotoia = findViewById(R.id.imageButtonBolumena);
         // Animation
         Animation anT = AnimationUtils.loadAnimation(this, R.anim.tituloa_atera);
         tituloa.startAnimation(anT);
@@ -56,21 +58,9 @@ public class MainActivity extends AppCompatActivity {
         hasiJokua.startAnimation(anB);
         // OnClickListener
         hasiJokua.setOnClickListener(this::jokatu);
+        musikaBotoia.setOnClickListener(this::musikaKontrolatu);
         // Abestia hasieratzen da
         hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
-
-        // Musika ez badago jarrita, abestia hasten da
-//        if (piztuta) {
-//            view.setBackgroundResource(R.drawable.musicaoff);
-//            hasierakoMusika.pause();
-//            piztuta = false;
-//            // Ez badago piztuta pizten du
-//        } else {
-//            view.setBackgroundResource(R.drawable.musika_jarrita);
-//            hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
-//            hasierakoMusika.start();
-//            piztuta = true;
-//        }
 
         // Musika ez badago piztuta, musika jarri
         if (!hasierakoMusika.isPlaying()) {
@@ -79,6 +69,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
         piztuta = true;
+    }
+
+    private void musikaKontrolatu(View view) {
+        // Musika ez badago jarrita, abestia hasten da
+        if (piztuta) {
+            musikaBotoia.setBackgroundResource(R.drawable.musicaoff);
+            hasierakoMusika.pause();
+            piztuta = false;
+            // Ez badago piztuta pizten du
+        } else {
+            musikaBotoia.setBackgroundResource(R.drawable.musicaon);
+            hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
+            hasierakoMusika.start();
+            piztuta = true;
+        }
     }
 
     // GameActivity-ra doa

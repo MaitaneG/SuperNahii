@@ -18,8 +18,6 @@ public class GameActivity extends AppCompatActivity {
 
     public static MediaPlayer naaahiMusika;
     public static MediaPlayer aiiiMusika;
-    // public static MediaPlayer hipoMusika;
-    //public static MediaPlayer grinchMusika;
     private GameView gameView;
     public static int puntuak = 0;
 
@@ -44,11 +42,9 @@ public class GameActivity extends AppCompatActivity {
         // Jokuaren soinuak hasieratu
         aiiiMusika = MediaPlayer.create(this, R.raw.aiiiii);
         naaahiMusika = MediaPlayer.create(this, R.raw.naaahi);
-        //hipoMusika=MediaPlayer.create(this, R.raw.hipo);
-        //grinchMusika=MediaPlayer.create(this, R.raw.grinch);
 
         // Musika ez badago, musika pizten du
-        if (!MainActivity.piztuta) {
+        if (MainActivity.piztuta) {
             MainActivity.hasierakoMusika = MediaPlayer.create(this, R.raw.jingle_bell_rock_remix);
             MainActivity.hasierakoMusika.setVolume(0.5f, 0.5f);
             MainActivity.hasierakoMusika.start();

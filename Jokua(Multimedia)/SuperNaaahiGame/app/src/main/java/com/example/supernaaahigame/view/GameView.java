@@ -331,7 +331,9 @@ public class GameView extends SurfaceView implements Runnable {
         isBloqueao = true;
 
         try {
-            GameActivity.aiiiMusika.start();
+            if (MainActivity.piztuta) {
+                GameActivity.aiiiMusika.start();
+            }
             Thread.sleep(rodolfoDepre);
             isTocandoFondo = false;
             Thread.sleep(200);
@@ -348,7 +350,9 @@ public class GameView extends SurfaceView implements Runnable {
         isJump = true;
         isBloqueao = true;
         try {
-            GameActivity.naaahiMusika.start();
+            if (MainActivity.piztuta) {
+                GameActivity.naaahiMusika.start();
+            }
             Thread.sleep(rodolfoSalto);
             isJump = false;
             Thread.sleep(200);

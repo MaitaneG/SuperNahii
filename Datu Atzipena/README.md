@@ -76,6 +76,26 @@ Proiektua hainbat karpetetan banatuta dago:
   
   - **eus.dam.uni.model:** bertan puntuazioen pojoa dago. [Puntuazioa.java](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/model/Puntuazioa.java) klasea hainbat atributu  eta bi konstruktore daude bakarrik eta metodoak  edukitzeko Lombok erabili dugu , ***@Data*** anotazioa erabiliz
   
+###  **Swagerrarekin izan ditugun arazoak:**
+
+ Swagerrarekin izan ditugun arazoak:
+ 
+Dependentzi hauek jarri 
+
+![Dependentziak](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/Captura%20de%20pantalla%202022-02-08%20093654.png)
+
+Swagger konfigurazioan bi anotazio jarri
+
+![SwaggerControler](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/Captura%20de%20pantalla%202022-02-08%20093505.png)
+
+Baina errore honek irteten zigun
+
+![Errorea](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/Captura%20de%20pantalla%202022-02-08%20092041.png)
+
+Konpontzeko:
+Application properties-en spring.mvc.pathmatch.matching-strategy=ant-path-matcher jarri.
+ 
+  
 <br/>
 
 ### Diagramak

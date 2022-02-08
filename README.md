@@ -33,7 +33,7 @@ Karpeta honetan SuperNaaahi enpresaren jokua dago. Jokua *SuperNaaahiGame* deitz
 ### Visual(Interfaze)
 Bertan web orria dago. Web orria *SuperNaaahi* deitzen da. 
 
-*[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Visual(Interfaze)/SuperNaaahi)*
+*[README-ra joateko](https://github.com/MaitaneG/SuperNahii/tree/main/Visual(Interfaze))*
 
 ### Zerbitzuak 🖥️
 Aplikazio honek android-eko SQLite datubasea eta PostgreSQL eta MongoDB datubaseak konektatzen du. Aplikazio hau, *PostgreMongoKonexioak* deitzen da

@@ -74,7 +74,7 @@ Proiektua hainbat karpetetan banatuta dago:
   
   - **eus.dam.uni.dao:** bertan DAO-a dago. [PuntuazioDAO.java-a](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/dao/PuntuazioaDAO.java) datuak kudeatzen duenez, ***@Repository*** anotazioa jarri behar da. Datu guztiak gordetzen duen metodoari ***@PostConstruct*** bat jarri diogu. Bean-a sortu bezain laster datuak kargatzeko. Gainera MongoClient objektua autoinjektatu dugu ***@Autowired*** erabiliz 
   
-  - **eus.dam.uni.model:** bertan puntuazioen pojoa dago. [Puntuazioa.java](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/model/Puntuazioa.java) klasea hainbat atributu, getter eta setter, equals, hashcode, eta toString metodoak daude.
+  - **eus.dam.uni.model:** bertan puntuazioen pojoa dago. [Puntuazioa.java](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/model/Puntuazioa.java) klasea hainbat atributu  eta bi konstruktore daude bakarrik eta metodoak  edukitzeko Lombok erabili dugu ,@Data anotazioa erabiliz
   
 <br/>
 

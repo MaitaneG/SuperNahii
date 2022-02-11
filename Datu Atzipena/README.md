@@ -92,7 +92,7 @@ Baina errore honek irteten zigun
 
 ![Errorea](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/Captura%20de%20pantalla%202022-02-08%20092041.png)
 
-Konpontzeko:
+**Konpontzeko:**
 Application properties-en spring.mvc.pathmatch.matching-strategy=ant-path-matcher jarri.
  
   

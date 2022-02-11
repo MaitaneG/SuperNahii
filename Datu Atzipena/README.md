@@ -74,7 +74,27 @@ Proiektua hainbat karpetetan banatuta dago:
   
   - **eus.dam.uni.dao:** bertan DAO-a dago. [PuntuazioDAO.java-a](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/dao/PuntuazioaDAO.java) datuak kudeatzen duenez, ***@Repository*** anotazioa jarri behar da. Datu guztiak gordetzen duen metodoari ***@PostConstruct*** bat jarri diogu. Bean-a sortu bezain laster datuak kargatzeko. Gainera MongoClient objektua autoinjektatu dugu ***@Autowired*** erabiliz 
   
-  - **eus.dam.uni.model:** bertan puntuazioen pojoa dago. [Puntuazioa.java](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/model/Puntuazioa.java) klasea hainbat atributu, getter eta setter, equals, hashcode, eta toString metodoak daude.
+  - **eus.dam.uni.model:** bertan puntuazioen pojoa dago. [Puntuazioa.java](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/REST_API_SuperNaaahi/src/main/java/eus/dam/uni/model/Puntuazioa.java) klasea hainbat atributu, bi konstruktore  eta getter-ak eta setter-ak daude 
+  
+###  **Swagerrarekin izan ditugun arazoak:**
+
+**Swagerrarekin izan ditugun arazoak:**
+ 
+Dependentzi hauek jarri 
+
+![Dependentziak](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/Captura%20de%20pantalla%202022-02-08%20093654.png)
+
+Swagger konfigurazioan bi anotazio jarri
+
+![SwaggerControler](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/Captura%20de%20pantalla%202022-02-08%20093505.png)
+
+Baina errore honek irteten zigun
+
+![Errorea](https://github.com/MaitaneG/SuperNahii/blob/main/Datu%20Atzipena/Captura%20de%20pantalla%202022-02-08%20092041.png)
+
+**Konpontzeko:**
+Application properties-en spring.mvc.pathmatch.matching-strategy=ant-path-matcher jarri.
+ 
   
 <br/>
 

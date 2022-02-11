@@ -78,7 +78,7 @@ Proiektua hainbat karpetetan banatuta dago:
   
 ###  **Swagerrarekin izan ditugun arazoak:**
 
- Swagerrarekin izan ditugun arazoak:
+**Swagerrarekin izan ditugun arazoak:**
  
 Dependentzi hauek jarri 
 
